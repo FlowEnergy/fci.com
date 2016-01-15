@@ -27,6 +27,8 @@ gulp.task('connect', function() {
 			progressive: true
 		}))
 	.pipe(gulp.dest('src/img/'));
+	gulp.src('build/img/favicon.ico')
+		.pipe(gulp.dest('src/'));
 });
 
 gulp.task('jade', function() {
@@ -65,8 +67,7 @@ gulp.task('less', function() {
 gulp.task('publish', function() {
 	var publisher = awspublish.create({
 		params: {
-			Bucket: 'flowcontrol.com',
-			region: 'us-west-2'
+			Bucket: 'flowcontrol.com'
 		}
 	});
 	gulp.src('src/**/*')
