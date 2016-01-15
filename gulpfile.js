@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 
 gulp.task('connect', function() {
   connect.server({
-    root: '',
+    root: 'src/',
     livereload: true
   });
 });
@@ -30,7 +30,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('jade', function() {
-	gulp.src('build/jade/*.jade')
+	gulp.src('build/jade/page/*.jade')
 		.pipe(jade({
 			locals: {}
 		}))
@@ -56,10 +56,10 @@ gulp.task('less', function() {
 		.on('error', function(err){ console.log(err.message); })
 		.pipe(sourcemaps.write())
 		// .pipe(minifyCSS())
-		.pipe(gulp.dest('./src/css/'))
+		.pipe(gulp.dest('src/css/'))
 		.pipe(connect.reload());
 	gulp.src('./build/css/*.css')
-		.pipe(gulp.dest('./src/css'));
+		.pipe(gulp.dest('src/css/'));
 });
 
 gulp.task('publish', function() {
