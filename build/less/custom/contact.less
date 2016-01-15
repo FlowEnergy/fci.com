@@ -1,0 +1,258 @@
+.wrap-contact-header {
+  position: relative;
+  padding: 70px 0;
+  background-color: #fafafa;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    background: url('../../build/img/contact/map-1.png');
+  }
+  &:before {
+    top: 0;
+    right: 0;
+    width: 641px;
+    height: 125px;
+    background-position: 0 -240px;
+  }
+  &:after {
+    width: 641px;
+    height: 92px;
+    bottom: 0;
+    left: -270px;
+    background-position: -11px 0;
+    @media(max-width: @screen-xs-max) {
+      left: -320px;
+    }
+  }
+}
+
+.contact {
+  &-title {
+    color: rgba(0,0,0,.8);
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 35px;
+  }
+
+  &-text {
+    font-size: 17px;
+    line-height: 30px;
+    color: #8b8b8b;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &-sub-title {
+    font-size: 17px;
+    line-height: 30px;
+    color: @brand-green;
+    font-weight: 700;
+  }
+}
+
+a.contact-text {
+  display: block;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    color: #8b8b8b;
+  }
+}
+
+.row-textarea {
+  margin-top: 40px;
+}
+
+.btn-contact-send-message {
+  margin-bottom: 50px;
+  @media(max-width: @screen-sm-max) {
+    margin: 30px 0 20px;
+    width: 100%;
+  }
+}
+
+.green-label {
+  margin: 10px 0;
+  color: #81bc00;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+}
+
+textarea.form-control.textarea-contact {
+  height: 130px;
+}
+
+.required-text {
+  color: rgba(0, 0, 0, .6);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 30px;
+  span {
+    color: @brand-green;
+  }
+}
+
+
+.row-nav-tabs-contact {
+  margin: 80px 0;
+}
+
+.nav-tabs-contact {
+  li {
+    margin: 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    .transition(.3s);
+    &:first-child {
+      border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+    &:hover {
+      border-color: transparent;
+    }
+    &.active {
+      a {
+        border: none;
+        &:hover,
+        &:focus,
+        &:active {
+          border: none;
+        }
+      }
+    }
+    a {
+      border: none;
+      display: block;
+      color: rgba(0,0,0,.8);
+      padding: 20px 25px;
+      font-size: 17px;
+      font-weight: 400;
+      text-transform: capitalize;
+      .transition(.3s);
+      &:hover {
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.bg-contact-map {
+  position: relative;
+  background: url(../../build/img/contact/map-2.png);
+  background-position: 780px 140px;
+  background-repeat: no-repeat;
+  @media(min-width: 1500px) {
+    background-position: 1300px 140px;
+  }
+  @media(max-width: @screen-sm-max) {
+    background-image: none;
+  }
+}
+
+.tab-content-info {
+  margin-left: 70px;
+}
+
+.contact-info-item {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+  @media(max-width: @screen-xs-max) {
+    margin: 45px 0 0;
+  }
+}
+.contact-info-name {
+  color: #585858;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.contact-info-state {
+  color: rgba(0, 0, 0, .8);
+  margin: 0 0 20px;
+  font-size: 26px;
+  font-weight: 400;
+  @media(max-width: @screen-sm-max) {
+    margin-top: 30px;
+  }
+  @media(max-width: @screen-xs-max) {
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+}
+.contact-wrap-info {
+  margin-left: 30px;
+  @media(max-width: @screen-xs-max) {
+    margin: 0;
+  }
+}
+.contact-info-phone {
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #585858;
+  padding-left: 24px;
+  &:hover {
+    color: #585858;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    background: url(../../build/img/contact/phone-icon.png);
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 0;
+  }
+}
+
+.contact-info-phone--no-icon {
+  &:before {
+    display: none;
+  }
+}
+
+.panel-group-custom {
+  margin: 50px 0;
+  @media(max-width: @screen-sm-max) {
+    margin-top: 0;
+  }
+  .panel-title {
+    margin: 0;
+  }
+  .panel-default {
+    .panel-heading {
+      display: block;
+      a {
+        display: block;
+        color: rgba(0,0,0,.8);
+        text-align: center;
+        border: none;
+        padding: 20px 25px;
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: capitalize;
+        .transition(.3s);
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+          background: #fff;
+          border-radius: 4px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+  .panel-body {
+    text-align: center;
+  }
+}

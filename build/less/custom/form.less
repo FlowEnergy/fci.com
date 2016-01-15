@@ -1,0 +1,30 @@
+.form {
+  &-group {
+    margin-bottom: 30px;
+    textarea.form-control  {
+      max-width: 100%;
+      max-height: 150px;
+    }
+    .form-control {
+      padding: 13px 15px;
+      height: auto;
+      opacity: .98;
+      background: #fff;
+      box-shadow: none;
+      font-size: 15px;
+      color: #000;
+      .rounded(@radius: 3px);
+      .transition(.3s);
+      &:focus {
+        background-color: rgba(129, 188, 0, 0.1);
+        border: 1px solid #81bc00;
+        border-radius: 3px;
+      }
+      &.error {
+        color: red;
+        background-color: rgba(255, 0, 0, 0.1);
+        border: 1px solid red;
+      }
+    }
+  }
+}

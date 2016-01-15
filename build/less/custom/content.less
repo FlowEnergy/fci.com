@@ -1,0 +1,103 @@
+.sticky-wrap {
+  height: 100%;
+  @media(max-width: @screen-sm-max) {
+    height: auto;
+  }
+}
+.content {
+  padding: 75px 15px 75px;
+  @media(max-width: @screen-sm-max) {
+    padding: 75px 15px;
+  }
+  &-title {
+    color: @brand-blue;
+    margin: 0 0 30px;
+    &-lg {
+      margin-top: 8px;
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 52px;
+      @media(max-width: @screen-xs-max) {
+        font-size: 28px;
+        line-height: 35px;
+      }
+    }
+    &-sm {
+      font-size: 24px;
+    }
+    &-sub {
+      font-size: 17px;
+      color: @brand-gray;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  &-text {
+    margin: 0;
+    color: @brand-gray;
+    font-size: 17px;
+    line-height: 30px;
+    @media(max-width: @screen-xs-max) {
+      text-align: left;
+    }
+    &--center {
+      @media(max-width: @screen-sm-max) {
+        text-align: center;
+      }
+    }
+  }
+  &-block {
+    padding: 120px 15px;
+    &-padding {
+      padding-top: 0;
+    }
+    @media(max-width: @screen-sm-max) {
+      padding: 0 15px;
+    }
+    &-item {
+      &-icon {
+        text-align: center;
+        @media(max-width: @screen-sm-max) {
+          padding: 60px 15px 0;
+        }
+        @media(max-width: @screen-xs-max) {
+          padding: 40px 15px 0;
+        }
+      }
+      &-text {
+        @media(max-width: @screen-sm-max) {
+          text-align: center;
+          padding: 60px 15px;
+        }
+        @media(max-width: @screen-xs-max) {
+          padding: 50px 15px;
+        }
+      }
+    }
+    &-half {
+      margin-top: 95px;
+      &-icon {
+        display: block;
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+        box-sizing: border-box;
+        border: 1px solid rgba(139,139,139,.15);
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+        .table {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+        }
+      }
+      .content-text {
+        margin-bottom: 20px;
+      }
+      &:last-child {
+        margin-bottom: 95px;
+      }
+    }
+  }
+}

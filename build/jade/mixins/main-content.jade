@@ -1,0 +1,9 @@
+mixin mainContent(icon, title, text)
+  - var defaultTitle = title || 'default title'
+  - var defaultText = text || 'lorem lorem lorem lorem lorem lorem '
+  - var defaultIcon = icon || 'lowest-icon'
+  .content-item
+    .content-item__icon
+      img.animated-down-0-7s(src="../../build/img/home/" + defaultIcon + ".svg")
+    .content-item__title.animated-down-0-9s=defaultTitle
+    .content-item__text.animate-40=defaultText

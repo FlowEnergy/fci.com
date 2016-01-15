@@ -1,0 +1,12 @@
+mixin upcomingEventsItem(img, title, date)
+  - var defaultImg = img || '1'
+  - var defaultTitle = title || 'defaultTitle'
+  - var defaultDate = date || '2016'
+
+  a.upcoming-events__item(href="#")
+    .upcoming-events__img-wrap.table
+      .table-row
+        .table-cell.vertical-middle
+          img.upcoming-events__img(src="../../build/img/resources/"+ defaultImg + ".png" alt="defaultImg")
+    .upcoming-events__title=defaultTitle
+    .upcoming-events__date=defaultDate

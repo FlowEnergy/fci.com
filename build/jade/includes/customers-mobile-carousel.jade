@@ -1,0 +1,69 @@
+.container.visible-sm.visible-xs
+  .row
+    .col-xs-12
+      #customers-mobile-carousel.home-mobile-carousel.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#customers-mobile-carousel', data-slide-to='0')
+          li(data-target='#customers-mobile-carousel', data-slide-to='1')
+          li(data-target='#customers-mobile-carousel', data-slide-to='2')
+          li(data-target='#customers-mobile-carousel', data-slide-to='3')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.svg.svg-color-green(src="../../build/img/customers/icons/airports-icon.svg")
+              h4.home-mobile-carousel__title Airports
+
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  .row.visible-xs.visible-sm
+                    include ../../jade/includes/customers-carousel-item
+                    include ../../jade/includes/customers-carousel-item
+
+          .item
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.svg.svg-color-green(src="../../build/img/customers/icons/universities-icon.svg")
+              h4.home-mobile-carousel__title Universities
+
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  .row.visible-xs.visible-sm
+                    include ../../jade/includes/customers-carousel-item
+                    include ../../jade/includes/customers-carousel-item
+
+          .item
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.svg.svg-color-green(src="../../build/img/customers/icons/hospitals-icon.svg")
+              h4.home-mobile-carousel__title Hospitals
+
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  .row.visible-xs.visible-sm
+                    include ../../jade/includes/customers-carousel-item
+                    include ../../jade/includes/customers-carousel-item
+
+          .item
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.svg.svg-color-green(src="../../build/img/customers/icons/commercial-icon.svg")
+              h4.home-mobile-carousel__title Commercial
+
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  .row.visible-xs.visible-sm
+                    include ../../jade/includes/customers-carousel-item
+                    include ../../jade/includes/customers-carousel-item
+
+        // Controls
+        a.left.carousel-control(href='#customers-mobile-carousel', role='button', data-slide='prev')
+          img.carousel-control-icon.svg(src="../../build/img/home/arrow-slider.svg" alt="")
+        a.right.carousel-control(href='#customers-mobile-carousel', role='button', data-slide='next')
+          img.carousel-control-icon.svg(src="../../build/img/home/arrow-slider.svg" alt="")

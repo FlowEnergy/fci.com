@@ -1,0 +1,215 @@
+.customers-content {
+  @media(max-width: @screen-xs-max) {
+    margin-top: 150px;
+  }
+}
+.customers-control {
+  top: 380px !important;
+}
+.nav-tabs-customers {
+
+
+
+  margin-top: 70px;
+  li {
+    width: 25%;
+    height: 150px;
+    float: left;
+    a {
+      height: 100%;
+      border: none;
+      border-bottom: 3px solid transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        border: none;
+        background: none;
+        border-bottom: 3px solid transparent;
+      }
+    }
+    &.active {
+      .customers-tab__title {
+        font-weight: 600;
+        color: @brand-green;
+      }
+      .customers-tab__img {
+        path {
+          fill: @brand-green !important;
+        }
+      }
+      a {
+        border: none;
+        border-bottom: 3px solid @brand-green;
+        &:hover,
+        &:focus,
+        &:active {
+          border: none;
+          border-bottom: 3px solid @brand-green;
+        }
+      }
+    }
+    .customers-tab {
+      &-row {
+
+      }
+      &__item {
+
+      }
+      &__img {
+        path {
+          fill: rgba(0,0,0,.4) !important;
+        }
+        &-wrap {
+          width: 100%;
+          text-align: center;
+          height: 60px;
+        }
+      }
+      &__title {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        color: rgba(0,0,0,.6);
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+
+.customers-carousel {
+  margin-top: 50px;
+  &-item {
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    &__img {
+      width: 100%;
+      &-wrap {
+
+      }
+    }
+    &__content {
+      padding: 30px 25px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    &__title {
+      text-align: center;
+      margin: 12px 0 25px;
+      color: #80be13;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 31px;
+    }
+    &__country {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: rgba(0,0,0,.6);
+    }
+    &__text {
+      color: #585858;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &__list {
+      padding: 0;
+      margin: 0;
+      li {
+        position: relative;
+        list-style-type: none;
+        padding-left: 10px;
+        display: block;
+        color: #585858;
+        font-size: 14px;
+        line-height: 30px;
+        &:before {
+          position: absolute;
+          content: '';
+          left: -5px;
+          top: 13px;
+          width: 5px;
+          height: 5px;
+          background-color: #81bc00;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.customers-scroll {
+  margin-top: 50px;
+  overflow: auto;
+  .col-sm-4 {
+    width: 304px !important;
+    float: left !important;
+    //@media(max-width: @screen-xs-max) {
+    //  width: 296px !important;
+    //}
+  }
+  &-wrap {
+    width: 100%;
+    overflow: hidden;
+  }
+  &--inner {
+    overflow-y: auto;
+  }
+  .row {
+
+  }
+}
+//  &-item {
+//    margin: 0 0 50px;
+//    .rounded(10px);
+//    border: 1px solid #e5e5e5;
+//    overflow: hidden;
+//
+//    &-img {
+//      width: 100%;
+//      .border-radius(10px, 0, 0, 10px)
+//    }
+//    &-content {
+//      padding: 20px;
+//      color: @brand-gray;
+//    }
+//    &-location {
+//      text-transform: uppercase;
+//      font-size: 13px;
+//      font-weight: 700;
+//    }
+//    &-title {
+//      color: @brand-blue;
+//      font-size: 21px;
+//      line-height: 35px;
+//      margin: 0 0 20px;
+//    }
+//    &-desc {
+//      font-size: 14px;
+//      line-height: 28px;
+//      margin: 0 0 40px;
+//    }
+//    &-list {
+//      list-style-type: none;
+//      padding: 0;
+//      margin: 0 0 32px;
+//      li {
+//        position: relative;
+//        padding-left: 30px;
+//        margin-bottom: 15px;
+//        &:before {
+//          left: 0;
+//          top: -3px;
+//          position: absolute;
+//          content: '';
+//          width: 24px;
+//          height: 24px;
+//          background-image: url(../../build/img/checkmark-icon.png);
+//        }
+//      }
+//    }
+//  }
+//}

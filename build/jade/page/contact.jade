@@ -1,0 +1,240 @@
+extends ../layout/layout
+block main-content
+  +headerNav()
+  .tab-scroll-wrap.margin-0
+    #scroll-block.tab-scroll.tab-scroll--green
+      .container.text-center
+        ul.tab-scroll-list
+          li: a.scroll-link-nav(href="#scroll-block-contact-1") contact
+          li: a.scroll-link-nav(href="#scroll-block-contact-2") send message
+          li: a.scroll-link-nav(href="#scroll-block-contact-3") representatives
+  .wrap-contact-header
+    .container
+      .row
+        .col-md-4.col-sm-6
+          h3#scroll-block-contact-1.contact-title.animate-40 Call us
+          .row
+            .col-sm-6
+              .contact-sub-title.animated-down-0-7s P:
+              .contact-text.animated-down-0-9s 425.483.1297
+            .col-sm-6
+              .contact-sub-title.animated-down-0-7s F:
+              .contact-text.animated-down-0-9s 425.486.5672
+            .col-sm-6
+              .contact-sub-title.animate-40 Toll-free:
+              .contact-text.animated-down-0-9s 866.454.1288
+        .col-md-3.col-sm-6.col-md-offset-1
+          h3.contact-title.animate-40 Email us
+          .contact-sub-title.animated-down-0-9s General Inquiries:
+          a(href="mailo:sales@flowcontrol.com").contact-text.animated-down-0-7s sales@flowcontrol.com
+          .contact-sub-title Service Issues:
+          a(href="mailto:fciservice@flowcontrol.com").contact-text.animated-down-0-9s fciservice@flowcontrol.com
+        .col-md-3.col-sm-6.col-md-offset-1
+          h3.contact-title.animate-40 Visit us
+          .contact-sub-title.animated-down-0-9s Address:
+          a(href="#").contact-text.animated-down-0-7s 18715 141st Ave NE, Woodinville, WA 98072
+
+
+
+  .container.text-center
+    h1#scroll-block-contact-2.custom-title.animate-40 Quote Requests
+    p.content-text.animated-down-0-9s We have a global rep network and would love to put you in touch with your
+      br.hidden-xs.hidden-sm
+      =" "
+      | local representative. Please be prepared to give these details:
+
+    form
+      .row
+        .col-xs-12
+          .green-label Project details *
+      .row
+        .col-md-4.col-sm-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Project Name")
+        .col-md-4.col-sm-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Project Location")
+        .col-md-4.col-sm-12.animated-down-0-9s
+          .form-group
+            input.form-control(type="text" placeholder="Design Engineer")
+      .row
+        .col-md-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Equipment Schedule & Specification")
+        .col-md-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="New or Retrofit Construction")
+      .row
+        .col-xs-12
+          .green-label.animated-down-0-9s Project details *
+      .row
+        .col-md-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="First Name")
+        .col-md-6
+          .form-group.animated-down-0-9s
+            input.form-control.error(type="text" placeholder="Last Name" value="Error message")
+        .col-md-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Email")
+        .col-md-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Phone")
+      .row.row-textarea
+        .col-md-12
+          .form-group.animated-down-0-9s
+            textarea.form-control.textarea-contact(placeholder="Project Name")
+      .row
+        .col-md-6
+          .required-text.text-left.animated-down-0-9s
+            span *
+            =" "
+            | – required fields
+        .col-md-6.text-right
+          button.animated-down-0-9s.btn.btn-main.btn-contact-send-message.animate-40 send message
+    hr
+  .bg-contact-map
+    .container
+      h1#scroll-block-contact-3.custom-title.custom-title--contact.animated-down-0-9s Representatives
+      hr.visible-sm.visible-xs
+      .row.row-nav-tabs-contact.hidden-sm.hidden-xs
+        .col-md-3
+          ul.nav.nav-tabs.nav-tabs-contact(role='tablist')
+            li.active(role='presentation')
+              a(href='#idaho', aria-controls='idaho', role='tab', data-toggle='tab') idaho
+            li(role='presentation')
+              a(href='#lowa', aria-controls='lowa', role='tab', data-toggle='tab') lowa
+            li(role='presentation')
+              a(href='#alabama', aria-controls='alabama', role='tab', data-toggle='tab') alabama
+            li(role='presentation')
+              a(href='#alaska', aria-controls='alaska', role='tab', data-toggle='tab') alaska
+
+            li
+              a(href='#arizona', aria-controls='arizona', role='tab', data-toggle='tab') arizona
+            li(role='presentation')
+              a(href='#arkansas', aria-controls='arkansas', role='tab', data-toggle='tab') arkansas
+            li(role='presentation')
+              a(href='#wyoming', aria-controls='wyoming', role='tab', data-toggle='tab') wyoming
+            li(role='presentation')
+              a(href='#washington', aria-controls='washington', role='tab', data-toggle='tab') washington
+
+            li
+              a(href='#vermont', aria-controls='vermont', role='tab', data-toggle='tab') vermont
+            li(role='presentation')
+              a(href='#virginia', aria-controls='virginia', role='tab', data-toggle='tab') virginia
+            li(role='presentation')
+              a(href='#wisconsin', aria-controls='wisconsin', role='tab', data-toggle='tab') wisconsin
+
+
+        .col-md-5
+          .tab-content.tab-content-info
+            #idaho.tab-pane.active(role='tabpanel')
+              +contactTabInfo()
+              +contactTabInfo()
+            #lowa.tab-pane(role='tabpanel')
+              +contactTabInfo('lowa')
+              +contactTabInfo('lowa')
+            #alabama.tab-pane(role='tabpanel')
+              +contactTabInfo('alabama')
+            #alaska.tab-pane(role='tabpanel')
+              +contactTabInfo('alaska')
+            #arizona.tab-pane(role='tabpanel')
+              +contactTabInfo('arizona')
+            #arkansas.tab-pane(role='tabpanel')
+              +contactTabInfo('arkansas')
+            #wyoming.tab-pane(role='tabpanel')
+              +contactTabInfo('wyoming')
+            #washington.tab-pane(role='tabpanel')
+              +contactTabInfo('washington')
+            #vermont.tab-pane(role='tabpanel')
+              +contactTabInfo('vermont')
+            #virginia.tab-pane(role='tabpanel')
+              +contactTabInfo('virginia')
+            #wisconsin.tab-pane(role='tabpanel')
+              +contactTabInfo('wisconsin')
+
+
+
+      .row.hidden-lg.hidden-md
+        .col-xs-12
+
+          #accordion.panel-group.panel-group-custom(role='tablist', aria-multiselectable='true')
+
+            .panel.panel-default
+              #idaho-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#idaho-collapse', aria-expanded='false', aria-controls='idaho-collapse') idaho
+              #idaho-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#idaho-heading')
+                .panel-body
+                  +contactTabInfo('idaho')
+                  +contactTabInfo('idaho')
+
+            .panel.panel-default
+              #lowa-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#lowa-collapse', aria-expanded='false', aria-controls='lowa-collapse') lowa
+              #lowa-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#lowa-heading')
+                .panel-body
+                  +contactTabInfo('lowa')
+
+            .panel.panel-default
+              #alabama-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#alabama-collapse', aria-expanded='false', aria-controls='alabama-collapse') alabama
+              #alabama-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#alabama-heading')
+                .panel-body
+                  +contactTabInfo('alabama')
+
+
+            .panel.panel-default
+              #alaska-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#alaska-collapse', aria-expanded='false', aria-controls='alaska-collapse') alaska
+              #alaska-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#alaska-heading')
+                .panel-body
+                  +contactTabInfo('alaska')
+
+            .panel.panel-default
+              #arizona-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#arizona-collapse', aria-expanded='false', aria-controls='arizona-collapse') arizona
+              #arizona-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#arizona-heading')
+                .panel-body
+                  +contactTabInfo('arizona')
+
+            .panel.panel-default
+              #wyoming-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#wyoming-collapse', aria-expanded='false', aria-controls='wyoming-collapse') wyoming
+              #wyoming-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#wyoming-heading')
+                .panel-body
+                  +contactTabInfo('wyoming')
+
+            .panel.panel-default
+              #washington-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#washington-collapse', aria-expanded='false', aria-controls='washington-collapse') washington
+              #washington-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#washington-heading')
+                .panel-body
+                  +contactTabInfo('washington')
+
+            .panel.panel-default
+              #vermont-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#vermont-collapse', aria-expanded='false', aria-controls='vermont-collapse') vermont
+              #vermont-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#vermont-heading')
+                .panel-body
+                  +contactTabInfo('vermont')
+
+            .panel.panel-default
+              #virginia-heading.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#virginia-collapse', aria-expanded='false', aria-controls='virginia-collapse') virginia
+              #virginia-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#virginia-heading')
+                .panel-body
+                  +contactTabInfo('virginia')
+
+
+
+block add-script
+  script(src="../../build/js/tab-scroll.js")

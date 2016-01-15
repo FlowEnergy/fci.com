@@ -1,0 +1,11 @@
+mixin whitepapersItem(icon, title, text)
+  - var defaultTitle = title || 'default title'
+  - var defaultIcon = icon || 'lowest-icon'
+  - var defaultText = text || 'default text'
+
+  a(href='#').whitepapers__item
+    .whitepapers__icon-wrap.animated-down-0-7s
+      img.svg.whitepapers__icon(src="../../build/img/resources/icons/" + defaultIcon + ".svg" alt="")
+    .whitepapers__content
+      .whitepapers__title.animated-down-0-9s=defaultTitle
+      .whitepapers__text.animate-40=defaultText

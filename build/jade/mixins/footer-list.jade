@@ -1,0 +1,5 @@
+mixin footerList
+    - var footerList = [{"title":"New York"},{"title":"Los Angeles"},{"title":"Kiev"},{"title":"Gamburg"},{"title":"Ontario"}];
+    each footerListItem, index in footerList
+        li
+            a(href="#")=footerListItem.title

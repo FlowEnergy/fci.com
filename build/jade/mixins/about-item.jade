@@ -1,0 +1,10 @@
+mixin aboutItem(icon, title, text)
+  - var icon = icon || 'experience-icon'
+  - var title = title || 'default title'
+  - var text = text || 'lorem lorem lorem lorem lorem lorem '
+
+  .about-item
+    .about-item--icon.animated-down-0-7s
+      img.svg(src="../../build/img/about/icons/" + icon + ".svg")
+    .about-item--title.animated-down-0-9s=title
+    .about-item--description.animate-40=text

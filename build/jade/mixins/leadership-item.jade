@@ -1,0 +1,11 @@
+mixin leadershipItem(photo, title, description, job)
+  - var photo = photo || false
+  - var title = title || 'Title'
+  - var description = description || 'description'
+  - var job = job || 'job'
+  .leadership-item
+    .leadership-item__photo-wrap.animate-40
+      img.leadership-item__photo(src="../../build/img/about/" + photo + '.png')
+    .leadership-item__title.animated-down-0-7s=title
+    .leadership-item__description.animated-down-0-9s=description
+    .leadership-item__job.animated-down-0-9s=job

@@ -1,0 +1,37 @@
+.container
+   .row
+      .col-md-10.col-md-offset-1
+         ul.nav.nav-tabs.nav-tabs-customers(role='tablist')
+            li.active(role='presentation')
+               a(href='#airports', aria-controls='airports', role='tab', data-toggle='tab')
+                  +customersTab('airports-icon', 'airports')
+            li(role='presentation')
+               a(href='#universities', aria-controls='universities', role='tab', data-toggle='tab')
+                  +customersTab('universities-icon', 'universities')
+            li(role='presentation')
+               a(href='#hospitals', aria-controls='hospitals', role='tab', data-toggle='tab')
+                  +customersTab('hospitals-icon', 'hospitals')
+            li(role='presentation')
+               a(href='#commercial', aria-controls='commercial', role='tab', data-toggle='tab')
+                  +customersTab('commercial-icon', 'commercial')
+   .row
+      .tab-content
+         #airports.tab-pane.active(role='tabpanel')
+
+           include customers-carousel
+
+         #universities.tab-pane(role='tabpanel')
+
+           include customers-carousel
+
+         #hospitals.tab-pane(role='tabpanel')
+
+           include customers-carousel
+
+         #commercial.tab-pane(role='tabpanel')
+
+           include customers-carousel
+
+
+
+

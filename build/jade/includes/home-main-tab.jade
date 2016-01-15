@@ -1,0 +1,56 @@
+.block-slider-tab.hidden-xs
+  .container
+    #carousel-main-tab.carousel.slide(data-ride='carousel')
+       ol.carousel-indicators
+
+          li.active.animated-down-0-7s(data-target='#carousel-main-tab', data-slide-to='0')
+             .block-slider-tab-wrap-img
+               img.svg(src="../../build/img/home/reduce-energy-icon.svg" alt="")
+             h4.block-slider-tab-title Reduce Energy
+               br
+               | Costs
+
+          li.animated-down-0-7s(data-target='#carousel-main-tab', data-slide-to='1')
+             .block-slider-tab-wrap-img
+                img.svg(src="../../build/img/home/recover-icon.svg" alt="")
+             h4.block-slider-tab-title.animated-down-0-8s Recover System
+              br
+              | Capacity
+
+          li.animate-40(data-target='#carousel-main-tab', data-slide-to='2')
+             .block-slider-tab-wrap-img
+               img.svg(src="../../build/img/home/reduce-maintenance-icon.svg" alt="")
+             h4.block-slider-tab-title Reduce
+               br
+               | Maintenance
+
+          li.animate-40(data-target='#carousel-main-tab', data-slide-to='3')
+            .block-slider-tab-wrap-img
+              img.svg(src="../../build/img/home/improve-icon.svg" alt="")
+            h4.block-slider-tab-title Improve Comfort
+              br
+              | For Tenants
+
+          li.animate-40(data-target='#carousel-main-tab', data-slide-to='4')
+            .block-slider-tab-wrap-img
+              img.svg(src="../../build/img/home/lowest-icon.svg" alt="")
+            h4.block-slider-tab-title Lowest Total Cost
+              br
+              | Of Ownership
+
+
+       .carousel-inner.animate-40(role='listbox')
+          .item.active
+             .text-center
+                p.content-text The DeltaPValve® uses far less energy by increasing system stability. In fact, it has proven to reduce energy consumption in heating and cooling systems by 20 - 40%. This translates to saving millions of dollars in operating costs and eliminates needless environmental waste.
+          .carousel-caption
+          - for(x=0; x<=5; x++)
+            .item
+               .text-center
+                  p.content-text Gain visibility and understanding of cooling and heating systems with insightful reports on energy performance.  Empower facilities teams with sophisticated diagnostic tools and equipment monitoring using 1-minute data resolution.
+       //a.left.carousel-control(href='#carousel-main-tab', role='button', data-slide='prev')
+       //  img.carousel-control-icon(src="../../build/img/icon-arrow-left.png" alt="")
+       //  span.sr-only Previous
+       //a.right.carousel-control(href='#carousel-main-tab', role='button', data-slide='next')
+       //  img.carousel-control-icon(src="../../build/img/icon-arrow-right.png" alt="")
+       //  span.sr-only Next

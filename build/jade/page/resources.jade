@@ -1,0 +1,62 @@
+extends ../layout/layout
+
+block main-content
+  .sticky-wrap
+    .main-header-bg(style="background-image: url(../../build/img/resources/resources-bg.jpg)")
+      +headerNav()
+      .container.h100.text-center
+        .table
+          .table-row
+            .table-cell.vertical-middle
+              .main-header-title.animated-down-0-7s Library
+              .main-header-title-sub.animated-down-0-9s We pride ourselves on being industry pioneers and educators. Use
+                br.hidden-xs.hidden-sm
+                | the resources below to explore the DeltaPValve® and its application.
+              a.btn.btn-main.scroll-link-nav.animate-40(href="#scroll-block-resources-1") learn more
+  .tab-scroll-wrap.tab-scroll--resources
+    .tab-scroll#scroll-block
+      .container.text-center
+        ul.tab-scroll-list
+          li: a.scroll-link-nav(href="#scroll-block-resources-1") data sheets
+          li: a.scroll-link-nav(href="#scroll-block-resources-2") whitepapers
+          li: a.scroll-link-nav(href="#scroll-block-resources-3") videos
+          li: a.scroll-link-nav(href="#scroll-block-resources-4") events
+  .container.text-center
+    .main-title-wrap
+      h1#scroll-block-resources-1.main-title.main-title--sm.animate-40 Data Sheets
+
+    .row.data-sheets-row
+      .col-sm-6.col-md-3
+        +dataSheetsItem('product-icon', 'Product Catalog')
+      .col-sm-6.col-md-3
+        +dataSheetsItem('sample-icon', 'Sample Specs')
+      .col-sm-6.col-md-3
+        +dataSheetsItem('design-icon', 'Design Manual')
+      .col-sm-6.col-md-3
+        +dataSheetsItem('service-icon', 'Service Procedures')
+
+  .container
+    .main-title-wrap
+      h1#scroll-block-resources-2.main-title.main-title--sm.animate-40 Whitepapers
+    .row.whitepapers-row
+      .col-md-6
+        +whitepapersItem('precision-icon', 'Precision Control', 'Lorem ipsum Venenatis consequat enim nec aliquam. Aliquam erat volutpat.')
+      .col-md-6
+        +whitepapersItem('human-icon', 'Human Comfort', 'Lorem ipsum Venenatis consequat enim nec aliquam. Aliquam erat volutpat.')
+  .bg-gray-resources
+    .container
+      .main-title-wrap
+        h1#scroll-block-resources-3.main-title.main-title--sm.animate-40 Videos
+        include ../../jade/includes/resources-video
+  .container.container-wrap-resources
+    .row.upcoming-events-row
+      .main-title-wrap
+        h1#scroll-block-resources-4.main-title.main-title--sm.animate-40 Upcoming Events
+      .col-md-4
+        +upcomingEventsItem('event-1', 'Idea Campus')
+      .col-md-4
+        +upcomingEventsItem('event-2', 'West Coast EMC')
+      .col-md-4
+        +upcomingEventsItem('event-3', 'Idea Campus')
+block add-script
+  script(src="../../build/js/tab-scroll.js")

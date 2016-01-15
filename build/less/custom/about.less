@@ -1,0 +1,131 @@
+.about-item {
+  min-height: 185px;
+  margin-bottom: 55px;
+  &-row {
+    margin-top: 65px;
+  }
+  .svg path {
+    fill: @brand-green !important;
+  }
+  &--icon {
+    min-height: 65px;
+  }
+  &--title {
+    margin: 25px 0;
+    color: @brand-green;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &--description {
+    color: #585858;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.leadership-item {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 75px 30px 30px;
+  text-align: left;
+  margin-bottom: 60px;
+  &__photo {
+    width: 100%;
+    &-wrap {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      top: -45px;
+      left: 43px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #d7d7d7;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    }
+  }
+  &__title {
+    margin-bottom: 15px;
+    color: #80be13;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 52px;
+  }
+  &__description {
+    margin-bottom: 30px;
+    color: rgba(0,0,0,.6);
+    font-size: 17px;
+    line-height: 30px;
+    font-style: italic;
+  }
+  &__job {
+    color: rgba(0,0,0,.6);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.open-position-item {
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 74px 30px 30px;
+  text-align: center;
+  margin-bottom: 100px;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -21px 0 0 -23px;
+    &.svg path {
+      fill: #fff !important;
+    }
+    &-wrap {
+      position: absolute;
+      left: 50%;
+      top: -53px;
+      margin-left: -53px;
+      border-radius: 50%;
+      width: 106px;
+      height: 106px;
+      background-color: @brand-green;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.36) 0%, rgba(0, 0, 0, 0.11) 100%);
+    }
+  }
+  &__title {
+    color: #80be13;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  &__country,
+  &__description {
+    color: rgba(0, 0, 0, .6);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  &__description {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.about-description {
+  max-width: 695px;
+  text-align: center;
+  margin: 0 auto 90px;
+}
+.row--leadership {
+  margin-top: 70px;
+}
+.row-about-info {
+  padding: 70px 0;
+}
+.row-mt-60 {
+  margin-top: 60px;
+}

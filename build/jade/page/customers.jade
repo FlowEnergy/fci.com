@@ -1,0 +1,46 @@
+extends ../layout/layout
+block main-content
+  .sticky-wrap
+    .main-header-bg(style="background-image: url(../../build/img/customers/maintenance.jpg)")
+      +headerNav()
+      .container.h100.text-center
+        .table
+          .table-row
+            .table-cell.vertical-middle
+              .main-header-title.animated-down-0-7s Our customers are our best sales people
+              .main-header-title-sub.animated-down-0-9s DeltaPValves are installed throughout the world in numerous buildings
+                br.hidden-xs.hidden-sm
+                | and various vertical markets.  We invite you to take a look at some of our
+                br.hidden-xs.hidden-sm
+                | featured projects.
+              a.btn.btn-main.scroll-link.animate-40(href="#scroll-block") learn more
+  #scroll-block.customers-content
+    .container.text-center
+      .hidden-sm.hidden-xs
+        include ../../jade/includes/customers-tab-md
+  include ../../jade/includes/customers-mobile-carousel
+  //.container.customers-scroll-wrap
+  //  .customers-scroll
+  //    .customers-scroll--inner
+  //    .row.visible-xs.visible-sm
+  //      include ../../jade/includes/customers-carousel-item
+  //      include ../../jade/includes/customers-carousel-item
+
+
+
+block add-script
+  script.
+    var itemSlider = $('#customers-mobile-carousel .item');
+    itemSlider.each(function () {
+      var scrollRow = $('.customers-scroll .row'),
+          numberElement = scrollRow.find('.col-sm-4');
+      console.log($(this));
+      $(this).find(numberElement).each(function (i) {
+        $(this).closest('.row').css('width', numberElement.innerWidth() * (i+1));
+      });
+
+    });
+
+
+    console.log();
+  //script(src="../../build/js/tab-scroll.js")

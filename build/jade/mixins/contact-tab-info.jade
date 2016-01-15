@@ -1,0 +1,12 @@
+mixin contactTabInfo(state, name, phone, phoneNoIcon)
+  - var state = state || 'Verne Simmonds Co.'
+  - var name = name || 'Scoty Blackmore'
+  - var phone = phone || '623.30.30'
+  - var phoneNoIcon = phoneNoIcon || false
+  .contact-info-item
+    h2.contact-info-state=state
+    .contact-wrap-info
+      .contact-info-name=name
+      a(href="tel:"+ phone).contact-info-phone=phone
+      if(phoneNoIcon)
+        .contact-info-phone.contact-info-phone--no-icon=phoneNoIcon

@@ -1,0 +1,11 @@
+mixin customersTab(icon, title)
+
+  - var defaultIcon = icon || 'lowest-icon'
+  - var defaultTitle = title || 'default title'
+
+  .customers-tab__item
+    .customers-tab__img-wrap.table
+      .table-row
+        .table-cell.vertical-middle
+          img.customers-tab__img.svg(src="../../build/img/customers/icons/" + defaultIcon + ".svg")
+    h4.customers-tab__title=defaultTitle

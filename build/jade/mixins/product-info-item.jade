@@ -1,0 +1,10 @@
+mixin productInfoItem(icon, title, text, text2)
+  - var defaultIcon = icon || 'installation-icon'
+  - var defaultTitle = title || 'defaultTitle'
+  - var defaultText = text || 'defaultText'
+  .product-info-item
+    img.svg(src="../../build/img/product/icons/" + defaultIcon + '.svg')
+    .product-info-item__title.animated-down-0-7s=defaultTitle
+    .product-info-item__text.animated-down-0-9s=defaultText
+    if(text2)
+      .product-info-item__text.animated-down-0-9s=text2

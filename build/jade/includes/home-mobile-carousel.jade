@@ -1,0 +1,63 @@
+.container.visible-sm.visible-xs
+  .row
+    .col-xs-12
+      #home-mobile-carousel.home-mobile-carousel.carousel.slide(data-ride='carousel')
+         // Indicators
+         ol.carousel-indicators
+            li.active(data-target='#home-mobile-carousel', data-slide-to='0')
+            li(data-target='#home-mobile-carousel', data-slide-to='1')
+            li(data-target='#home-mobile-carousel', data-slide-to='2')
+            li(data-target='#home-mobile-carousel', data-slide-to='3')
+            li(data-target='#home-mobile-carousel', data-slide-to='4')
+         // Wrapper for slides
+         .carousel-inner(role='listbox')
+            .item.active
+               .home-mobile-carousel__item
+                 .home-mobile-carousel__wrap-img
+                    img.svg(src="../../build/img/home/reduce-energy-icon.svg" alt="")
+                 h4.home-mobile-carousel__title Reduce Energy
+                    br
+                    | Costs
+               .home-mobile-carousel__text The DeltaPValve® uses far less energy by increasing system stability. In fact, it has proven to reduce energy consumption in heating and cooling systems by 20 - 40%. This translates to saving millions of dollars in operating costs and eliminates needless environmental waste.
+
+            .item
+              .home-mobile-carousel__item
+                .home-mobile-carousel__wrap-img
+                  img.svg(src="../../build/img/home/recover-icon.svg" alt="")
+                h4.home-mobile-carousel__title Recover System
+                  br
+                  | Capacity
+              .home-mobile-carousel__text The DeltaPValve® uses far less energy by increasing system stability. In fact, it has proven to reduce energy consumption in heating and cooling systems by 20 - 40%. This translates to saving millions of dollars in operating costs and eliminates needless environmental waste.
+
+            .item
+              .home-mobile-carousel__item
+                .home-mobile-carousel__wrap-img
+                  img.svg(src="../../build/img/home/reduce-maintenance-icon.svg" alt="")
+                h4.home-mobile-carousel__title Reduce
+                  br
+                  | Maintenance
+              .home-mobile-carousel__text The DeltaPValve® uses far less energy by increasing system stability. In fact, it has proven to reduce energy consumption in heating and cooling systems by 20 - 40%. This translates to saving millions of dollars in operating costs and eliminates needless environmental waste.
+
+            .item
+              .home-mobile-carousel__item
+                .home-mobile-carousel__wrap-img
+                  img.svg(src="../../build/img/home/improve-icon.svg" alt="")
+                h4.home-mobile-carousel__title Improve Comfort
+                  br
+                  | For Tenants
+              .home-mobile-carousel__text The DeltaPValve® uses far less energy by increasing system stability. In fact, it has proven to reduce energy consumption in heating and cooling systems by 20 - 40%. This translates to saving millions of dollars in operating costs and eliminates needless environmental waste.
+
+            .item
+              .home-mobile-carousel__item
+                .home-mobile-carousel__wrap-img
+                  img.svg(src="../../build/img/home/lowest-icon.svg" alt="")
+                h4.home-mobile-carousel__title Lowest Total Cost
+                  br
+                  | Of Ownership
+              .home-mobile-carousel__text The DeltaPValve® uses far less energy by increasing system stability. In fact, it has proven to reduce energy consumption in heating and cooling systems by 20 - 40%. This translates to saving millions of dollars in operating costs and eliminates needless environmental waste.
+
+         // Controls
+         a.left.carousel-control(href='#home-mobile-carousel', role='button', data-slide='prev')
+           img.carousel-control-icon.svg(src="../../build/img/home/arrow-slider.svg" alt="")
+         a.right.carousel-control(href='#home-mobile-carousel', role='button', data-slide='next')
+           img.carousel-control-icon.svg(src="../../build/img/home/arrow-slider.svg" alt="")

@@ -1,0 +1,10 @@
+mixin dataSheetsItem(icon, title)
+  - var defaultTitle = title || 'default title'
+  - var defaultIcon = icon || 'lowest-icon'
+
+  .data-sheets__item
+    .table.data-sheets__icon-wrap.animated-down-0-7s
+      .table-row
+        .table-cell.vertical-middle
+          img.svg.data-sheets__icon(src="../../build/img/resources/icons/" + defaultIcon + ".svg" alt="")
+    .data-sheets__title.animate-40=defaultTitle

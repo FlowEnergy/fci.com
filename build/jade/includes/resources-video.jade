@@ -1,0 +1,60 @@
+.row
+  .col-md-10.col-md-offset-1.text-left
+    ul.nav.nav-tabs.nav-resources(role='tablist')
+      li.active(role='presentation')
+        a(href='#webinars', aria-controls='webinars', role='tab', data-toggle='tab') webinars
+      li(role='presentation')
+        a(href='#video', aria-controls='video', role='tab', data-toggle='tab') video
+  .col-md-1
+.tab-content
+  #webinars.tab-pane.active(role='tabpanel')
+    .row
+      .col-sm-1
+        a.left.carousel-control.resources-control(href='#resources-webinars-carousel', role='button', data-slide='prev')
+          img.svg(src="../../build/img/resources/resources-arrow.svg" alt="")
+      .col-sm-10
+        #resources-webinars-carousel.resources-video-carousel.carousel.slide(data-ride='carousel')
+          .carousel-inner(role='listbox')
+            .item.active
+              .row
+                .col-sm-6
+                  +resourcesVideoItem('video-1', 'Precision Control')
+                .col-sm-6
+                  +resourcesVideoItem('video-2', 'Precision Control')
+            .item
+              .row
+                .col-sm-6
+                  +resourcesVideoItem('video-1', 'Precision Control')
+                .col-sm-6
+                  +resourcesVideoItem('video-2', 'Precision Control')
+      .col-md-1
+        a.right.carousel-control.resources-control(href='#resources-webinars-carousel', role='button', data-slide='next')
+          img.svg(src="../../build/img/resources/resources-arrow.svg" alt="")
+  #video.tab-pane(role='tabpanel')
+    .row
+      .col-sm-1
+        a.left.carousel-control.resources-control(href='#resources-video-carousel', role='button', data-slide='prev')
+          img.svg(src="../../build/img/resources/resources-arrow.svg" alt="")
+      .col-md-10
+        #resources-video-carousel.resources-video-carousel.carousel.slide(data-ride='carousel')
+          .carousel-inner(role='listbox')
+            .item.active
+              .row
+                .col-md-6
+                  +resourcesVideoItem('video-2', 'Precision Control')
+                .col-md-6
+                  +resourcesVideoItem('video-1', 'Precision Control')
+            .item
+              .row
+                .col-md-6
+                  +resourcesVideoItem('video-2', 'Precision Control')
+                .col-md-6
+                  +resourcesVideoItem('video-1', 'Precision Control')
+      .col-md-1
+        a.right.carousel-control.resources-control(href='#resources-video-carousel', role='button', data-slide='next')
+          img.svg(src="../../build/img/resources/resources-arrow.svg" alt="")
+
+
+
+
+

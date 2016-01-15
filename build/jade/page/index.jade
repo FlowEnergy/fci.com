@@ -1,0 +1,57 @@
+doctype html
+html
+	include ../includes/head
+	style.
+		body {
+			text-rendering: optimizeLegibility;
+			font-smoothing: antialiased;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			background:#fff;
+		}
+		.container {
+			background: transparent;
+		}
+		h1 {
+			width: 100%;
+			text-align: center;
+			margin: 40px auto 0;
+		}
+		.list {
+			width: 500px;
+			padding: 0;
+			background: #fff;
+			margin: 50px auto;
+			border: 1px solid #ebebeb;
+		}
+		.list li {
+			width: 100%;
+			border-bottom: 1px solid #ebebeb;
+			list-style: decimal;
+			-webkit-transition: .3s;
+			-o-transition: .3s;
+			transition: .3s;
+		}
+		.list li:hover {
+			background: #f2f2f2;
+		}
+		.list li:last-child {
+			border: none;
+		}
+		.list li a {
+			display: block;
+			text-decoration: none;
+			color: #000;
+			font-size: 17px;
+			line-height: 24px;
+			padding: 10px;
+		}
+	body
+		h1 Flow Control
+		ul.list
+			li: a(href="home.html") home.html
+			li: a(href="about.html") about.html
+			li: a(href="contact.html") contact.html
+			li: a(href="customers.html") customers.html
+			li: a(href="resources.html") resources.html
+			li: a(href="product.html") product.html

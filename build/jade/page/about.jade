@@ -1,0 +1,84 @@
+extends ../layout/layout
+
+block main-content
+  .sticky-wrap
+    .main-header-bg(style="background-image: url(../../build/img/about/about-bg.jpg)")
+      +headerNav()
+      .container.h100.text-center
+        .table
+          .table-row
+            .table-cell.vertical-middle
+              .main-header-title.animated-down-0-7s Flow Control is a team of engineers
+                br
+                | and problem-solvers.
+              .main-header-title-sub.animated-down-0-9s We are in the business of changing people’s minds about HVAC systems.
+              a.btn.btn-main.scroll-link-nav.animate-40(href="#scroll-block-about-1") learn more
+  .tab-scroll-wrap.tab-scroll-wrap--about
+    .tab-scroll#scroll-block
+      .container.text-center
+        ul.tab-scroll-list
+          li: a.scroll-link-nav(href="#scroll-block-about-1") who we are
+          li: a.scroll-link-nav(href="#scroll-block-about-2") leadership
+          li: a.scroll-link-nav(href="#scroll-block-about-3") career
+  .container.text-center
+    .main-title-wrap
+      h1#scroll-block-about-1.main-title.main-title--sm.animate-40 Who we are
+      p.content-text--center.content-text.animated-down-0-9s For the past 30 years, Flow Control has manufactured the DeltaPValve®, a
+        br
+        | precision control valve for the heating and cooling of commercial buildings.
+    .row.about-item-row
+      .col-md-3.col-sm-6
+        +aboutItem('experience-icon', 'Experience', '25+ years of experience ')
+      .col-md-3.col-sm-6
+        +aboutItem('patents-icon', 'Patents', 'Over 15 active patents ')
+      .col-md-3.col-sm-6
+        +aboutItem('installations-icon', 'Installations', '10k+ worldwide installations ')
+      .col-md-3.col-sm-6
+        +aboutItem('network-icon', 'Network', 'Global partner network ')
+    hr
+    .row.row-about-info.text-left
+      .col-md-6
+        p.content-text.animated-down-0-9s Flow Control Industries, Inc. (FCI) is a specialty manufacturer of high-performance pressure independent control valves, delivering energy efficient products and services through a consultative process to increase building value and lower total cost of ownership (TCO).
+        br
+        p.content-text.animated-down-0-9s The DeltaPValve®, FCI’s flagship product was developed by founder and Chairman Paul Skoglund, P.E. over 20 years ago when he realized that more effective valves could revolutionize mechanical system efficiency. As an industry pioneer, Paul was the first to create the patented design, development and application of pressure independent control valves.
+      .col-md-6
+        p.content-text.animated-down-0-9s Since the release of the first DeltaPValve®, FCI’s team of world class engineers has worked to improve its design, efficiency and overall effectiveness. This focus and dedication has propelled the DeltaPValve® to the top of the industry being the only variable flow hydronic system that Guarantess delta T.
+        br
+        p.content-text.animated-down-0-9s DeltaPValves are used in projects all over the world and is consistently saving customers millions of dollars in first costs, operating costs and deferred capital costs.
+        br
+        p.content-text.animated-down-0-9s Flow Control Industries is a private company headquartered in Woodinville, WA.
+    hr
+    .row.row-mt-60
+      h5.title-green.animated-down-0-7s Team
+      div
+        h1#scroll-block-about-2.main-title.main-title--sm.text-normal.animate-40 Our leadership
+    .row.row--leadership
+      .col-md-6
+        +leadershipItem('paul-earney', 'Paul Eearney', 'Venenatis consequat enim nec aliquam. Aliquam erat volutpat. Aenean quis efficitur lorem, quis pretium mi. Curabitur dictum libero blandit ultriciesr.“', 'President')
+      .col-md-6
+        +leadershipItem('paul-skoglund', 'Paul Skoglund', '“Consectetur adipiscing elit. Duis venenatis consequat enim nec aliquam. Aliquam erat volutpat. Aenean quis efficitur lorem, quis pretium mi. Curabitur dictum libero blandit ultricies consectetur.“', 'VP Sales and Marketing')
+      .col-md-6
+        +leadershipItem('raquel-lackey', 'Raquel Lackey', '“Consectetur adipiscing elit. Duis venenatis consequat enim nec aliquam. Aliquam erat volutpat. Aenean quis efficitur lorem, quis pretium mi. Curabitur dictum libero blandit ultricies consectetur.“', 'VP Sales and Marketing')
+      .col-md-6
+        +leadershipItem('rob-trickett', 'Rob Trickett', '“Consectetur adipiscing elit. Duis venenatis consequat enim nec aliquam. Aliquam erat volutpat. Aenean quis efficitur lorem, quis pretium mi. Curabitur dictum libero blandit ultricies consectetur.“', 'VP Sales and Marketing')
+      .col-md-6
+        +leadershipItem('tami-hansen', 'Tami Hansen', '“Consectetur adipiscing elit. Duis venenatis consequat enim nec aliquam. Aliquam erat volutpat. Aenean quis efficitur lorem, quis pretium mi. Curabitur dictum libero blandit ultricies consectetur.“', 'VP Sales and Marketing')
+    hr
+    .row.row-mt-60
+      h5.title-green.animated-down-0-7s Careers
+      h1#scroll-block-about-3.main-title.main-title--sm.text-normal.animate-40 Open positions
+      .about-description
+        p.text-italic.animated-down-0-9s We don’t currently have any job openings at Flow Control Industries. We’d love to hear from you, though! Please send your resume to us at
+          =" "
+          a.link-green(href="mailto:info@flowcontrol.com" ) info@flowcontrol.com
+          =" "
+          | and we’ll get back to you as soon as possible with opportunities.
+    .row
+      .col-md-6
+        +openPositionItem('careers-icon' ,'Engineer', 'Woodinville, WA ', 'Venenatis consequat enim nec aliquam. Aliquam erat volutpat. Aenean quis efficitur lorem, quis pretium mi. Curabitur dictum libero blandit ultriciesr. Aliquam erat volutpat. Aenean quis efficitur lorem. Aenean quis efficitur lorem.')
+      .col-md-6
+        +openPositionItem('careers-icon', 'VP Operanions', 'Woodinville, WA', 'Venenatis consequat enim nec aliquam. Aliquam erat volutpat. Aenean quis efficitur lorem, quis pretium mi. Curabitur dictum libero blandit ultriciesr. Aliquam erat volutpat. Aenean quis efficitur lorem. Aenean quis efficitur lorem.')
+
+
+block add-script
+  script(src="../../build/js/tab-scroll.js")
