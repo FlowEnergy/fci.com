@@ -65,7 +65,8 @@ gulp.task('less', function() {
 gulp.task('publish', function() {
 	var publisher = awspublish.create({
 		params: {
-			Bucket: 'flowenergy.com'
+			Bucket: 'flowcontrol.com',
+			region: 'us-west-2'
 		}
 	});
 	gulp.src('src/**/*')
