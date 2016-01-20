@@ -26,11 +26,11 @@ block main-content
       h1#scroll-block-resources-1.main-title.main-title--sm.animate-40 Data Sheets
 
     .row.data-sheets-row
-      .col-sm-6.col-md-3
+      a.col-sm-6.col-md-3(href="../resources/DeltaPValves-Product-Catalog.pdf")
         +dataSheetsItem('product-icon', 'Product Catalog')
       .col-sm-6.col-md-3
         +dataSheetsItem('sample-icon', 'Sample Specs')
-      .col-sm-6.col-md-3
+      a.col-sm-6.col-md-3(href="../resources/System-Design-Manual.pdf")
         +dataSheetsItem('design-icon', 'Design Manual')
       .col-sm-6.col-md-3
         +dataSheetsItem('service-icon', 'Service Procedures')
@@ -39,10 +39,10 @@ block main-content
     .main-title-wrap
       h1#scroll-block-resources-2.main-title.main-title--sm.animate-40 Whitepapers
     .row.whitepapers-row
-      .col-md-6
-        +whitepapersItem('precision-icon', 'Precision Control', 'Lorem ipsum Venenatis consequat enim nec aliquam. Aliquam erat volutpat.')
-      .col-md-6
-        +whitepapersItem('human-icon', 'Human Comfort', 'Lorem ipsum Venenatis consequat enim nec aliquam. Aliquam erat volutpat.')
+      a.col-md-12(href="#")
+        +whitepapersItem('precision-icon', 'Precision Control', 'HVAC system designers and operators have a new system technology that increases efficiency and the effective system capacity, cures low delta T syndrome, improves comfort and simplifies operation. A DeltaPValve® System, using DeltaPValves as manufactured by Flow Control Industries, is revolutionary, changing the way HVAC systems are designed and operated. By establishing unprecedented system stability, the benefits of precision control extend throughout the HVAC system resulting in substantial energy savings as high as 40%. Precise control of an HVAC system provides efficient comfort for building occupants.')
+      //.col-md-6
+        //+whitepapersItem('human-icon', 'Human Comfort', 'Lorem ipsum Venenatis consequat enim nec aliquam. Aliquam erat volutpat.')
   .bg-gray-resources
     .container
       .main-title-wrap

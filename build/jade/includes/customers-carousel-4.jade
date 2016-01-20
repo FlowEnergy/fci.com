@@ -1,0 +1,51 @@
+.col-md-1
+//   a.left.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='prev')
+//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+.col-md-10
+   #customers-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
+      .carousel-inner(role='listbox')
+         .item.active
+            .row
+               .col-md-4
+                  .customers-carousel-item
+                     .customers-carousel-item__img-wrap
+                        img.customers-carousel-item__img(src="../img/customers/hancock.jpg" alt="John Hancock Center")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country CHICAGO, IL • 2008
+                        .customers-carousel-item__title John Hancock Center
+                        ul.customers-carousel-item__list
+                           li 3,500 tons [12,306 kW] of recovered cooling capacity (45%)
+                           li Reduced HVAC energy consumption by more than 25%
+                           li Only two of three chillers required on a design day
+               .col-md-4
+                  .customers-carousel-item
+                     .customers-carousel-item__img-wrap
+                        img.customers-carousel-item__img(src="../img/customers/atlantic-station.jpg" alt="Atlantic Station")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country ATLANTA, GA • 2012
+                        .customers-carousel-item__title Atlantic Station
+                        ul.customers-carousel-item__list
+                           li ΔT performance increased nearly 300%, from 6 to 18° F [3.3 to 10° C]
+                           li 17% decrease in total building electricity consumption 
+                           li Project payback in less than 9 months 
+                           li District energy recovered 1,000+ tons [3,516 kW] of capacity
+               .col-md-4
+                  .customers-carousel-item
+                     .customers-carousel-item__img-wrap
+                        img.customers-carousel-item__img(src="../img/customers/nordstrom.jpg" alt="Nordstrom")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country SEATTLE, WA • 2001
+                        .customers-carousel-item__title 1700 Seventh Ave (Nordstrom)
+                        ul.customers-carousel-item__list
+                           li Delta T exceeds 18° F [10° C] in all cooling load conditions
+                           li Flow rate was reduced to approximately 50% of design
+                           li Only one of two chillers required at design conditions
+         .item
+           .row
+              include customers-carousel-item
+         .item
+           .row
+              include customers-carousel-item
+.col-md-1
+//   a.right.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='next')
+//      img.svg(src="../img/resources/resources-arrow.svg" alt="")

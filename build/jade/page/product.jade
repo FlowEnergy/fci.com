@@ -9,8 +9,7 @@ block main-content
     .row
       .col-xs-12
         .main-title-wrap.main-title-wrap
-          h1.main-title.main-title--mt100.main-title-product.animated-down-0-9s DeltaPValve
-            span &#174;
+          h1.main-title.main-title--mt100.main-title-product.animated-down-0-9s DeltaPValve®
             | Catalog
         .content-text.animate-40.text-center Download the DeltaPValve® Catalog or continue scrolling
           br.hidden-sm.hidden-xs
@@ -33,7 +32,7 @@ block main-content
             ul.list-circle-green
               li.animated-down-0-9s Made in the USA
     .text-center
-      a.btn.btn-main.animate-40.btn-download-product(href="#") download pdf
+      a.btn.btn-main.animate-40.btn-download-product(href="../resources/DeltaPValves-Product-Catalog.pdf") download catalog
 
   .bg-gray.bg-gray--product
     .container
@@ -41,18 +40,20 @@ block main-content
         h5.title-green.animated-down-0-7s Application
         h1.main-title.animate-40 Use DeltaPValves for the following
           br.hidden-xs.hidden-sm
-          | applications:
+          | Applications:
       .row
-        +productCardInfo('Chilled Water &amp; Heating Water Coils ', 'DeltaPValves installed at cooling and heating coils in the distribution system will stabilize system flow, improve comfort control and reduce energy consumption.')
+        +productCardInfo('Chilled Water & Heating Water Coils ', 'DeltaPValves installed at cooling and heating coils in the distribution system will stabilize system flow, improve comfort control and reduce energy consumption.')
         +productCardInfo('Heat Exchangers for District Cooling and Heating ', 'Control heat exchanger flow in district cooling and heating energy transfer stations with the DeltaPValve®. Provide proper temperature control, limit wasted energy and eliminate additional equipment, control strategies and complexity. ')
         +productCardInfo('Condensing Boiler Systems ', 'Use DeltaPValves in a heating water system served with condensing boilers to achieve the lowest possible return water temperature, while still minimizing pump energy. ')
+  .text-center
+      a.btn.btn-main.animate-40.btn-download-product(href="../resources/System-Design-Manual.pdf") download design manual
   .container.row-product-info
     .row
       .col-md-6
-        +productInfoItem('shut-off-icon', 'Shut-off and Leakage', 'The unique design and low internal differential pressure allows the DeltaPValve® to achieve tight close-off, meeting ANSI Class III and IV leakage standards(0.1 % -0.01 % of rated valve capacity). Actuators are selected. appropriately for the torque required to achieve up to 200 PSID(13.8 bar) shut-off.')
+        +productInfoItem('shut-off-icon', 'Shut-off and Leakage', 'The unique design and low internal differential pressure allows the DeltaPValve® to achieve tight close-off, meeting ANSI Class III and IV leakage standards (0.1 % - 0.01 % of rated valve capacity). Actuators are selected appropriately for the torque required to achieve up to 200 PSID [13.8 bar] shut-off.')
 
       .col-md-6
-        +productInfoItem('maintenance-icon', 'Maintenance', 'All seals can be replaced in valves 3” [80 mm] and smallerwithout removal from the piping system. Valve flow characteristics can be modified in valves 8” [200 mm] and smaller without removal from the piping system. ')
+        +productInfoItem('maintenance-icon', 'Maintenance', 'All seals can be replaced in valves 3” [80 mm] and smaller without removal from the piping system. Valve flow characteristics can be modified in valves 8” [200 mm] and smaller without removal from the piping system. ')
 
     .row
       .col-md-6
@@ -90,4 +91,4 @@ block main-content
     .product-scroll-wrap.customers-scroll-wrap.visible-sm.visible-xs
       .customers-scroll
         .customers-scroll--inner
-          include ../../jade/includes/product-carousel-item
+          include ../../jade/includes/product-carousel-item-1

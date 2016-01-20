@@ -76,11 +76,16 @@ gulp.task('publish', function() {
 		.pipe(awspublish.reporter())
 });
 
+gulp.task('resources', function() {
+	gulp.src('./build/resources/**/*')
+		.pipe(gulp.dest('src/resources'));
+});
+
 gulp.task('watch', function(){
 	gulp.watch('build/jade/**/*.jade', ['jade']);
 	gulp.watch('build/**/*.less', ['less']);
 	gulp.watch('build/js/*.js', ['scripts']);
 });
 
-gulp.task('build', ['scripts', 'jade', 'compress-img', 'less']);
-gulp.task('default', ['scripts', 'jade', 'compress-img', 'less', 'watch','connect']);
+gulp.task('build', ['scripts', 'jade', 'compress-img', 'less', 'resources']);
+gulp.task('default', ['scripts', 'jade', 'compress-img', 'less', 'resources','watch','connect']);

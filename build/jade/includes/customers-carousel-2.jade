@@ -1,0 +1,52 @@
+.col-md-1
+//   a.left.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='prev')
+//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+.col-md-10
+   #customers-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
+      .carousel-inner(role='listbox')
+         .item.active
+            .row
+               .col-md-4
+                  .customers-carousel-item
+                     .customers-carousel-item__img-wrap
+                        img.customers-carousel-item__img(src="../img/customers/duke.jpg" alt="Duke University")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country DURHAM, NC • 2005   
+                        .customers-carousel-item__title Duke University
+                        ul.customers-carousel-item__list
+                           li <b>1,500 tons</b> [5,274 kW] of recovered cooling capacity
+                           li Improvement in campus chilled water Delta T from 12.5 to 16.5° F on design days
+                           li <b>$17,000,000</b> in capital expenditures avoided by delaying full plant buildout for 5 years
+               .col-md-4
+                  .customers-carousel-item
+                     .customers-carousel-item__img-wrap
+                        img.customers-carousel-item__img(src="../img/customers/uva.jpg" alt="University of Virginia")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country CHARLOTTESVILLE, VA • 2005   
+                        .customers-carousel-item__title University of Virginia
+                        ul.customers-carousel-item__list
+                           li 1,000+ DeltaPValves installed over 8 years with <b>zero valve failures</b>
+                           li Chilled water usage decreased by <b>40%</b> and heating energy usage decreased by 14%
+                           li <b>$388,000</b> in annual savings
+
+               .col-md-4
+                  .customers-carousel-item
+                     .customers-carousel-item__img-wrap
+                        img.customers-carousel-item__img(src="../img/customers/awc.jpg" alt="Arizona Western College")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country YUMA, AZ • 2014
+                        .customers-carousel-item__title Arizona Western College
+                        ul.customers-carousel-item__list
+                           li <b>$350,000</b> in annual utility savings
+                           li <b>$200,000</b> utility rebate
+                           li <b>600 tons</b> of recovered cooling capacity, deferring $2,500,000 capital expenditures
+                           li Comfort complaints reduced from 10/day to 2/week   
+         .item
+           .row
+              include customers-carousel-item
+         .item
+           .row
+              include customers-carousel-item
+.col-md-1
+//   a.right.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='next')
+//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
