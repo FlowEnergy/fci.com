@@ -1,9 +1,10 @@
-mixin whitepapersItem(icon, title, text)
+mixin whitepapersItem(icon, title, text, url)
   - var defaultTitle = title || 'default title'
   - var defaultIcon = icon || 'lowest-icon'
   - var defaultText = text || 'default text'
+  - var defaultUrl = url || '#'
 
-  a(href='#').whitepapers__item
+  a(href=defaultUrl).whitepapers__item
     .whitepapers__icon-wrap.animated-down-0-7s
       img.svg.whitepapers__icon(src="../img/resources/icons/" + defaultIcon + ".svg" alt="")
     .whitepapers__content

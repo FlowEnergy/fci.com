@@ -8,10 +8,10 @@ block main-content
         .table
           .table-row
             .table-cell.vertical-middle
-              .main-header-title.animated-down-0-7s Library
-              .main-header-title-sub.animated-down-0-9s We pride ourselves on being industry pioneers and educators. Use
+              .main-header-title.animated-down-0-7s We pride ourselves on being industry 
                 br.hidden-xs.hidden-sm
-                | the resources below to explore the DeltaPValve® and its application.
+                | pioneers and educators.
+              .main-header-title-sub.animated-down-0-9s Use the resources below to explore the DeltaPValve® and its application.
               a.btn.btn-main.scroll-link-nav.animate-40(href="#scroll-block-resources-1") learn more
   .tab-scroll-wrap.tab-scroll--resources
     .tab-scroll#scroll-block
@@ -19,7 +19,7 @@ block main-content
         ul.tab-scroll-list
           li: a.scroll-link-nav(href="#scroll-block-resources-1") data sheets
           li: a.scroll-link-nav(href="#scroll-block-resources-2") whitepapers
-          li: a.scroll-link-nav(href="#scroll-block-resources-3") videos
+          //li: a.scroll-link-nav(href="#scroll-block-resources-3") videos
           li: a.scroll-link-nav(href="#scroll-block-resources-4") events
   .container.text-center
     .main-title-wrap
@@ -39,24 +39,24 @@ block main-content
     .main-title-wrap
       h1#scroll-block-resources-2.main-title.main-title--sm.animate-40 Whitepapers
     .row.whitepapers-row
-      a.col-md-12(href="#")
-        +whitepapersItem('precision-icon', 'Precision Control', 'HVAC system designers and operators have a new system technology that increases efficiency and the effective system capacity, cures low delta T syndrome, improves comfort and simplifies operation. A DeltaPValve® System, using DeltaPValves as manufactured by Flow Control Industries, is revolutionary, changing the way HVAC systems are designed and operated. By establishing unprecedented system stability, the benefits of precision control extend throughout the HVAC system resulting in substantial energy savings as high as 40%. Precise control of an HVAC system provides efficient comfort for building occupants.')
+      .col-md-12
+        +whitepapersItem('precision-icon', 'Precision Control', 'HVAC system designers and operators have a new system technology that increases efficiency and the effective system capacity, cures low Delta T syndrome, improves comfort and simplifies operation. A DeltaPValve® System, using DeltaPValves as manufactured by Flow Control Industries, is revolutionary, changing the way HVAC systems are designed and operated. By establishing unprecedented system stability, the benefits of precision control extend throughout the HVAC system resulting in substantial energy savings as high as 40%. Precise control of an HVAC system provides efficient comfort for building occupants.', '../resources/The-DeltaPValve-System-Precision-Control.pdf')
       //.col-md-6
         //+whitepapersItem('human-icon', 'Human Comfort', 'Lorem ipsum Venenatis consequat enim nec aliquam. Aliquam erat volutpat.')
   .bg-gray-resources
-    .container
-      .main-title-wrap
-        h1#scroll-block-resources-3.main-title.main-title--sm.animate-40 Videos
-        include ../../jade/includes/resources-video
+  //  .container
+  //    .main-title-wrap
+  //      h1#scroll-block-resources-3.main-title.main-title--sm.animate-40 Videos
+  //      include ../../jade/includes/resources-video
   .container.container-wrap-resources
     .row.upcoming-events-row
       .main-title-wrap
         h1#scroll-block-resources-4.main-title.main-title--sm.animate-40 Upcoming Events
       .col-md-4
-        +upcomingEventsItem('event-1', 'Idea Campus')
+        +upcomingEventsItem('event-1', 'IDEA Campus Energy', 'February 8-12, 2016', 'http://www.ideacampus2016.org/')
       .col-md-4
-        +upcomingEventsItem('event-2', 'West Coast EMC')
+        +upcomingEventsItem('event-2', 'West Coast EMC', 'May 25-26, 2016', 'http://www.energyevent.com/')
       .col-md-4
-        +upcomingEventsItem('event-3', 'Idea Campus')
+        +upcomingEventsItem('event-3', 'IDEA Annual Conference', 'June 20-23, 2016', 'http://www.idea2016.org/')
 block add-script
   script(src="../js/tab-scroll.js")

@@ -1,9 +1,10 @@
-mixin upcomingEventsItem(img, title, date)
+mixin upcomingEventsItem(img, title, date, url)
   - var defaultImg = img || '1'
   - var defaultTitle = title || 'defaultTitle'
   - var defaultDate = date || '2016'
+  - var defaultUrl = url || '#'
 
-  a.upcoming-events__item(href="#")
+  a.upcoming-events__item(href=defaultUrl)
     .upcoming-events__img-wrap.table
       .table-row
         .table-cell.vertical-middle
