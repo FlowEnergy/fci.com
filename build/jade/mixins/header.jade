@@ -14,9 +14,9 @@ mixin headerNav(home, customers)
         .container-fluid
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false') menu
-            a.navbar-brand.hidden-xs(href='home.html')
+            a.navbar-brand.hidden-xs(href='index.html')
               img.logo-header(src="../img/logo.png", alt="Flow Control")
-            a.navbar-brand.visible-xs(href='home.html')
+            a.navbar-brand.visible-xs(href='index.html')
               img.logo-header(src="../img/logo-mobile.png", alt="Flow Control")
           #bs-example-navbar-collapse-1.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
@@ -25,3 +25,4 @@ mixin headerNav(home, customers)
               li: a(href='resources.html') Resources
               li: a(href='about.html') About
               li: a(href='contact.html') Contact
+              li: a(href='http://www.flowcontrol.com/Users/login') Log In

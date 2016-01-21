@@ -37,121 +37,116 @@ block main-content
 
 
   .container.text-center
-    h1#scroll-block-contact-2.custom-title.animate-40 Quote Requests
-    p.content-text.animated-down-0-9s We have a global rep network and would love to put you in touch with your
-      br.hidden-xs.hidden-sm
-      =" "
-      | local representative. Please be prepared to give these details:
+    h1#scroll-block-contact-2.custom-title.animate-40 General Contact
 
-    form
+    form(id='contactForm')
       .row
-        .col-xs-12
-          .green-label Project details *
-      .row
-        .col-md-4.col-sm-6
+        .col-md-12
           .form-group.animated-down-0-9s
-            input.form-control(type="text" placeholder="Project Name")
-        .col-md-4.col-sm-6
-          .form-group.animated-down-0-9s
-            input.form-control(type="text" placeholder="Project Location")
-        .col-md-4.col-sm-12.animated-down-0-9s
-          .form-group
-            input.form-control(type="text" placeholder="Design Engineer")
-      .row
+            input.form-control(type="text" placeholder="Name" id="contactName" required)
         .col-md-6
           .form-group.animated-down-0-9s
-            input.form-control(type="text" placeholder="Equipment Schedule & Specification")
+            input.form-control(type="text" placeholder="Email" id="contactEmail" required)
         .col-md-6
           .form-group.animated-down-0-9s
-            input.form-control(type="text" placeholder="New or Retrofit Construction")
-      .row
-        .col-xs-12
-          .green-label.animated-down-0-9s Project details *
-      .row
-        .col-md-6
-          .form-group.animated-down-0-9s
-            input.form-control(type="text" placeholder="First Name")
-        .col-md-6
-          .form-group.animated-down-0-9s
-            input.form-control.error(type="text" placeholder="Last Name" value="Error message")
-        .col-md-6
-          .form-group.animated-down-0-9s
-            input.form-control(type="text" placeholder="Email")
-        .col-md-6
-          .form-group.animated-down-0-9s
-            input.form-control(type="text" placeholder="Phone")
+            input.form-control(type="text" placeholder="Phone" id="contactPhone" required)
       .row.row-textarea
         .col-md-12
           .form-group.animated-down-0-9s
-            textarea.form-control.textarea-contact(placeholder="Project Name")
+            textarea.form-control.textarea-contact(placeholder="Message" id="contactMessage" required)
+      p.content-text.animated-down-0-9s For quote requests please include project details.
+      br.hidden-xs.hidden-sm
+      
+      .row
+        .col-xs-12
+          .green-label.animated-down-0-9s Quote Requests
+      .row
+        .col-md-4.col-sm-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Project Name" id="projectName")
+        .col-md-4.col-sm-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Project Location" id="projectLocation")
+        .col-md-4.col-sm-12.animated-down-0-9s
+          .form-group
+            input.form-control(type="text" placeholder="Design Engineer" id="designEngineer")
       .row
         .col-md-6
-          .required-text.text-left.animated-down-0-9s
-            span *
-            =" "
-            | – required fields
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="Equipment Schedule & Specification" id="projectEquipment")
+        .col-md-6
+          .form-group.animated-down-0-9s
+            input.form-control(type="text" placeholder="New or Retrofit Construction" id="projectType")
         .col-md-6.text-right
-          button.animated-down-0-9s.btn.btn-main.btn-contact-send-message.animate-40 send message
+          button.animated-down-0-9s.btn.btn-main.btn-contact-send-message.animate-40(type='button' id='contactButton') send message
     hr
   .bg-contact-map
     .container
       h1#scroll-block-contact-3.custom-title.custom-title--contact.animated-down-0-9s Representatives
       hr.visible-sm.visible-xs
+      p.content-text.animated-down-0-9s Territories not listed are covered by Corporate Sales.  
+      p.content-text.animated-down-0-9s Please contact Rob Trickett at 425-483-1297
+      .contact-sub-title
+          a(href="mailto:sales@flowcontrol.com").contact-text.animated-down-0-9s sales@flowcontrol.com
       .row.row-nav-tabs-contact.hidden-sm.hidden-xs
         .col-md-3
           ul.nav.nav-tabs.nav-tabs-contact(role='tablist')
             li.active(role='presentation')
-              a(href='#idaho', aria-controls='idaho', role='tab', data-toggle='tab') idaho
-            li(role='presentation')
-              a(href='#lowa', aria-controls='lowa', role='tab', data-toggle='tab') lowa
-            li(role='presentation')
-              a(href='#alabama', aria-controls='alabama', role='tab', data-toggle='tab') alabama
-            li(role='presentation')
-              a(href='#alaska', aria-controls='alaska', role='tab', data-toggle='tab') alaska
-
-            li
               a(href='#arizona', aria-controls='arizona', role='tab', data-toggle='tab') arizona
             li(role='presentation')
-              a(href='#arkansas', aria-controls='arkansas', role='tab', data-toggle='tab') arkansas
+              a(href='#colorado', aria-controls='colorado', role='tab', data-toggle='tab') colorado
             li(role='presentation')
-              a(href='#wyoming', aria-controls='wyoming', role='tab', data-toggle='tab') wyoming
+              a(href='#connecticut', aria-controls='connecticut', role='tab', data-toggle='tab') connecticut
             li(role='presentation')
-              a(href='#washington', aria-controls='washington', role='tab', data-toggle='tab') washington
+              a(href='#illinois', aria-controls='illinois', role='tab', data-toggle='tab') illinois
 
             li
-              a(href='#vermont', aria-controls='vermont', role='tab', data-toggle='tab') vermont
+              a(href='#indiana', aria-controls='indiana', role='tab', data-toggle='tab') indiana
             li(role='presentation')
-              a(href='#virginia', aria-controls='virginia', role='tab', data-toggle='tab') virginia
+              a(href='#iowa', aria-controls='iowa', role='tab', data-toggle='tab') iowa
             li(role='presentation')
-              a(href='#wisconsin', aria-controls='wisconsin', role='tab', data-toggle='tab') wisconsin
+              a(href='#kansas', aria-controls='kansas', role='tab', data-toggle='tab') kansas
+            li(role='presentation')
+              a(href='#kentucky', aria-controls='kentucky', role='tab', data-toggle='tab') kentucky
 
+            li
+              a(href='#maine', aria-controls='maine', role='tab', data-toggle='tab') maine
+            li(role='presentation')
+              a(href='#maryland', aria-controls='maryland', role='tab', data-toggle='tab') maryland
+            li(role='presentation')
+              a(href='#massachussetts', aria-controls='massachussetts', role='tab', data-toggle='tab') massachussetts
+            li(role='presentation')
+              a(href='#michigan', aria-controls='michigan', role='tab', data-toggle='tab') michigan
 
         .col-md-5
           .tab-content.tab-content-info
-            #idaho.tab-pane.active(role='tabpanel')
-              +contactTabInfo()
-              +contactTabInfo()
-            #lowa.tab-pane(role='tabpanel')
-              +contactTabInfo('lowa')
-              +contactTabInfo('lowa')
-            #alabama.tab-pane(role='tabpanel')
-              +contactTabInfo('alabama')
-            #alaska.tab-pane(role='tabpanel')
-              +contactTabInfo('alaska')
-            #arizona.tab-pane(role='tabpanel')
-              +contactTabInfo('arizona')
-            #arkansas.tab-pane(role='tabpanel')
-              +contactTabInfo('arkansas')
-            #wyoming.tab-pane(role='tabpanel')
-              +contactTabInfo('wyoming')
-            #washington.tab-pane(role='tabpanel')
-              +contactTabInfo('washington')
-            #vermont.tab-pane(role='tabpanel')
-              +contactTabInfo('vermont')
-            #virginia.tab-pane(role='tabpanel')
-              +contactTabInfo('virginia')
-            #wisconsin.tab-pane(role='tabpanel')
-              +contactTabInfo('wisconsin')
+            #arizona.tab-pane.active(role='tabpanel')
+              +contactTabInfo('Arizona', 'DMG Arizona', 'Don Behm', '623.238.1640')
+            #colorado.tab-pane(role='tabpanel')
+              +contactTabInfo('Colorado', 'E3MS', 'Bob Padgett', '303.534.1600')
+            #connecticut.tab-pane(role='tabpanel')
+              +contactTabInfo('Connecticut', 'System Specialties', 'Gary Franchi', '860.613.0093')
+            #illinois.tab-pane(role='tabpanel')
+              +contactTabInfo('illinois', 'Prime Energy', 'Tim Nugent', '630.904.0399')
+              +contactTabInfo('Illinois', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+            #indiana.tab-pane(role='tabpanel')
+              +contactTabInfo('Indiana', 'Validated Custom Solutions', 'Dan Fillenwarth', '317.259.7604')
+            #iowa.tab-pane(role='tabpanel')
+              +contactTabInfo('iowa', 'Setpoint Mechanical', 'Patrick Peterson', '515.974.6497')
+              +contactTabInfo('Iowa', 'Verne Simmonds Co', 'Dan Holtmeyer', '402.827.8081')
+            #kansas.tab-pane(role='tabpanel')
+              +contactTabInfo('Kansas', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+            #kentucky.tab-pane(role='tabpanel')
+              +contactTabInfo('Kentucky', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+            #maine.tab-pane(role='tabpanel')
+              +contactTabInfo('Maine', 'System Specialties', 'Gary Franchi', '860.613.0093')
+            #maryland.tab-pane(role='tabpanel')
+              +contactTabInfo('Maryland', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712')
+            #massachussetts.tab-pane(role='tabpanel')
+              +contactTabInfo('Massachussetts', 'System Specialties', 'Guy Franchi', '860.613.0093')
+            #michigan.tab-pane(role='tabpanel')
+              +contactTabInfo('Michigan', 'Steve Mancuso', '248.549.4680')
+              +contactTabInfo('Michigan', 'Prime Energy', 'Tim Nugent', '630.904.0399')
 
 
 
