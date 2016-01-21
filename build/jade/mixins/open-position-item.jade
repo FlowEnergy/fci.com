@@ -1,8 +1,9 @@
-mixin openPositionItem(icon, title, country, description)
+mixin openPositionItem(icon, title, country, description, url)
   - var icon = icon || false
   - var title = title || 'Title'
   - var country = country || 'country'
   - var description = description || 'description'
+  - var defaultUrl = url || '#'
 
   .open-position-item
     .open-position-item__icon-wrap.animate-40
