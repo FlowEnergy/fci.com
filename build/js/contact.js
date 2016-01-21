@@ -13,7 +13,7 @@ function dismissContactModal() {
 }
 
 function validateForm() {
-    if ($('#contactName').val() == '' || 
+    if ($('#contactName').val() == '' ||
         $('#contactEmail').val() == '' ||
         $('#contactPhone').val() == '' ||
         $('#contactMessage').val() == '')
@@ -35,7 +35,7 @@ $('#contactButton').click(function() {
 
        $.ajax({
             type: "POST",
-            url: "https://9vndfrb2ae.execute -api.us-west-2.amazonaws.com/prod/lambda-mailer", 
+            url: "https://9vndfrb2ae.execute-api.us-west-2.amazonaws.com/prod/lambda-mailer",
             data: JSON.stringify(contactData),
             contentType: 'application/json',
             success: function() {
