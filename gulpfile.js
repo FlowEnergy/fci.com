@@ -42,8 +42,9 @@ gulp.task('jade', function() {
 			siteUrl: 'http://www.flowcontrol.com/'
 		}))
 		.pipe(gulp.dest('src/'))
-
 		.pipe(connect.reload());
+	gulp.src('build/robots.txt')
+		.pipe(gulp.dest('src/'));
 });
 
 gulp.task('scripts', function() {
