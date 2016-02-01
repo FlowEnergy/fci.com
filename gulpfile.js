@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	awspublish = require('gulp-awspublish');
+	sitemap = require('gulp-sitemap');
 
 gulp.task('connect', function() {
   connect.server({
@@ -35,6 +36,9 @@ gulp.task('jade', function() {
 	gulp.src('build/jade/page/*.jade')
 		.pipe(jade({
 			locals: {}
+		}))
+		.pipe(sitemap({
+			siteUrl: 'http://www.flowcontrol.com'
 		}))
 		.pipe(gulp.dest('src/'))
 		.pipe(connect.reload());
