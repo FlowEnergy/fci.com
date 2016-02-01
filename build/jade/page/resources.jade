@@ -19,20 +19,20 @@ block main-content
         ul.tab-scroll-list
           li: a.scroll-link-nav(href="#scroll-block-resources-1") data sheets
           li: a.scroll-link-nav(href="#scroll-block-resources-2") whitepapers
-          //li: a.scroll-link-nav(href="#scroll-block-resources-3") videos
+          li: a.scroll-link-nav(href="#scroll-block-resources-3") videos
           li: a.scroll-link-nav(href="#scroll-block-resources-4") events
   .container.text-center
     .main-title-wrap
       h1#scroll-block-resources-1.main-title.main-title--sm.animate-40 Data Sheets
 
     .row.data-sheets-row
-      a.col-sm-6.col-md-3(href="../resources/DeltaPValves-Product-Catalog.pdf")
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/DeltaPValves-Product-Catalog.pdf")
         +dataSheetsItem('product-icon', 'Product Catalog')
-      a.col-sm-6.col-md-3(href="../resources/DeltaPValve-Sample-Specification.pdf")
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/DeltaPValve-Sample-Specification.pdf")
         +dataSheetsItem('sample-icon', 'Sample Specs')
-      a.col-sm-6.col-md-3(href="../resources/System-Design-Manual.pdf")
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/System-Design-Manual.pdf")
         +dataSheetsItem('design-icon', 'Design Manual')
-      a.col-sm-6.col-md-3(href="../resources/Commissioning-Checklist.pdf")
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/Commissioning-Checklist.pdf")
         +dataSheetsItem('service-icon', 'Commissioning Checklist')
 
   .container
@@ -44,10 +44,10 @@ block main-content
       //.col-md-6
         //+whitepapersItem('human-icon', 'Human Comfort', 'Lorem ipsum Venenatis consequat enim nec aliquam. Aliquam erat volutpat.')
   .bg-gray-resources
-  //  .container
-  //    .main-title-wrap
-  //      h1#scroll-block-resources-3.main-title.main-title--sm.animate-40 Videos
-  //      include ../../jade/includes/resources-video
+    .container
+      .main-title-wrap
+        h1#scroll-block-resources-3.main-title.main-title--sm.animate-40 Videos
+        include ../../jade/includes/resources-video
   .container.container-wrap-resources
     .row.upcoming-events-row
       .main-title-wrap

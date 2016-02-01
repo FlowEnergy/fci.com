@@ -1,10 +1,8 @@
-mixin resourcesVideoItem(img, title)
-
-  - var defaultImg = img || 'lowest-icon'
+mixin resourcesVideoItem(url, title)
   - var defaultTitle = title || 'default title'
-
-  a.resources-video-carousel__item(href="#")
+  - var defaultUrl = url || '#'
+  .resources-video-carousel__item
     .resources-video-carousel__img-wrap
-      .resources-video-carousel__img-grad
-      img.resources-video-carousel__img(src="../img/resources/" + defaultImg + ".png" alt=defaultImg)
+      .resources-video-carousel
+      iframe.resources-video-carousel(type='text/html' width='450' height='315' src=defaultUrl frameborder='0' allowfullscreen)
     h4.resources-video-carousel__title=defaultTitle
