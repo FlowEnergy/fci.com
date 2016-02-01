@@ -37,10 +37,12 @@ gulp.task('jade', function() {
 		.pipe(jade({
 			locals: {}
 		}))
+		.pipe(gulp.dest('src/'))
 		.pipe(sitemap({
-			siteUrl: 'http://www.flowcontrol.com'
+			siteUrl: 'http://www.flowcontrol.com/'
 		}))
 		.pipe(gulp.dest('src/'))
+
 		.pipe(connect.reload());
 });
 
@@ -92,4 +94,4 @@ gulp.task('watch', function(){
 });
 
 gulp.task('build', ['scripts', 'jade', 'compress-img', 'less', 'resources']);
-gulp.task('default', ['scripts', 'jade', 'compress-img', 'less', 'resources','watch','connect']);
+gulp.task('default', ['scripts', 'jade','compress-img', 'less', 'resources','watch','connect']);
