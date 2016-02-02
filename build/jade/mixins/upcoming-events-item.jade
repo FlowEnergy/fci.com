@@ -4,7 +4,7 @@ mixin upcomingEventsItem(img, title, date, url)
   - var defaultDate = date || '2016'
   - var defaultUrl = url || '#'
 
-  a.upcoming-events__item(href=defaultUrl)
+  a.upcoming-events__item(target="_blank" href=defaultUrl)
     .upcoming-events__img-wrap.table
       .table-row
         .table-cell.vertical-middle
