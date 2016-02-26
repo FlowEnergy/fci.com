@@ -1,8 +1,9 @@
-mixin upcomingEventsItem(img, title, date, url)
+mixin upcomingEventsItem(img, title, date, url, city)
   - var defaultImg = img || '1'
   - var defaultTitle = title || 'defaultTitle'
   - var defaultDate = date || '2016'
   - var defaultUrl = url || '#'
+  - var defaultCity = city || 'Seattle, WA'
 
   a.upcoming-events__item(target="_blank" href=defaultUrl)
     .upcoming-events__img-wrap.table
@@ -11,3 +12,4 @@ mixin upcomingEventsItem(img, title, date, url)
           img.upcoming-events__img(src="../img/resources/"+ defaultImg + ".png" alt="defaultImg")
     .upcoming-events__title=defaultTitle
     .upcoming-events__date=defaultDate
+    .upcoming-events__city=defaultCity

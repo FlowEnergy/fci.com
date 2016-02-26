@@ -6894,4 +6894,8 @@ textarea.form-control.textarea-contact {
   font-size: 13px;
   font-weight: 700;
 }
+.upcoming-events__city {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+}
 /*# sourceMappingURL=style.css.map */

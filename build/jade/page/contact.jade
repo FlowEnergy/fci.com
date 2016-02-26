@@ -142,34 +142,38 @@ block main-content
               li
                 a(href='#or', aria-controls='oregon', role='tab', data-toggle='tab') oregon
               li(role='presentation')
+                a(href='#pr', aria-controls='puerto rico', role='tab', data-toggle='tab') puerto rico
+              li(role='presentation')
                 a(href='#ri', aria-controls='rhode island', role='tab', data-toggle='tab') rhode island
               li(role='presentation')
                 a(href='#sc', aria-controls='south carolina', role='tab', data-toggle='tab') south carolina
-              li(role='presentation')
-                a(href='#va', aria-controls='virginia', role='tab', data-toggle='tab') virginia  
 
               li
+                a(href='#va', aria-controls='virginia', role='tab', data-toggle='tab') virginia  
+              li(role='presentation')
                 a(href='#wa', aria-controls='washington', role='tab', data-toggle='tab') washington
               li(role='presentation')
                 a(href='#wv', aria-controls='west virginia', role='tab', data-toggle='tab') west virginia
               li(role='presentation')
                 a(href='#wi', aria-controls='wisconsin', role='tab', data-toggle='tab') wisconsin
-              li(role='presentation')
-                a(href='#wy', aria-controls='wyoming', role='tab', data-toggle='tab') wyoming
 
               li
+                a(href='#wy', aria-controls='wyoming', role='tab', data-toggle='tab') wyoming
+              li(role='presentation')
+                a(href='#caribbean', aria-controls='caribbean', role='tab', data-toggle='tab') caribbean
+              li(role='presentation')
                 a(href='#ireland', aria-controls='ireland', role='tab', data-toggle='tab') ireland
               li(role='presentation')
                 a(href='#ksa', aria-controls='saudi arabia', role='tab', data-toggle='tab') saudi arabia
-              li(role='presentation')
+
+              li
                 a(href='#sk', aria-controls='south korea', role='tab', data-toggle='tab') south korea
               li(role='presentation')
                 a(href='#uae', aria-controls='united arab emirates', role='tab', data-toggle='tab') united arab emirates
-
-              li
+              li(role='presentation')
                 a(href='#uk', aria-controls='uk', role='tab', data-toggle='tab') united kingdom
-            .nav-tabs-contact__scroll-text
-              img(src="../img/contact/scroll-icon@2x.png" width="16px")
+            //.nav-tabs-contact__scroll-text
+            //  img(src="../img/contact/scroll-icon@2x.png" width="16px")
               | Scroll to see more
 
         .col-md-5
@@ -219,6 +223,8 @@ block main-content
               +contactTabInfo('Oklahoma', 'R.B. Akins Company', 'Bert Akins', '405.947.6502')
             #or.tab-pane(role='tabpanel')
               +contactTabInfo('Oregon', 'Air Reps', 'Ken Porter', '425.562.1150')
+            #pr.tab-pane(role='tabpanel')
+              +contactTabInfo('Puerto Rico', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761')
             #ri.tab-pane(role='tabpanel')
               +contactTabInfo('Rhode Island', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093')
             #sc.tab-pane(role='tabpanel')
@@ -233,6 +239,9 @@ block main-content
               +contactTabInfo('Wisconsin', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399')
             #wy.tab-pane(role='tabpanel')
               +contactTabInfo('Wyoming', 'Engineered Mechanical Systems (E3MS)', 'Bob Padgett', '303.534.1600')
+            #caribbean.tab-pane(role='tabpanel')
+              +contactTabInfo('Caribbean', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761')
+            #ri.tab-pane(role='tabpanel')
             #ireland.tab-pane(role='tabpanel')
               +contactTabInfo('Ireland', 'Induchem', 'Stephen Keogh', '353-1-2763177')
             #ksa.tab-pane(role='tabpanel')
