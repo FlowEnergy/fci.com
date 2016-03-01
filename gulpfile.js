@@ -65,9 +65,11 @@ gulp.task('less', function() {
 		.on('error', function(err){ console.log(err.message); })
 		.pipe(sourcemaps.write())
 		// .pipe(minifyCSS())
-		.pipe(gulp.dest('src/css/'))
+		.pipe(gulp.dest('./src/css/'))
 		.pipe(connect.reload());
 	gulp.src('./build/css/*.css')
+		.pipe(gulp.dest('src/css/'));
+	gulp.src('./src/css/build/less/style.**')
 		.pipe(gulp.dest('src/css/'));
 });
 
