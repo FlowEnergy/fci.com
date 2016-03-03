@@ -6732,6 +6732,22 @@ textarea.form-control.textarea-contact {
 .whitepapers__icon-wrap .svg path {
   fill: #81bc00 !important;
 }
+.social__icon-wrap {
+  height: 50%;
+  float: left;
+}
+@media (max-width: 767px) {
+  .social__icon-wrap {
+    display: block;
+    height: auto;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.social__icon-wrap .svg path {
+  fill: #ffffff !important;
+}
 .resources-video-carousel {
   margin-bottom: 50px;
 }

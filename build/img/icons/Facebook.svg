@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="outlined" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Brands_sliced" sketch:type="MSLayerGroup" transform="translate(-120.000000, 0.000000)" fill="#535353">
+            <g id="Imported-Layers" transform="translate(2.000000, 4.000000)" sketch:type="MSShapeGroup">
+                <path d="M152,51 L139.913,51 L139.913,26.979 L132,27.003 L132,17.896 L139.903,17.872 C139.903,13.046 140.63,10.98 140.664,10.889 C142.783,2.806 150.545,2.392 152.08,2.392 C152.348,2.392 152.498,2.403 152.498,2.403 L161.095,2.4 L161.095,11.083 L156.338,11.083 C152.752,11.083 152,13.211 152,14.996 L152,17.869 L160,17.869 L160,27 L152,27 L152,51 L152,51 Z M141.913,49 L150,49 L150,25 L158,25 L158,19.869 L150,19.869 L150,14.996 C150,12.138 151.665,9.083 156.338,9.083 L159.095,9.083 L159.095,4.4 L152.431,4.4 C151.512,4.363 144.464,4.278 142.571,11.484 C142.538,11.587 141.81,13.737 141.913,18.849 L141.934,19.866 L134,19.89 L134,24.997 L141.913,24.973 L141.913,49 L141.913,49 Z" id="Fill-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
