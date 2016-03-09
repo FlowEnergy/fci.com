@@ -6539,22 +6539,19 @@ textarea.form-control.textarea-contact {
   font-weight: 400;
   line-height: 30px;
   color: #585858;
-  padding-left: 24px;
 }
 .contact-info-phone:hover {
   color: #585858;
 }
-.contact-info-phone:before {
-  position: absolute;
-  content: '';
-  background: url(../img/contact/phone-icon.png);
-  width: 16px;
-  height: 16px;
-  top: 7px;
-  left: 0;
-}
 .contact-info-phone--no-icon:before {
   display: none;
+}
+.contact-info-email {
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
 }
 .panel-group-custom {
   margin: 50px 0;

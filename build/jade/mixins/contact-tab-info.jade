@@ -1,14 +1,14 @@
-mixin contactTabInfo(state, rep, name, phone, phoneNoIcon)
+mixin contactTabInfo(state, rep, name, phone, email)
   - var state = state || 'Washington'
   - var rep = rep || 'FCI'
   - var name = name || 'Rob Trickett'
   - var phone = phone || '425.483.1297'
-  - var phoneNoIcon = phoneNoIcon || false
+  - var email = email || 'sales@flowcontrol.com'
   .contact-info-item
     h2.contact-info-state=state
     .contact-wrap-info
       .contact-info-name=rep
       .contact-info-name=name
       a(href="tel:"+ phone).contact-info-phone=phone
-      if(phoneNoIcon)
-        .contact-info-phone.contact-info-phone--no-icon=phoneNoIcon
+      br
+      a(href="mailto:"+ email).contact-info-email=email

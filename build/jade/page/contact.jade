@@ -149,28 +149,33 @@ block main-content
                 a(href='#sc', aria-controls='south carolina', role='tab', data-toggle='tab') south carolina
 
               li
+                a(href='#ve', aria-controls='vermont', role='tab', data-toggle='tab') vermont
+              li(role='presentation')
                 a(href='#va', aria-controls='virginia', role='tab', data-toggle='tab') virginia  
               li(role='presentation')
                 a(href='#wa', aria-controls='washington', role='tab', data-toggle='tab') washington
               li(role='presentation')
+                a(href='#dc', aria-controls='dc', role='tab', data-toggle='tab') washington DC
+
+              li
                 a(href='#wv', aria-controls='west virginia', role='tab', data-toggle='tab') west virginia
               li(role='presentation')
                 a(href='#wi', aria-controls='wisconsin', role='tab', data-toggle='tab') wisconsin
-
-              li
+              li(role='presentation')
                 a(href='#wy', aria-controls='wyoming', role='tab', data-toggle='tab') wyoming
               li(role='presentation')
                 a(href='#caribbean', aria-controls='caribbean', role='tab', data-toggle='tab') caribbean
-              li(role='presentation')
+
+              li
                 a(href='#ireland', aria-controls='ireland', role='tab', data-toggle='tab') ireland
               li(role='presentation')
                 a(href='#ksa', aria-controls='saudi arabia', role='tab', data-toggle='tab') saudi arabia
-
-              li
+              li(role='presentation')
                 a(href='#sk', aria-controls='south korea', role='tab', data-toggle='tab') south korea
               li(role='presentation')
                 a(href='#uae', aria-controls='united arab emirates', role='tab', data-toggle='tab') united arab emirates
-              li(role='presentation')
+              
+              li
                 a(href='#uk', aria-controls='uk', role='tab', data-toggle='tab') united kingdom
           .nav-tabs-contact__scroll-text
               img(src="../img/contact/scroll-icon@2x.png" width="16px" alt)
@@ -179,79 +184,83 @@ block main-content
         .col-md-5
           #myAffix.tab-content.tab-content-info
             #arizona.tab-pane.active(role='tabpanel')
-              +contactTabInfo('Arizona', 'DMG Arizona', 'Don Behm', '623.760.9200')
+              +contactTabInfo('Arizona', 'DMG Arizona', 'Don Behm', '623.760.9200', 'don.behm@dmghvac.com')
             #colorado.tab-pane(role='tabpanel')
-              +contactTabInfo('Colorado', 'Engineered Mechanical Systems (E3MS)', 'Bob Padgett', '303.534.1600')
+              +contactTabInfo('Colorado', 'Engineered Mechanical Systems (E3MS)', 'Bob Padgett', '303.534.1600', 'bob@e3ms.com')
             #connecticut.tab-pane(role='tabpanel')
-              +contactTabInfo('Connecticut', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093')
+              +contactTabInfo('Connecticut', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #illinois.tab-pane(role='tabpanel')
-              +contactTabInfo('Northern Illinois (Chicago Metro)', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399')
-              +contactTabInfo('Southern Illinois', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+              +contactTabInfo('Northern Illinois (Chicago Metro)', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com')
+              +contactTabInfo('Southern Illinois', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com')
             #indiana.tab-pane(role='tabpanel')
-              +contactTabInfo('Indiana', 'Validated Custom Solutions, LLC', 'Dan Fillenwarth', '317.259.7604')
+              +contactTabInfo('Indiana', 'Validated Custom Solutions, LLC', 'Dan Fillenwarth', '317.259.7604', 'dan@vc-solutions.com')
             #iowa.tab-pane(role='tabpanel')
-              +contactTabInfo('Iowa', 'Setpoint Mechanical, Inc.', 'Patrick Peterson', '515.974.6497')
-              +contactTabInfo('Iowa', 'Verne Simmonds Company', 'Dan Holtmeyer', '402.827.8081')
+              +contactTabInfo('Central & Eastern Iowa', 'Setpoint Mechanical, Inc.', 'Patrick Peterson', '515.974.6497', 'Patrick@setpointmech.com')
+              +contactTabInfo('Western Iowa', 'Verne Simmonds Company', 'Dan Holtmeyer', '402.827.8081', 'danh@V-S-C.com')
             #kansas.tab-pane(role='tabpanel')
-              +contactTabInfo('Kansas', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+              +contactTabInfo('Kansas', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com')
             #kentucky.tab-pane(role='tabpanel')
-              +contactTabInfo('Kentucky', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+              +contactTabInfo('Kentucky', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com')
             #maine.tab-pane(role='tabpanel')
-              +contactTabInfo('Maine', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093')
+              +contactTabInfo('Maine', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #maryland.tab-pane(role='tabpanel')
-              +contactTabInfo('Maryland', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712')
+              +contactTabInfo('Maryland', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712', 'mark@mechanicalsolutions.net')
             #massachusetts.tab-pane(role='tabpanel')
-              +contactTabInfo('Massachusetts', 'System Specialties, Inc.', 'Guy Franchi', '860.613.0093')
+              +contactTabInfo('Massachusetts', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #michigan.tab-pane(role='tabpanel')
-              +contactTabInfo('Michigan', 'Flow Control Systems', 'Steve Mancuso', '248.549.4680')
-              +contactTabInfo('Michigan', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399')
+              +contactTabInfo('Central & Northern Michigan', 'Flow Control Systems', 'Steve Mancuso', '248.549.4680', 'SMancuso@fcsystems-usa.com')
+              +contactTabInfo('Southern Michigan', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com')
             #minnesota.tab-pane(role='tabpanel')
-              +contactTabInfo('Minnesota', 'Midwest Mechanical Solutions', 'Bret Riemenschneider', '952.525.2004')
+              +contactTabInfo('Minnesota', 'Midwest Mechanical Solutions', 'Bret Riemenschneider', '952.525.2004', 'Bret@mmsus.com')
             #missouri.tab-pane(role='tabpanel')
-              +contactTabInfo('Missouri', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+              +contactTabInfo('Missouri', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com')
             #nebraska.tab-pane(role='tabpanel')
               +contactTabInfo('Nebraska', 'Verne Simmonds Company', 'Dan Holtmeyer', '402.827.8081')
             #nevada.tab-pane(role='tabpanel')
-              +contactTabInfo('Nevada', 'Mechanical Products of Nevada, Inc.', 'Cory Nehls', '702.228.8974')
+              +contactTabInfo('Nevada', 'Mechanical Products of Nevada, Inc.', 'Cory Nehls', '702.228.8974', 'cnehls@mpnevada.com')
             #nh.tab-pane(role='tabpanel')
-              +contactTabInfo('New Hampshire', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093')
+              +contactTabInfo('New Hampshire', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #nc.tab-pane(role='tabpanel')
-              +contactTabInfo('North Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761')
+              +contactTabInfo('North Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com')
             #oh.tab-pane(role='tabpanel')
-              +contactTabInfo('Ohio', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+              +contactTabInfo('Southern Ohio', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com')
             #ok.tab-pane(role='tabpanel')
-              +contactTabInfo('Oklahoma', 'R.B. Akins Company', 'Bert Akins', '405.947.6502')
+              +contactTabInfo('Oklahoma', 'R.B. Akins Company', 'Bert Akins', '405.947.6502', 'bakins@rbakins.com')
             #or.tab-pane(role='tabpanel')
-              +contactTabInfo('Oregon', 'Air Reps', 'Ken Porter', '425.562.1150')
+              +contactTabInfo('Oregon', 'Air Reps', 'Ken Porter', '425.562.1150', 'KPorter@airreps.com')
             #pr.tab-pane(role='tabpanel')
-              +contactTabInfo('Puerto Rico', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761')
+              +contactTabInfo('Puerto Rico', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com')
             #ri.tab-pane(role='tabpanel')
-              +contactTabInfo('Rhode Island', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093')
+              +contactTabInfo('Rhode Island', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #sc.tab-pane(role='tabpanel')
-              +contactTabInfo('South Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761')
+              +contactTabInfo('South Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com')
             #va.tab-pane(role='tabpanel')
-              +contactTabInfo('Virginia', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712')
+              +contactTabInfo('Virginia', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712', 'mark@mechanicalsolutions.net')
+            #ve.tab-pane(role='tabpanel')
+              +contactTabInfo('Vermont', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #wa.tab-pane(role='tabpanel')
-              +contactTabInfo('Washington', 'Air Reps', 'Ken Porter', '425.562.1150')
+              +contactTabInfo('Washington', 'Air Reps', 'Ken Porter', '425.562.1150', 'KPorter@airreps.com')
+            #dc.tab-pane(role='tabpanel')
+              +contactTabInfo('Washington DC', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712', 'mark@mechanicalsolutions.net')
             #wv.tab-pane(role='tabpanel')
-              +contactTabInfo('West Virginia', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313')
+              +contactTabInfo('West Virginia', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com')
             #wi.tab-pane(role='tabpanel')
-              +contactTabInfo('Wisconsin', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399')
+              +contactTabInfo('Southern Wisconsin', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com')
             #wy.tab-pane(role='tabpanel')
-              +contactTabInfo('Wyoming', 'Engineered Mechanical Systems (E3MS)', 'Bob Padgett', '303.534.1600')
+              +contactTabInfo('Wyoming', 'Engineered Mechanical Systems (E3MS)', 'Bob Padgett', '303.534.1600', 'bob@e3ms.com')
             #caribbean.tab-pane(role='tabpanel')
-              +contactTabInfo('Caribbean', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761')
+              +contactTabInfo('Caribbean', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com')
             #ri.tab-pane(role='tabpanel')
             #ireland.tab-pane(role='tabpanel')
-              +contactTabInfo('Ireland', 'Induchem', 'Stephen Keogh', '353-1-2763177')
+              +contactTabInfo('Ireland', 'Induchem', 'Stephen Keogh', '353-1-2763177', 'SKeogh@induchem.ie')
             #ksa.tab-pane(role='tabpanel')
-              +contactTabInfo('Saudi Arabia', 'Independent Technical Solutions, LLC', 'Paul Richards/Girish Rao', '971-4-2679885')
+              +contactTabInfo('Saudi Arabia', 'Independent Technical Solutions, LLC', 'Paul Richards/Girish Rao', '971-4-2679885', 'paul.richards@intechsolutions.ae')
             #sk.tab-pane(role='tabpanel')
-              +contactTabInfo('South Korea', 'G-Tech Engineering Company', 'Stella Lee', '82-2-416-2671')  
+              +contactTabInfo('South Korea', 'G-Tech Engineering Company', 'Stella Lee', '82-2-416-2671', 'kslee-777@daum.net')  
             #uae.tab-pane(role='tabpanel')
-              +contactTabInfo('United Arab Emirates', 'Independent Technical Solutions, LLC', 'Paul Richards/Girish Rao', '971-4-2679885')
+              +contactTabInfo('United Arab Emirates', 'Independent Technical Solutions, LLC', 'Paul Richards/Girish Rao', '971-4-2679885', 'paul.richards@intechsolutions.ae')
             #uk.tab-pane(role='tabpanel')
-              +contactTabInfo('United Kingdom', 'Induchem', 'Stephen Keogh', '353-1-2763177')
+              +contactTabInfo('United Kingdom', 'Induchem', 'Stephen Keogh', '353-1-2763177', 'SKeogh@induchem.ie')
 
 
 
