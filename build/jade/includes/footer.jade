@@ -3,21 +3,17 @@
         button.modal-close-btn(type='button', data-dismiss='modal')
         .modal-dialog(role='document')
             .modal-header.text-center
-                h2.modal-header-title Contact us
-                p.modal-header-title-sub Or call us :
-                    a(href="tel:425-415-3997") 425 415 3997
+                h2.modal-header-title Subscribe to Mailing List
             .modal-body
-                form
+                form(id='contactForm')
                     .form-group
-                        input.form-control(type="text" placeholder="Name")
+                        input.form-control(type="text" placeholder="Name" id="contactName" required)
                     .form-group
-                        input.form-control(type="email" placeholder="Email")
+                        input.form-control(type="email" placeholder="Email" id="contactEmail" required)
                     .form-group
-                        input.form-control(type="text" placeholder="Phone")
-                    .form-group
-                        textarea.form-control(placeholder="Message" rows="5")
+                        input.form-control(type="text" placeholder="Company" id="contactCompany" required)
             .modal-footer
-                button.btn.btn-main(type='button') send message
+                button.btn.btn-main(type='button' id="contactButton") subscribe
     .container
         .row
             .col-md-6
@@ -33,6 +29,9 @@
                 .copyright.hidden-xs.hidden-sm.animated-down-0-9s &copy; 2009 - 2016. Flow Control Industries, Inc. All Rights Reserved.
             .col-md-6
                 h5.footer-title.animated-down-0-7s Interested in working with us?
+                .wrap-btn
+                    a.btn.btn-main.animated-down-0-9s(href="mailto:info@flowcontrol.com") Drop us a message
+                br
                 div
                     .footer-title-green.animated-down-0-8s Address:
                     p.footer-text-contact.animated-down-0-8s 18715 141st Ave NE Woodinville, WA 98072
@@ -43,7 +42,7 @@
                     .footer-title-green.animated-down-0-9s E-mail:
                     a.footer-text-contact.animated-down-0-9s(href="mailto:info@flowcontrol.com") info@flowcontrol.com
                 .wrap-btn
-                    a.btn.btn-main.animated-down-0-9s(href="mailto:info@flowcontrol.com") Drop us a message
+                    button.btn.btn-main(type='button' data-toggle='modal' data-target='#contactModal') Subscribe to mailing list
                 br
                 div
                     a(href="https://www.facebook.com/DeltaPValve" target="_blank")

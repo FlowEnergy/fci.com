@@ -4,6 +4,7 @@ function dismissContactModal() {
     $('#contactEmail').val('');
     $('#contactPhone').val('');
     $('#contactMessage').val('');
+    $('#contactCompany').val('');
     $('#projectName').val('');
     $('#projectLocation').val('');
     $('#designEngineer').val('');
@@ -30,7 +31,7 @@ $('#contactButton').click(function() {
         "sendersName" : $('#contactName').val(),
         "email" : $('#contactEmail').val(),
         "phone" : $('#contactPhone').val(),
-        "msg": $('#contactMessage').val() + '\n' + 'Project: ' + $('#projectName').val() + '\n' + 'Location: ' + $('#projectLocation').val() + '\n' + 'Engineer: ' + $('#designEngineer').val() + '\n' + "Equipment: " + $('#projectEquipment').val() + '\n' + "Project Type: " + $('#projectType').val()
+        "msg": $('#contactMessage').val() + '\n' + 'Company: ' + $('#contactCompany').val() + '\n' + 'Project: ' + $('#projectName').val() + '\n' + 'Location: ' + $('#projectLocation').val() + '\n' + 'Engineer: ' + $('#designEngineer').val() + '\n' + "Equipment: " + $('#projectEquipment').val() + '\n' + "Project Type: " + $('#projectType').val()
        };
 
        $.ajax({
