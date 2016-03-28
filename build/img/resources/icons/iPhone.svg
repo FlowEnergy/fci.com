@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>iPhone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="colored" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Tech_sliced" sketch:type="MSLayerGroup" transform="translate(0.000000, -240.000000)"></g>
+        <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(1.000000, -238.000000)" fill="#535353">
+            <path d="M43,285.976 L12,285.976 L12,243.004 C12,241.348 13.343,240 14.993,240 L40.007,240 C41.657,240 43,241.348 43,243.004 L43,285.976 L43,285.976 Z M14,283.976 L41,283.976 L41,243.004 C41,242.45 40.555,242 40.007,242 L14.993,242 C14.445,242 14,242.45 14,243.004 L14,283.976 L14,283.976 Z" id="Fill-128" sketch:type="MSShapeGroup"></path>
+            <path d="M40.007,296 L14.993,296 C13.343,296 12,294.654 12,293 L12,284 L43,284 L43,293 C43,294.654 41.657,296 40.007,296 L40.007,296 Z M14,286 L14,293 C14,293.561 14.436,294 14.993,294 L40.007,294 C40.555,294 41,293.552 41,293 L41,286 L14,286 L14,286 Z" id="Fill-129" sketch:type="MSShapeGroup"></path>
+            <path d="M28,293 C26.346,293 25,291.654 25,290 C25,288.346 26.346,287 28,287 C29.654,287 31,288.346 31,290 C31,291.654 29.654,293 28,293 L28,293 Z M28,289 C27.449,289 27,289.449 27,290 C27,290.551 27.449,291 28,291 C28.551,291 29,290.551 29,290 C29,289.449 28.551,289 28,289 L28,289 Z" id="Fill-130" sketch:type="MSShapeGroup"></path>
+            <path d="M28.025,258.071 L26.586,256.682 L37.288,245.586 L38.728,246.975 L28.025,258.071" id="Fill-131" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

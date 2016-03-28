@@ -4,7 +4,7 @@ mixin whitepapersItem(icon, title, text, url)
   - var defaultText = text || 'default text'
   - var defaultUrl = url || '#'
 
-  a(href=defaultUrl).whitepapers__item
+  a(href=defaultUrl target="_blank").whitepapers__item
     .whitepapers__icon-wrap.animated-down-0-7s
       img.svg.whitepapers__icon(src="../img/resources/icons/" + defaultIcon + ".svg" alt="")
     .whitepapers__content
