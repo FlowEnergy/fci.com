@@ -54,7 +54,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('less', function() {
-	gulp.src('./build/less/style.less')
+	gulp.src('build/less/style.less', {base: 'build/less'})
 		.pipe(sourcemaps.init())
 		//.pipe(lessImport('./build/less/style.less'))
 		.pipe(less({
@@ -65,25 +65,14 @@ gulp.task('less', function() {
 		.on('error', function(err){ console.log(err.message); })
 		.pipe(sourcemaps.write())
 		 //.pipe(minifyCSS())
-		.pipe(gulp.dest('./src/css/'))
+		.pipe(gulp.dest('src/css'))
 		.pipe(connect.reload());
-	//gulp.src('./build/css/*.css')
-	//	.pipe(gulp.dest('./src/css/'));
-	//gulp.src('./src/css/build/less/style.**')
-	//	.pipe(gulp.dest('src/css/'));
 });
 
 
 gulp.task('publish', function() {
-	var publisher = awspublish.create({
-		params: {
-			Bucket: 'flowcontrol.com'
-		}
-	});
-	gulp.src('src/**/*')
-		.pipe(publisher.publish())
-		.pipe(publisher.cache())
-		.pipe(awspublish.reporter())
+	return gulp.src('src/**/*', {base: 'src'})
+		.pipe(gulp.dest('/Volumes/web/PublicSites/FlowControl'));
 });
 
 gulp.task('resources', function() {
