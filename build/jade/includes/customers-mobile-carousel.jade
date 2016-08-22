@@ -1,7 +1,7 @@
 .container.visible-sm.visible-xs
   .row
     .col-xs-12
-      #customers-mobile-carousel.home-mobile-carousel.carousel.slide(data-ride='carousel')
+      #customers-mobile-carousel.home-mobile-carousel.customers-mobile-carousel.carousel.slide(data-ride='carousel')
         // Indicators
         ol.carousel-indicators
           li.active(data-target='#customers-mobile-carousel', data-slide-to='0')
@@ -20,7 +20,7 @@
               .customers-scroll
                 .customers-scroll--inner
                   .row.visible-xs.visible-sm
-                    include ../../jade/includes/customers-carousel-1
+                    include ../../jade/includes/customers/customers-mobile-airoports
 
           .item
             .home-mobile-carousel__item
@@ -32,7 +32,7 @@
               .customers-scroll
                 .customers-scroll--inner
                   .row.visible-xs.visible-sm
-                    include ../../jade/includes/customers-carousel-1
+                    include ../../jade/includes/customers/customers-mobile-universities
 
           .item
             .home-mobile-carousel__item
@@ -44,7 +44,7 @@
               .customers-scroll
                 .customers-scroll--inner
                   .row.visible-xs.visible-sm
-                    include ../../jade/includes/customers-carousel-1
+                    include ../../jade/includes/customers/customers-mobile-hospitals
 
           .item
             .home-mobile-carousel__item
@@ -56,7 +56,7 @@
               .customers-scroll
                 .customers-scroll--inner
                   .row.visible-xs.visible-sm
-                    include ../../jade/includes/customers-carousel-1
+                    include ../../jade/includes/customers/customers-mobile-commercial
 
         // Controls
         a.left.carousel-control(href='#customers-mobile-carousel', role='button', data-slide='prev')

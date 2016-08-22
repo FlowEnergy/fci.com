@@ -56,7 +56,7 @@ gulp.task('scripts', function() {
 gulp.task('less', function() {
 	gulp.src('./build/less/style.less')
 		.pipe(sourcemaps.init())
-		.pipe(lessImport('./build/less/style.less'))
+		//.pipe(lessImport('./build/less/style.less'))
 		.pipe(less({
 			sourceMap: {
 				sourceMapRootpath: './build/less' // Optional absolute or relative path to your LESS files
@@ -64,14 +64,15 @@ gulp.task('less', function() {
 		}))
 		.on('error', function(err){ console.log(err.message); })
 		.pipe(sourcemaps.write())
-		// .pipe(minifyCSS())
+		 //.pipe(minifyCSS())
 		.pipe(gulp.dest('./src/css/'))
 		.pipe(connect.reload());
-	gulp.src('./build/css/*.css')
-		.pipe(gulp.dest('src/css/'));
-	gulp.src('./src/css/build/less/style.**')
-		.pipe(gulp.dest('src/css/'));
+	//gulp.src('./build/css/*.css')
+	//	.pipe(gulp.dest('./src/css/'));
+	//gulp.src('./src/css/build/less/style.**')
+	//	.pipe(gulp.dest('src/css/'));
 });
+
 
 gulp.task('publish', function() {
 	var publisher = awspublish.create({

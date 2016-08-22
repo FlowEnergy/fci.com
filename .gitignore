@@ -2,3 +2,4 @@ node_modules/
 .awspublish-flowcontrol.com
 .DS_Store
 src/
+.idea/

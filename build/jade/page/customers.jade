@@ -33,7 +33,7 @@ block add-script
     var itemSlider = $('#customers-mobile-carousel .item');
     itemSlider.each(function () {
       var scrollRow = $('.customers-scroll .row'),
-          numberElement = scrollRow.find('.col-sm-4');
+          numberElement = scrollRow.find('.customers-carousel-item');
       console.log($(this));
       $(this).find(numberElement).each(function (i) {
         $(this).closest('.row').css('width', numberElement.innerWidth() * (i+1));

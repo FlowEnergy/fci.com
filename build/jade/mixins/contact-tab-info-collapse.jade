@@ -1,0 +1,36 @@
+//mixin contactTabInfoCollapse(state, rep, name, phone, email)
+  //  - console.log('{state:' + '#' + state + '#' + ', ' + 'rep:' + '#' + rep + '#' + ', ' + 'name:' + '#' + name + '#' + ', ' + 'phone:' + '#' + phone + '#' + ', ' + 'email:' + '#' + email + '#'  +  '}');
+
+mixin contactTabInfoCollapse(id, obj)
+  - var title = id
+  - var idName = id.toLowerCase().replace(/\s+/g, '-');
+  - console.log(idName);
+  
+  - var idHeader = idName + '-heading' || ''
+  - var idCollapse = idName + '-collapse' || ''
+  - var href = '#' + idName +  '-collapse' || ''
+  - var ariaControls = idName +  '-collapse' || ''
+  - var state = obj.state || 'Washington'
+  - var rep = obj.rep || 'FCI'
+  - var name = obj.name || 'Rob Trickett'
+  - var phone = obj.phone || '425.483.1297'
+  - var email = obj.email || false
+  .panel.panel-default.animated-down-0-9s
+    .panel-heading(id=id role='tab')
+      h4.panel-title
+        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href=href, aria-expanded='false', aria-controls=ariaControls)=title
+    .panel-collapse.collapse(id=idCollapse, role='tabpanel', aria-labelledby=href)
+      each val in obj
+        .panel-body
+          .contact-info-item
+            h2.contact-info-state=val.state
+            .contact-wrap-info
+              if val.rep
+                .contact-info-name=val.rep
+              if val.name
+                .contact-info-name=val.name
+              if val.phone
+                a(href="tel:"+ val.phone).contact-info-phone=val.phone
+                br
+              if val.email
+                a(href="mailto:"+ val.email).contact-info-email=val.email

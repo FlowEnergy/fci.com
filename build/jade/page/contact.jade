@@ -268,80 +268,73 @@ block main-content
         .col-xs-12
 
           #accordion.panel-group.panel-group-custom(role='tablist', aria-multiselectable='true')
+            include ../includes/contact-state
 
-            .panel.panel-default
-              #idaho-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#idaho-collapse', aria-expanded='false', aria-controls='idaho-collapse') idaho
-              #idaho-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#idaho-heading')
-                .panel-body
-                  +contactTabInfo('idaho')
-                  +contactTabInfo('idaho')
-
-            .panel.panel-default
-              #lowa-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#lowa-collapse', aria-expanded='false', aria-controls='lowa-collapse') lowa
-              #lowa-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#lowa-heading')
-                .panel-body
-                  +contactTabInfo('lowa')
-
-            .panel.panel-default
-              #alabama-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#alabama-collapse', aria-expanded='false', aria-controls='alabama-collapse') alabama
-              #alabama-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#alabama-heading')
-                .panel-body
-                  +contactTabInfo('alabama')
-
-
-            .panel.panel-default
-              #alaska-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#alaska-collapse', aria-expanded='false', aria-controls='alaska-collapse') alaska
-              #alaska-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#alaska-heading')
-                .panel-body
-                  +contactTabInfo('alaska')
-
-            .panel.panel-default
-              #arizona-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#arizona-collapse', aria-expanded='false', aria-controls='arizona-collapse') arizona
-              #arizona-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#arizona-heading')
-                .panel-body
-                  +contactTabInfo('arizona')
-
-            .panel.panel-default
-              #wyoming-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#wyoming-collapse', aria-expanded='false', aria-controls='wyoming-collapse') wyoming
-              #wyoming-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#wyoming-heading')
-                .panel-body
-                  +contactTabInfo('wyoming')
-
-            .panel.panel-default
-              #washington-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#washington-collapse', aria-expanded='false', aria-controls='washington-collapse') washington
-              #washington-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#washington-heading')
-                .panel-body
-                  +contactTabInfo('washington')
-
-            .panel.panel-default
-              #vermont-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#vermont-collapse', aria-expanded='false', aria-controls='vermont-collapse') vermont
-              #vermont-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#vermont-heading')
-                .panel-body
-                  +contactTabInfo('vermont')
-
-            .panel.panel-default
-              #virginia-heading.panel-heading(role='tab')
-                h4.panel-title
-                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#virginia-collapse', aria-expanded='false', aria-controls='virginia-collapse') virginia
-              #virginia-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#virginia-heading')
-                .panel-body
-                  +contactTabInfo('virginia')
+            //
+            //.panel.panel-default
+            //  #lowa-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#lowa-collapse', aria-expanded='false', aria-controls='lowa-collapse') lowa
+            //  #lowa-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#lowa-heading')
+            //    .panel-body
+            //      +contactTabInfo('lowa')
+            //
+            //.panel.panel-default
+            //  #alabama-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#alabama-collapse', aria-expanded='false', aria-controls='alabama-collapse') alabama
+            //  #alabama-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#alabama-heading')
+            //    .panel-body
+            //      +contactTabInfo('alabama')
+            //
+            //
+            //.panel.panel-default
+            //  #alaska-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#alaska-collapse', aria-expanded='false', aria-controls='alaska-collapse') alaska
+            //  #alaska-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#alaska-heading')
+            //    .panel-body
+            //      +contactTabInfo('alaska')
+            //
+            //.panel.panel-default
+            //  #arizona-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#arizona-collapse', aria-expanded='false', aria-controls='arizona-collapse') arizona
+            //  #arizona-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#arizona-heading')
+            //    .panel-body
+            //      +contactTabInfo('arizona')
+            //
+            //.panel.panel-default
+            //  #wyoming-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#wyoming-collapse', aria-expanded='false', aria-controls='wyoming-collapse') wyoming
+            //  #wyoming-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#wyoming-heading')
+            //    .panel-body
+            //      +contactTabInfo('wyoming')
+            //
+            //.panel.panel-default
+            //  #washington-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#washington-collapse', aria-expanded='false', aria-controls='washington-collapse') washington
+            //  #washington-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#washington-heading')
+            //    .panel-body
+            //      +contactTabInfo('washington')
+            //
+            //.panel.panel-default
+            //  #vermont-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#vermont-collapse', aria-expanded='false', aria-controls='vermont-collapse') vermont
+            //  #vermont-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#vermont-heading')
+            //    .panel-body
+            //      +contactTabInfo('vermont')
+            //
+            //.panel.panel-default
+            //  #virginia-heading.panel-heading(role='tab')
+            //    h4.panel-title
+            //      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#virginia-collapse', aria-expanded='false', aria-controls='virginia-collapse') virginia
+            //  #virginia-collapse.panel-collapse.collapse(role='tabpanel', aria-labelledby='#virginia-heading')
+            //    .panel-body
+            //      +contactTabInfo('virginia')
 
 
 
