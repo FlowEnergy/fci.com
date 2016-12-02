@@ -1,0 +1,129 @@
+extends ../layout/layout
+
+block main-content
+    +headerNav()
+    .container.blogs
+        .row
+            .col-lg-4.hidden-md.hidden-sm.hidden-xs.blogs__sidebar
+                .blogs__sidebar-block
+                    p.blogs__sidebar-block-heading Category
+                    ul.blogs__sidebar-menu
+                        li.blogs__sidebar-menu-item
+                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                | Dell
+                                span.pull-right 25
+                        li.blogs__sidebar-menu-item.blogs__sidebar-menu-item--active
+                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                | Intel
+                                span.pull-right 425
+                        li.blogs__sidebar-menu-item
+                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                | Lot
+                                span.pull-right 4
+                        li.blogs__sidebar-menu-item
+                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                | Green Building
+                                span.pull-right 86
+                        li.blogs__sidebar-menu-item
+                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                | Industrial
+                                span.pull-right 59
+                        li.blogs__sidebar-menu-item
+                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                | Smart Buildins
+                                span.pull-right 127
+                .blogs__sidebar-block
+                    p.blogs__sidebar-block-heading Popular Posts
+                    .blogs__sidebar-posts
+                        a(href='/blog.html').blogs__sidebar-posts-item
+                            img(src='img/blog/popular-post-1.png').blogs__sidebar-posts-thumbnail
+                            .blogs__sidebar-posts-info
+                                p.blogs__sidebar-posts-title Block Programming with KMC
+                                p.blogs__sidebar-posts-date Nov 16, 2016
+                        a(href='/blog.html').blogs__sidebar-posts-item
+                            img(src='img/blog/popular-post-2.png').blogs__sidebar-posts-thumbnail
+                            .blogs__sidebar-posts-info
+                                p.blogs__sidebar-posts-title When Failure is Not an Option: The Evolution ...
+                                p.blogs__sidebar-posts-date Nov 16, 2016
+                        a(href='/blog.html').blogs__sidebar-posts-item
+                            img(src='img/blog/popular-post-3.png').blogs__sidebar-posts-thumbnail
+                            .blogs__sidebar-posts-info
+                                p.blogs__sidebar-posts-title What are Benefits of a BAS?
+                                p.blogs__sidebar-posts-date Nov 16, 2016
+            .col-lg-8.blogs__content
+                .blogs__content-header
+                    .blogs__content-heading
+                        p
+                            | Blog Posts
+                            a(href='#')#categoriesToggler.blogs__content-heading-category.hidden-lg
+                                | Category
+                                | <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="12px">
+                                |   <path fill-rule="evenodd"  fill="rgb(118, 185, 0)" d="M-0.000,12.000 L-0.000,10.000 L16.000,10.000 L16.000,12.000 L-0.000,12.000 ZM-0.000,5.000 L16.000,5.000 L16.000,7.000 L-0.000,7.000 L-0.000,5.000 ZM-0.000,0.000 L16.000,0.000 L16.000,2.000 L-0.000,2.000 L-0.000,0.000 Z"/>
+                                | </svg>
+                                .category-dropdown-menu
+                                    ul.blogs__sidebar-menu
+                                        li.blogs__sidebar-menu-item
+                                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                                | Dell
+                                                span.pull-right 25
+                                        li.blogs__sidebar-menu-item.blogs__sidebar-menu-item--active
+                                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                                | Intel
+                                                span.pull-right 425
+                                        li.blogs__sidebar-menu-item
+                                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                                | Lot
+                                                span.pull-right 4
+                                        li.blogs__sidebar-menu-item
+                                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                                | Green Building
+                                                span.pull-right 86
+                                        li.blogs__sidebar-menu-item
+                                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                                | Industrial
+                                                span.pull-right 59
+                                        li.blogs__sidebar-menu-item
+                                            a(href='/blogs.html').blogs__sidebar-menu-link
+                                                | Smart Buildins
+                                                span.pull-right 127
+                    .blogs__content-filters
+                        a(href='#').blogs__content-filter-search
+                            | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            |   <path fill="rgba(0, 0, 0, .4)" d="M3924.99,214.494l-1.49,1.5-5.08-5.072a6.011,6.011,0,1,1,1.5-1.5ZM3915,202a4,4,0,1,0,4,4A4,4,0,0,0,3915,202Z" transform="translate(-3909 -200)" />
+                            | </svg>
+                        .blogs__content-filter-search-field
+                            span(contenteditable='true') City
+                            | <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.5px" height="9.5px">
+                            |   <path fill-rule="evenodd"  stroke="rgb(157, 157, 157)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M8.504,7.103 L7.103,8.504 L4.500,5.902 L1.898,8.504 L0.496,7.103 L3.099,4.500 L0.496,1.897 L1.898,0.495 L4.500,3.098 L7.103,0.495 L8.504,1.897 L5.902,4.500 L8.504,7.103 Z" / >
+                            | </svg>
+                        a(href='#').blogs__content-filter-dropdown
+                            | Most recent
+                            | <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="5px">
+                            |   <path fill-rule="evenodd" fill="rgba(0, 0, 0, .4)" d="M4.008,4.987 L0.007,0.003 L8.009,0.003 L4.008,4.987 Z" />
+                            | </svg>
+                .blogs__content-posts
+                    a(href='/blog.html').blogs__content-post
+                        img(src='img/blog/post-1.png').blogs__content-post-thumbnail
+                        .blogs__content-post-info
+                            p.blogs__content-post-title Block Programming with KMC
+                            p.blogs__content-post-text As of September 2016, KMC Controls has released block programming via the Control Basic Block editor, supported in Connect, Total Control and Niagara. Block programming provides...
+                            p.blogs__content-post-date Nov 16, 2016
+                    a(href='/blog.html').blogs__content-post
+                        img(src='img/blog/post-2.png').blogs__content-post-thumbnail
+                        .blogs__content-post-info
+                            p.blogs__content-post-title When Failure is Not an Option: The Evolution of Fail-Safe Actuators
+                            p.blogs__content-post-text As of September 2016, KMC Controls has released block programming via the Control Basic Block editor, supported in Connect...
+                            p.blogs__content-post-date Nov 16, 2016
+                    a(href='/blog.html').blogs__content-post
+                        img(src='img/blog/post-3.png').blogs__content-post-thumbnail
+                        .blogs__content-post-info
+                            p.blogs__content-post-title KMC Controls Customer Conference
+                            p.blogs__content-post-text As of September 2016, KMC Controls has released block programming via the Control Basic Block editor, supported in Connect...
+                            p.blogs__content-post-date Nov 16, 2016
+                    a(href='/blog.html').blogs__content-post
+                        img(src='img/blog/post-4.png').blogs__content-post-thumbnail
+                        .blogs__content-post-info
+                            p.blogs__content-post-title What are Benefits of a BAS?
+                            p.blogs__content-post-text As of September 2016, KMC Controls has released block programming via the Control Basic Block editor, supported in Connect, Total Control and Niagara. Block programming provides...
+                            p.blogs__content-post-date Nov 16, 2016
+                a(href='/blogs-with-no-results.html').blogs__content-more Show more
