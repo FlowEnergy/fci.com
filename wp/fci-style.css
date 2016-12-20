@@ -94,6 +94,10 @@ img.wp-post-image {
 	line-height: 2.5;
 }
 
+.entry-content {
+    line-height: 2.5;
+}
+
 .main-menu {
 	font-weight: 700;
 	font-size: 12px;
