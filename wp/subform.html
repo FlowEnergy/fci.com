@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="fci-style.css"></head>
+	<body>
+
+		<script>
+			function dismissContactModal() {
+			    $('#contactModal').modal('hide');
+			    $('#contactName').val('');
+			    $('#contactEmail').val('');
+			    $('#contactPhone').val('');
+			    $('#contactMessage').val('');
+			    $('#contactCompany').val('');
+			    $('#projectName').val('');
+			    $('#projectLocation').val('');
+			    $('#designEngineer').val('');
+			    $('#projectEquipment').val('');
+			    $('#projectType').val('');
+			    $('#contactButton').html('Subscribe');
+			}
+
+			function validateForm() {
+			    if ($('#contactName').val() == '' ||
+			        $('#contactEmail').val() == '' ||
+			        $('#contactPhone').val() == '' ||
+			        $('#contactMessage').val() == '')
+			        return false;
+			    else
+			        return true;
+			}
+
+
+		</script>
+
+		
+		<a style="color: #81bc00; cursor: pointer;" data-toggle="modal" data-target="#contactModal">Subscribe to Mailing List</a>
+
+		<div id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade fcisub">
+			<button type="button" data-dismiss="modal" class="modal-close-btn">
+			</button>
+			<div role="document" class="modal-dialog fcisubfrm">
+				<div class="modal-header text-center">
+					<h1 class="modal-header-title fcisubtitle">Subscribe to Mailing List</h1>
+				</div>
+				<div class="modal-body">
+					<form id="contactForm">
+						<div class="form-group fcisubfield">
+							<input type="text" placeholder="Name" id="contactName" required class="form-control" width="50">
+						</div>
+						<div class="form-group fcisubfield">
+							<input type="email" placeholder="Email" id="contactEmail" required class="form-control">
+						</div>
+						<div class="form-group fcisubfield">
+							<input type="text" placeholder="Company" id="contactCompany" required class="form-control">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="contactButton" class="btn btn-main fcisubbtn">Subscribe</button>
+					<button type="button" id="cancelButton" class="btn btn-main fcicanbtn" onclick="dismissContactModal();">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script>
+			$('#contactModal').hide();
+
+			$('#contactButton').click(function() {
+			    if (validateForm()) {
+			       $('#contactButton').html('Sending...');
+
+			       var contactData = {
+			        "sendersName" : $('#contactName').val(),
+			        "email" : $('#contactEmail').val(),
+			        "phone" : $('#contactPhone').val(),
+			        "msg": $('#contactMessage').val() + '\n' + 'Company: ' + $('#contactCompany').val() + '\n' + 'Project: ' + $('#projectName').val() + '\n' + 'Location: ' + $('#projectLocation').val() + '\n' + 'Engineer: ' + $('#designEngineer').val() + '\n' + "Equipment: " + $('#projectEquipment').val() + '\n' + "Project Type: " + $('#projectType').val()
+			       };
+
+			       $.ajax({
+			            type: "POST",
+			            url: "https://9vndfrb2ae.execute-api.us-west-2.amazonaws.com/prod/lambda-mailer",
+			            data: JSON.stringify(contactData),
+			            contentType: 'application/json',
+			            success: function() {
+			                $('#contactButton').html('Message sent!');
+			                setTimeout(dismissContactModal, 1000);
+			            }
+			        });
+			    } else {
+			        $('#contactSubmit').click();
+			    }
+			});			
+		</script>	
+
+	</body>
+</html>
+
