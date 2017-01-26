@@ -1,4 +1,4 @@
-mixin contactTabInfo(state, rep, name, phone, email)
+mixin contactTabInfo(state, rep, name, phone, email, url)
   - var state = state || 'Washington'
   - var rep = rep || 'FCI'
   - var name = name || 'Rob Trickett'
@@ -10,5 +10,7 @@ mixin contactTabInfo(state, rep, name, phone, email)
       .contact-info-name=rep
       .contact-info-name=name
       a(href="tel:"+ phone).contact-info-phone=phone
+      br
+      a(href="http://"+ url).contact-info-url=url
       br
       a(href="mailto:"+ email).contact-info-email=email

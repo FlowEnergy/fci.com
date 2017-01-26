@@ -6546,6 +6546,13 @@ textarea.form-control.textarea-contact {
 .contact-info-phone--no-icon:before {
   display: none;
 }
+.contact-info-url {
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
 .contact-info-email {
   display: inline-block;
   position: relative;
