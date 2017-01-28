@@ -1,6 +1,6 @@
 .col-md-1
-//   a.left.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='prev')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.left.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='prev')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")
 .col-md-10
    #customers-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
       .carousel-inner(role='listbox')
@@ -12,7 +12,7 @@
                         img.customers-carousel-item__img(src="../img/customers/dia.jpg" alt="Denver International Airport")
                      .customers-carousel-item__content
                         .customers-carousel-item__country DENVER, CO • 2012
-                        .customers-carousel-item__title Denver International Airport 1
+                        .customers-carousel-item__title Denver International Airport
                         ul.customers-carousel-item__list
                            li <b>6,800,000</b> kWh annual reduction in energy consumption and 820 kW demand reduction
                            li <b>$400,000+</b> annual utility savings
@@ -41,6 +41,20 @@
                            li Recovered cooling capacity throughout 4-mile chilled water loop
                            li Capacity gains allowed for continued terminal expansion
                            li Terminals: American Airlines, Jet Blue, Delta, International
+         .item
+            .row
+               .col-md-4
+                  .customers-carousel-item
+                     a.customers-carousel-item__img-wrap(target="_blank" href="../resources/Portland-International-Airport.pdf")
+                        img.customers-carousel-item__img(src="../img/customers/pdx.jpg" alt="Portland International Airport")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country PORTLAND, OR • 1997
+                        .customers-carousel-item__title Portland International Airport
+                        ul.customers-carousel-item__list
+                           li Above design delta T (<b>17-19° F</b>)
+                           li <b>1000+</b> valves installed & zero failures
+                           li Significantly reduced maintenance
+                           li No balancing required
          //.item
          //  .row
          //     include customers-carousel-item
@@ -48,5 +62,5 @@
          //  .row
          //     include customers-carousel-item
 .col-md-1
-//   a.right.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='next')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.right.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='next')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")
