@@ -1,8 +1,8 @@
 .col-md-1
-//   a.left.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='prev')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.left.carousel-control.resources-control.customers-control(href='#customers-comm-carousel', role='button', data-slide='prev')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")
 .col-md-10
-   #customers-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
+   #customers-comm-carousel.resources-video-carousel.customers-comm-carousel.carousel.slide(data-ride='carousel')
       .carousel-inner(role='listbox')
          .item.active
             .row
@@ -26,8 +26,8 @@
                         .customers-carousel-item__title Atlantic Station
                         ul.customers-carousel-item__list
                            li ΔT performance increased nearly 300%, from 6 to 18° F [3.3 to 10° C]
-                           li 17% decrease in total building electricity consumption 
-                           li Project payback in less than 9 months 
+                           li 17% decrease in total building electricity consumption
+                           li Project payback in less than 9 months
                            li District energy recovered 1,000+ tons [3,516 kW] of capacity
                .col-md-4
                   .customers-carousel-item
@@ -41,11 +41,18 @@
                            li Flow rate was reduced to approximately 50% of design
                            li Only one of two chillers required at design conditions
          .item
-           .row
-              include customers-carousel-item
-         .item
-           .row
-              include customers-carousel-item
+            .row
+               .col-md-4
+                  .customers-carousel-item
+                     a.customers-carousel-item__img-wrap(target="_blank" href="../resources/Galleria-700-Case-Study.pdf")
+                        img.customers-carousel-item__img(src="../img/customers/galleria700.jpg" alt="Galleria 700")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country ATLANTA, GA • 2010
+                        .customers-carousel-item__title Galleria 700
+                        ul.customers-carousel-item__list
+                           li Reduced HVAC energy consumption by <b>over 30%</b>
+                           li Saving <b>1.6m kWh</b> annually
+                           li <b>Increased delta T</b> while also improving comfort
 .col-md-1
-//   a.right.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='next')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.right.carousel-control.resources-control.customers-control(href='#customers-comm-carousel', role='button', data-slide='next')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")
