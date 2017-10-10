@@ -1,0 +1,52 @@
+.container
+   .row
+      .col-md-10.col-md-offset-1.bottom-tab
+         ul.nav.nav-tabs.nav-tabs-customers(role='tablist')
+            li.active(role='presentation')
+               a(href='#airports', aria-controls='airports', role='tab', data-toggle='tab')
+                  +customersTab('airports-icon', 'airports')
+            li(role='presentation')
+               a(href='#universities', aria-controls='universities', role='tab', data-toggle='tab')
+                  +customersTab('universities-icon', 'universities')
+            li(role='presentation')
+               a(href='#hospitals', aria-controls='hospitals', role='tab', data-toggle='tab')
+                  +customersTab('hospitals-icon', 'hospitals')
+            li(role='presentation')
+               a(href='#commercial', aria-controls='commercial', role='tab', data-toggle='tab')
+                  +customersTab('commercial-icon', 'commercial')
+   .row
+    .col-md-10.col-md-offset-1
+      .tab-content
+         #airports.tab-pane.active(role='tabpanel') 
+            ul.list-inner
+              li Increased data resolution brings energy management capability all the way down to the AHU with instantaneous energy feedback
+              li Quick and easy installation – no straight run requirements, no balancing requirement
+              li Seamless integration into existing building automation systems – designed to work with all systems and doesn’t require new technology to support
+              li Advanced system troubleshooting tool:
+
+         #universities.tab-pane(role='tabpanel')
+            ul.list-inner
+              li Increased data resolution brings energy management capability all the way down to the AHU with instantaneous energy feedback
+              li Quick and easy installation – no straight run requirements, no balancing requirement
+              li Seamless integration into existing building automation systems – designed to work with all systems and doesn’t require new technology to support
+              li Advanced system troubleshooting tool:
+
+
+         #hospitals.tab-pane(role='tabpanel') 
+            ul.list-inner
+              li Increased data resolution brings energy management capability all the way down to the AHU with instantaneous energy feedback
+              li Quick and easy installation – no straight run requirements, no balancing requirement
+              li Seamless integration into existing building automation systems – designed to work with all systems and doesn’t require new technology to support
+              li Advanced system troubleshooting tool:
+
+
+         #commercial.tab-pane(role='tabpanel')
+            ul.list-inner
+              li Increased data resolution brings energy management capability all the way down to the AHU with instantaneous energy feedback
+              li Quick and easy installation – no straight run requirements, no balancing requirement
+              li Seamless integration into existing building automation systems – designed to work with all systems and doesn’t require new technology to support
+              li Advanced system troubleshooting tool:
+
+
+
+

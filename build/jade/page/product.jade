@@ -2,3 +2,22 @@ extends ../layout/layout
 
 block main-content
   +headerNav()
+  .container
+    .body
+      .title-body
+        h1 DeltaP SmartValve
+        sup ®
+      .line
+
+      h2.sub-title Protect your investment by guaranteeing system performance.
+
+      img.product-head-img(src="../img/product-head.png", alt="product")
+
+      .our-solution
+        h1 What makes our solution  different?
+        .line
+        p As an industry pioneer, Flow Control Industries was the first to create the patented design, development and application of pressure independent control valves with the DeltaPValve®. Built on this foundation, the DeltaP SmartValve® combines the unparalleled precision control of the DeltaPValve® with advanced instrumentation for accurate data reporting and troubleshooting capability – all in an accessible format for easy integration.
+
+       .hidden-sm.hidden-xs.tab-stuff
+        include ../../jade/includes/product-tab-md
+      include ../../jade/includes/product-mobile-carousel
