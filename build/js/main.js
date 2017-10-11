@@ -153,13 +153,3 @@ $(function(){
 
     });    
 });
-
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      items: 3,
-      stagePadding: '10',
-      margin: 10,
-      center: true,
-      loop:true,
-    });
-  });
