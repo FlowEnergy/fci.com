@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css";
+body {
+  overflow-x: hidden;
+}
 
 .bg-gray-grad {
   margin-top: 70px;
@@ -44,6 +47,8 @@
 
 
 .body {
+   margin-top: 90px;
+
   .title-body {
     display: flex;
     align-items: center;
@@ -57,7 +62,7 @@
       font-size: 52px;
 
       @media (max-width: 414px) {
-        font-size: 18px;
+        font-size: 28px;
       }
     }
 
@@ -208,6 +213,10 @@
   padding: 100px 0 100px;
   background: rgba(151, 151, 151, 0.02);
 
+  @media (max-width: 650px) {
+    padding: 57px 0 57px;
+  }
+
   .container {
     .main-delta {
       display: flex;
@@ -215,7 +224,12 @@
       align-items: center;
 
       @media (max-width: 560px) {
-        font-size: 18px;
+        font-size: 28px;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 23px;
       }
     }
 
@@ -277,6 +291,11 @@
         font-weight: 600;
         color: #81BC00;
         text-align: left;
+
+        @media (max-width: 414px) {
+          text-align: center;
+          margin-bottom: 30px;
+        }
       }
 
       .sub-title {
@@ -349,10 +368,23 @@
   padding: 100px 0 100px;
   background: #fff;
 
+  @media (max-width: 650px) {
+    padding: 57px 0 57px;
+  }
+
   .container {
     
     .main-spec {
       text-align: center;
+
+      @media (max-width: 560px) {
+        font-size: 27px;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 23px;
+      }
     }
 
     .line {
@@ -542,4 +574,18 @@
 
 .product-wrap-carousel .resources-control {
   top: 230px;
+}
+
+.home-mobile-carousel__title {
+  @media (max-width: 545px) {
+    font-size: 14px;
+  }
+}
+
+.product-carousel-item__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  color: #7EC000;
 }
