@@ -423,3 +423,123 @@
     }
   }
 }
+
+.customers-scroll--inner {
+  display: flex;
+
+  .col-md-4 .product-carousel-item {
+    width: 284px !important;
+  }
+}
+.product-card-info {
+  padding: 40px 25px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  @media (max-width: @screen-md-max) {
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 35px;
+    color: @brand-green;
+  }
+  &__text {
+    color: #585858;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+.row-product-info {
+  padding-top: 100px;
+  @media (max-width: @screen-md-max) {
+    padding-top: 45px;
+    padding-bottom: 15px;
+  }
+}
+.product-info-item {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  @media (max-width: @screen-sm-max) {
+    margin-bottom: 30px;
+
+  }
+  .svg {
+    margin-bottom: 10px;
+    path {
+      fill: @brand-green !important;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 52px;
+    color: @brand-green;
+  }
+  &__text {
+    color: #585858;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.product-carousel-item {
+  border-radius: 10px;
+  display: block;
+  padding: 45px 20px 50px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.1);
+  cursor: pointer;
+  margin-bottom: 20px;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  &__img {
+    max-width: 100%;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: @brand-green;
+  }
+  &__text {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    color: #000;
+  }
+}
+
+.product-control {
+  top: 30px;
+}
+
+.product-scroll-wrap {
+  .customers-scroll {
+    margin-top: 0;
+  }
+  .customers-scroll--inner {
+    padding-bottom: 30px;
+  }
+  .col-md-4 {
+    @media (max-width: @screen-md-max) {
+      width: 307px;
+      float: left;
+    }
+  }
+}
+
+.product-wrap-carousel .resources-control {
+  top: 230px;
+}

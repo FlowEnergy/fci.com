@@ -100,10 +100,10 @@ block main-content
 
   .product-sliders
     .container
-      .owl-carousel
-        div  Your Content 
-        div  Your Content 
-        div  Your Content 
-        div  Your Content 
-        div  Your Content 
-        div  Your Content 
+     .hidden-sm.hidden-xs.product-wrap-carousel
+      include ../../jade/includes/product-carousel
+
+    .product-scroll-wrap.customers-scroll-wrap.visible-sm.visible-xs
+      .customers-scroll
+        .customers-scroll--inner
+          include ../../jade/includes/product-carousel-items-mobile
