@@ -1,0 +1,109 @@
+extends ../layout/layout
+
+block main-content
+  +headerNav()
+  .container
+    .body
+      .title-body
+        h1 DeltaP SmartValve 
+        sup ®
+      .line
+
+      h2.sub-title Protect your investment by guaranteeing system performance.
+
+      img.product-head-img(src="../img/product-head.png", alt="product")
+
+      .our-solution
+        h1 What makes our solution  different?
+        .line
+        p As an industry pioneer, Flow Control Industries was the first to create the patented design, development and application of pressure independent control valves with the DeltaPValve®. Built on this foundation, the DeltaP SmartValve® combines the unparalleled precision control of the DeltaPValve® with advanced instrumentation for accurate data reporting and troubleshooting capability – all in an accessible format for easy integration.
+
+       .hidden-sm.hidden-xs.tab-stuff
+          include ../../jade/includes/product-tab-md
+          include ../../jade/includes/product-mobile-carousel
+
+  .sensors
+      .container
+        h1.main-delta 
+          | DeltaP Smartvalve 
+          sup ®
+          |Sensors
+        .line
+
+        .block-container
+          .block
+            .block-wrap
+              h2.title Rotation Sensor
+              ul.list-items
+                li.item ± 0.1° rotation accuracy
+                li.item Unique flow data from factory test
+                li.item Calibrated on NIST traceable test stand
+                li.item Remote mounted
+            .block-wrap
+              h2.sub-title FCI Advantage:
+              ul.list-check
+                li.check Allows SmartValve to provide accurate flow information
+                li.check No calibration required
+                li.check Remote mounted
+
+
+          .block
+            .block-wrap
+              h2.title Pressure Sensors
+              ul.list-items
+                li.item Utilizes existing inlet, intermediate & outlet P/T ports
+                li.item 0-150 PSI range
+                li.item ±0.25% FS Accuracy
+                li.item Remote mounted
+            .block-wrap
+              h2.sub-title FCI Advantage:
+              ul.list-check
+                li.check Confirm system pressures, pressure independent operation & shutoff
+                li.check Provide feedback for pump control
+                li.check Develop real-time system pressure gradient
+
+
+          .block
+            .block-wrap
+              h2.title Temperature Sensors
+              ul.list-items
+                li.item Supply and return water temp sensors
+                li.item 1/10 DIN 100 Ω RTD (± 0.03° C, ± 0.05° F)	
+                li.item Calibrated on NIST traceable test stand
+                li.item ¼” dia x 6” with ½” NPT thermowells
+            
+            .block-wrap
+              h2.sub-title FCI Advantage:
+              ul.list-check
+                li.check Immediate feedback on coil performance
+                li.check Simple performance targets for 	evaluation
+                li.check Troubleshooting
+
+
+  .download
+    .container
+      h1.main-spec
+        |DeltaP Smartvalve
+        sup ®
+        |Spec Sh
+      .line
+      p.sub-title Download the DeltaP SmartValve® Spec Sheet or continue scrolling to find more information about:
+
+      ul.list-product
+        li Hardware
+        li Sensors 
+        li Monitor
+        li Output Variables
+        li Communication
+
+      a(href='/').download  Download Spec Sheet
+
+  .product-sliders
+    .container
+     .hidden-sm.hidden-xs.product-wrap-carousel
+      include ../../jade/includes/product-carousel
+
+    .product-scroll-wrap.customers-scroll-wrap.visible-sm.visible-xs
+      .customers-scroll
+        .customers-scroll--inner
+          include ../../jade/includes/product-carousel-items-mobile
