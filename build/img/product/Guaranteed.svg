@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="48px" viewBox="0 0 46 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Guaranteed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FlowControl-Product-v2" transform="translate(-1001.000000, -1598.000000)">
+            <g id="Body" transform="translate(0.000000, 1135.000000)">
+                <g id="What-makes-our-solution--different?" transform="translate(151.000000, 0.000000)">
+                    <g id="Icons" transform="translate(0.000000, 434.000000)">
+                        <g id="Guaranteed" transform="translate(851.000000, 30.000000)">
+                            <g id="Group-7" transform="translate(32.000000, 4.000000)" stroke="#81BC00" stroke-width="2" stroke-linejoin="round">
+                                <path d="M0,35 C0,38.314 2.686,41 6,41 C9.314,41 12,38.314 12,35" id="Stroke-1" stroke-linecap="round"></path>
+                                <path d="M12,35 L12,0.985" id="Stroke-3" stroke-linecap="square"></path>
+                                <path d="M0,35 L0,0.985" id="Stroke-5" stroke-linecap="square"></path>
+                            </g>
+                            <path d="M29,46 L9.412,46 C4.214,46 0,41.775 0,36.58 L0,2.006 C0,0.898 0.9,0 2.002,0 L33,0" id="Stroke-8" stroke="#81BC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <g id="Group-14" transform="translate(36.000000, 5.000000)" stroke="#81BC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4,34 L4,0" id="Stroke-10"></path>
+                                <path d="M0,34 L0,0" id="Stroke-12"></path>
+                            </g>
+                            <polygon id="Fill-15" fill="#FFFFFF" points="5 20 16 20 16 6 5 6"></polygon>
+                            <polygon id="Stroke-17" stroke="#81BC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5 20 16 20 16 6 5 6"></polygon>
+                            <polygon id="Fill-19" fill="#FFFFFF" points="18 37 29 37 29 23 18 23"></polygon>
+                            <polygon id="Stroke-21" stroke="#81BC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="18 37 29 37 29 23 18 23"></polygon>
+                            <g id="Group-35" transform="translate(6.000000, 7.000000)" stroke="#81BC00" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                                <path d="M13,0 L22,0" id="Stroke-23"></path>
+                                <path d="M13,6 L22,6" id="Stroke-25"></path>
+                                <path d="M13,12 L22,12" id="Stroke-27"></path>
+                                <path d="M0,17 L9,17" id="Stroke-29"></path>
+                                <path d="M0,23 L9,23" id="Stroke-31"></path>
+                                <path d="M0,29 L9,29" id="Stroke-33"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -20,7 +20,15 @@ mixin headerNav(home, customers)
               img.logo-header(src="../img/logo-mobile.png", alt="Flow Control")
           #bs-example-navbar-collapse-1.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
-              li: a(href='product.html') Products
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | Products 
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='product-2.html') DeltaP SmartValve
+                  li
+                    a(href='product-1.html') DeltaPValve
               li: a(href='customers.html') Customers
               li: a(href='resources.html') Resources
               li: a(href='about.html') About

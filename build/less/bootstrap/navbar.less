@@ -460,8 +460,8 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-default-link-active-bg;
-        color: @navbar-default-link-active-color;
+        background-color: transparent;
+        color: rgba(0, 0, 0, .3);
       }
     }
 
@@ -655,6 +655,30 @@
       &:focus {
         color: @navbar-inverse-link-disabled-color;
       }
+    }
+  }
+}
+
+.dropdown {
+  .caret {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 8px !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  & li {
+    & a {
+      color: rgba(0, 0, 0, .6);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding-bottom: 7px;
+      padding-top: 7px;
+      text-transform: uppercase;
     }
   }
 }
