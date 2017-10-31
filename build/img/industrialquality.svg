@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="33px" viewBox="0 0 56 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Industrial Quality</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M41.9996,7.1125389 C41.9674739,10.1447424 40.0034294,12.7147977 37.282,13.655 L40.47,25.552 C41.315,28.706 39.433,31.952 36.281,32.796 C33.122,33.643 29.878,31.775 29.031,28.616 L25.125,14.036 L7.006,14.036 C3.137,14.036 0,10.894 0,7.037 C0,3.171 3.14,0.037 7.006,0.037 L34.994,0.037 C38.8377551,0.037 41.9590316,3.13813124 41.9996,6.96157282 L41.9996,7.1125389 L41.9996,7.1125389 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FlowControl-Product-v2" transform="translate(-747.000000, -1606.000000)">
+            <g id="Body" transform="translate(0.000000, 1135.000000)">
+                <g id="What-makes-our-solution--different?" transform="translate(151.000000, 0.000000)">
+                    <g id="Icons" transform="translate(0.000000, 434.000000)">
+                        <g id="Industrial-Quality" transform="translate(623.500000, 53.000000) scale(-1, 1) translate(-623.500000, -53.000000) translate(596.000000, 36.000000)">
+                            <g id="Group-3" transform="translate(13.000000, 0.963300)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M37.2816,13.6546 C40.0266,12.7066 41.9996,10.1016 41.9996,7.0366 C41.9996,3.1786 38.8636,0.0366 34.9936,0.0366 L7.0066,0.0366 C3.1396,0.0366 -0.0004,3.1706 -0.0004,7.0366 C-0.0004,10.8946 3.1366,14.0366 7.0066,14.0366 L25.1246,14.0366 L29.0306,28.6166 C29.8776,31.7756 33.1226,33.6426 36.2806,32.7966 C39.4326,31.9516 41.3146,28.7066 40.4696,25.5516 L37.2816,13.6546 Z" id="Stroke-1" stroke="#81BC00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                            </g>
+                            <path d="M21,3 L21,13" id="Stroke-4" stroke="#81BC00" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M14,8 L0,8" id="Stroke-5" stroke="#81BC00" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M33,6 L33,10" id="Stroke-7" stroke="#81BC00" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M29,6 L29,10" id="Stroke-8" stroke="#81BC00" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M25,6 L25,10" id="Stroke-9" stroke="#81BC00" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <g id="Group-14" transform="translate(35.000000, 5.963300)" stroke="#81BC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13,4.0367 C14.105,4.0367 15,3.1417 15,2.0367 C15,0.9317 14.105,0.0367 13,0.0367 C11.895,0.0367 11,0.9317 11,2.0367 C11,3.1417 11.895,4.0367 13,4.0367 Z" id="Stroke-10"></path>
+                                <polyline id="Stroke-12" points="2.7073 8.2472 0.4133 12.9492 2.0903 15.3942"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

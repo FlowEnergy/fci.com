@@ -1,0 +1,12 @@
+<svg width="9" height="7" viewBox="0 0 9 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Icon Copy 4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2359 -2888)">
+<g id="Icon Copy 4">
+<use xlink:href="#path0_fill" transform="translate(2359 2888)" fill="#81BC00"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 7.81539 0L 3.05878 4.6758L 1.17986 2.83319L 0 3.99196L 3.05957 7L 9 1.15802L 7.81539 0Z"/>
+</defs>
+</svg>

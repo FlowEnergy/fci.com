@@ -1,5 +1,5 @@
 mixin headerNav(home, customers)
-  .wrap-loader.table
+  .unknow
     .table-row
       .table-cell.vertical-middle
         .spinner
@@ -20,15 +20,8 @@ mixin headerNav(home, customers)
               img.logo-header(src="../img/logo-mobile.png", alt="Flow Control")
           #bs-example-navbar-collapse-1.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                  | Products 
-                  span.caret
-                ul.dropdown-menu
-                  li
-                    a(href='product-2.html') DeltaP SmartValve
-                  li
-                    a(href='product-1.html') DeltaPValve
+<<<<<<< HEAD
+              //- li: a(href='product.html') 
               li
                 .dropdown
                   a(href="#", data-toggle="dropdown").dropdown-toggle Products
@@ -41,6 +34,17 @@ mixin headerNav(home, customers)
                     $('.dropdown-toggle').dropdown()
               li: a.mob-list(href='product-delta.html') DeltaP SmartValve
               li: a.mob-list(href='product.html') DeltaPValve
+=======
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | Products 
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='product-2.html') DeltaP SmartValve
+                  li
+                    a(href='product-1.html') DeltaPValve
+>>>>>>> elekenagency/new-product-page
               li: a(href='customers.html') Customers
               li: a(href='resources.html') Resources
               li: a(href='about.html') About

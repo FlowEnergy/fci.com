@@ -3,4 +3,7 @@
 @import "mixins/fonts";
 @import "variables";
 @import "custom/custom";
+<<<<<<< HEAD
 @import "custom/product-delta";
+=======
+>>>>>>> elekenagency/new-product-page
