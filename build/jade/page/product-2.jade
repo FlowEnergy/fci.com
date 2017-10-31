@@ -1,0 +1,219 @@
+extends ../layout/layout
+
+block main-content
+  +headerNav()
+
+  .product-2--gradient-bg
+    .container.product-2__container.product-2__container--lead
+      .row.product-2__block.animate-40
+        h1.product-2__block-title.product-2__block-title--lead
+          | DeltaP SmartValve
+          sup ®
+        hr.product-2__block-delimiter
+        p.product-2__block-subtitle Protect your investment by guaranteeing system performance.
+      .row.animate-40
+        img.product-2__header-image(src="../img/product/product-4.png")
+
+  .container.product-2__container
+    .row.product-2__block.animate-40
+      h1.product-2__block-title
+        | What makes our solution
+        br
+        | different?
+      hr.product-2__block-delimiter
+      p.product-2__block-subtitle As an industry pioneer, Flow Control Industries was the first to create the patented design, development and application of pressure independent control valves with the DeltaPValve®. Built on this foundation, the DeltaP SmartValve® combines the unparalleled precision control of the DeltaPValve® with advanced instrumentation for accurate data reporting and troubleshooting capability – all in an accessible format for easy integration.
+
+    .row.product-2__tabs.animate-40.hidden-xs.hidden-sm
+      div
+        input#tab-d-1(type="radio", name="s", checked="")
+        input#tab-d-2(type="radio", name="s")
+        input#tab-d-3(type="radio", name="s")
+        input#tab-d-4(type="radio", name="s")
+        .tabs
+          label(for="tab-d-1")
+            div
+              img.svg(src="../img/product/icons/tab-1.svg")
+              span Next Generation HVAC Technology
+          label(for="tab-d-2")
+            div
+              img.svg(src="../img/product/icons/tab-2.svg")
+              span Unparalleled Energy Savings
+          label(for="tab-d-3")
+            div
+              img.svg(src="../img/product/icons/tab-3.svg")
+              span Industrial Quality Hardware
+          label(for="tab-d-4")
+            div
+              img.svg(src="../img/product/icons/tab-4.svg")
+              span Guaranteed Performance
+        ul.sections
+          li
+            ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+              li Increased data resolution brings energy management capability all the way down to the AHU with instantaneous energy feedback.
+              li Quick and easy installation – no straight run requirements, no balancing requirement.
+              li Seamless integration into existing building automation systems – designed to work with all systems and doesn’t require new technology to support.
+              li Advanced system troubleshooting tool.
+          li
+            ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+              li Properly applied DeltaPValves reduce energy consumption in HVAC systems by 20-40%.
+              li By maximizing existing infrastructure, customers recover wasted capacity – deferring millions of dollars in capital investment.
+              li No system balancing requirements.
+          li
+            ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+              li Our 10-year warranty is at least twice as long as any of our competitors.
+              li The DeltaPValve is the only control valve with 3 P/T ports, which are vital to confirm system pressures, pressure independent operation, and shutoff.
+              li We offer the largest differential pressure operating range (5-70 PSID or 10-90 PSID) to simplify selection and ensure stable operation.
+              li Our valves are individually built and tested in Woodinville, WA, USA to ensure product quality and reliability and meet ARRA and Buy American requirements.
+          li
+            ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+              li 100:1 turndown enables control of flow throughout the full range of the valve.
+              li We are the only valve manufacturers to offer a delta T guarantee.
+              li The DeltaPValve has the ability to maintain +/- 0.1° F LAT control
+              li DeltaPValves are factory set for design flow, reducing staff requirements and allowing more time for preventative maintenance.
+
+    .row.product-2__tabs.animate-40.visible-xs.visible-sm
+      #customers-mobile-carousel.home-mobile-carousel.customers-mobile-carousel.carousel.slide(data-ride='carousel')
+        .carousel-inner(role='listbox')
+          .item.active
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.icon-tab(src="../img/product/icons/tab-1.svg")
+              h4.home-mobile-carousel__title.product-2__mobile-carousel-title Next Generation HVAC Technology
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+                    li Increased data resolution brings energy management capability all the way down to the AHU with instantaneous energy feedback.
+                    li Quick and easy installation – no straight run requirements, no balancing requirement.
+                    li Seamless integration into existing building automation systems – designed to work with all systems and doesn’t require new technology to support.
+                    li Advanced system troubleshooting tool.
+          .item
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.icon-tab(src="../img/product/icons/tab-2.svg")
+              h4.home-mobile-carousel__title.product-2__mobile-carousel-title Unparalleled Energy Savings
+
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+                    li Properly applied DeltaPValves reduce energy consumption in HVAC systems by 20-40%.
+                    li By maximizing existing infrastructure, customers recover wasted capacity – deferring millions of dollars in capital investment.
+                    li No system balancing requirements.
+          .item
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.icon-tab(src="../img/product/icons/tab-3.svg")
+              h4.home-mobile-carousel__title.product-2__mobile-carousel-title Industrial Quality Hardware
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+                    li Our 10-year warranty is at least twice as long as any of our competitors.
+                    li The DeltaPValve is the only control valve with 3 P/T ports, which are vital to confirm system pressures, pressure independent operation, and shutoff.
+                    li We offer the largest differential pressure operating range (5-70 PSID or 10-90 PSID) to simplify selection and ensure stable operation.
+                    li Our valves are individually built and tested in Woodinville, WA, USA to ensure product quality and reliability and meet ARRA and Buy American requirements.
+          .item
+            .home-mobile-carousel__item
+              .home-mobile-carousel__wrap-img
+                img.icon-tab(src="../img/product/icons/tab-4.svg")
+              h4.home-mobile-carousel__title Guaranteed Performance
+            .customers-scroll-wrap
+              .customers-scroll
+                .customers-scroll--inner
+                  ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+                    li 100:1 turndown enables control of flow throughout the full range of the valve.
+                    li We are the only valve manufacturers to offer a delta T guarantee.
+                    li The DeltaPValve has the ability to maintain +/- 0.1° F LAT control.
+                    li DeltaPValves are factory set for design flow, reducing staff requirements and allowing more time for preventative maintenance.
+        a.left.carousel-control(href='#customers-mobile-carousel', role='button', data-slide='prev')
+          img.carousel-control-icon.svg(src="../img/home/arrow-slider.svg" alt="")
+        a.right.carousel-control(href='#customers-mobile-carousel', role='button', data-slide='next')
+          img.carousel-control-icon.svg(src="../img/home/arrow-slider.svg" alt="")
+
+  .product-2--solid-bg
+    .container.product-2__container
+      .row.product-2__block.animate-40
+        h1.product-2__block-title
+          | DeltaP SmartValve
+          sup ®
+          |  Sensors
+        hr.product-2__block-delimiter
+      .row
+        .col-md-4
+          .container(style="width: 100%;")
+            .row.product-2__sensor-card.animate-40
+              .col-xs-12.col-sm-6.col-md-12
+                p.product-2__sensor-card-title Rotation Sensor
+                ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+                  li ± 0.1° rotation accuracy
+                  li Unique flow data from factory test
+                  li Calibrated on NIST traceable test stand
+                  li Remote mounted
+              .col-xs-12.col-sm-6.col-md-12
+                p.product-2__sensor-card-title.product-2__sensor-card-title--secondary FCI Advantage:
+                ul.product-2__sensor-card-list.product-2__sensor-card-list--marks
+                  li Allows SmartValve to provide accurate flow information
+                  li No calibration required
+                  li Not exposed to fluid, no wear
+        .col-md-4
+          .container(style="width: 100%;")
+            .row.product-2__sensor-card.animate-40
+              .col-xs-12.col-sm-6.col-md-12
+                p.product-2__sensor-card-title Pressure Sensors
+                ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+                  li Utilizes existing inlet, intermediate & outlet P/T ports
+                  li 0-150 PSI range
+                  li ±0.25% FS Accuracy
+                  li Remote mounted
+              .col-xs-12.col-sm-6.col-md-12
+                p.product-2__sensor-card-title.product-2__sensor-card-title--secondary FCI Advantage:
+                ul.product-2__sensor-card-list.product-2__sensor-card-list--marks
+                  li Confirm system pressures, pressure independent operation & shutoff
+                  li Provide feedback for pump control
+                  li Develop real-time system pressure gradient
+
+        .col-md-4
+          .container(style="width: 100%;")
+            .row.product-2__sensor-card.animate-40
+              .col-xs-12.col-sm-6.col-md-12
+                p.product-2__sensor-card-title Temperature Sensors
+                ul.product-2__sensor-card-list.product-2__sensor-card-list--dots
+                  li Supply and return water temp sensors
+                  li 1/10 DIN 100 Ω RTD (± 0.03° C, ± 0.05° F)
+                  li ¼” dia x 6” with ½” NPT thermowells
+              .col-xs-12.col-sm-6.col-md-12
+                p.product-2__sensor-card-title.product-2__sensor-card-title--secondary FCI Advantage:
+                ul.product-2__sensor-card-list.product-2__sensor-card-list--marks
+                  li Immediate feedback on coil performance
+                  li Simple performance targets for evaluation
+                  li Troubleshooting
+
+  .container.product-2__container
+    .row.product-2__block.animate-40
+      h1.product-2__block-title
+        | DeltaP SmartValve
+        sup ®
+        |  Spec Sheet
+      hr.product-2__block-delimiter
+      p.product-2__block-subtitle Download the DeltaP SmartValve® Spec Sheet or continue scrolling to find more information about:
+      .row.product-2__spec-list.product-2__spec-list--first
+        .col-sm-4
+          p.product-2__spec-list-item Hardware
+        .col-sm-4
+          p.product-2__spec-list-item Sensors
+        .col-sm-4
+          p.product-2__spec-list-item Monitoring
+      .row.product-2__spec-list
+        .col-sm-4
+          p.product-2__spec-list-item Output Variables
+        .col-sm-4
+          p.product-2__spec-list-item Communication
+      a.btn.btn-main.product-2__spec-list-download(target ="_blank" href="../resources/DeltaP.SmartValve.Spec.Sheet.2.PAGER_06072017.pdf") Download Spec Sheet
+
+    .hidden-sm.hidden-xs.product-wrap-carousel.animate-40
+      include ../../jade/includes/product-2-carousel
+    .product-scroll-wrap.customers-scroll-wrap.visible-sm.visible-xs(style="margin-top: 50px;").animate-40
+      .customers-scroll
+        .customers-scroll--inner
+          include ../../jade/includes/product-2-carousel-items-mobile
