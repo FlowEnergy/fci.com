@@ -1,5 +1,5 @@
 mixin headerNav(home, customers)
-  .wrap-loader.table
+  .unknow
     .table-row
       .table-cell.vertical-middle
         .spinner
@@ -20,7 +20,19 @@ mixin headerNav(home, customers)
               img.logo-header(src="../img/logo-mobile.png", alt="Flow Control")
           #bs-example-navbar-collapse-1.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
-              li: a(href='product.html') Products
+              //- li: a(href='product.html') 
+              li
+                .dropdown
+                  a(href="#", data-toggle="dropdown").dropdown-toggle Products
+                  ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu')
+                      li
+                          a(href='product-delta.html', tabindex='-1') DeltaP SmartValve
+                      li 
+                          a(href='product.html', tabindex='-1') DeltaPValve
+                  script.
+                    $('.dropdown-toggle').dropdown()
+              li: a.mob-list(href='product-delta.html') DeltaP SmartValve
+              li: a.mob-list(href='product.html') DeltaPValve
               li: a(href='customers.html') Customers
               li: a(href='resources.html') Resources
               li: a(href='about.html') About

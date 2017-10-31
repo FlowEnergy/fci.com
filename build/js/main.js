@@ -88,7 +88,7 @@ $(document).ready(function() {
         var product_scroll_wrap = $('.product-scroll-wrap');
         var itemSlider = $('.product-scroll-wrap .col-md-4');
         itemSlider.each(function (i) {
-            $(this).closest('.customers-scroll--inner').css('width', itemSlider.innerWidth() * (i + 1));
+            $(this).closest('.customers-scroll--inner').css('width', '100%');
         });
     };
 
@@ -151,5 +151,5 @@ $(function(){
 
         }, 'xml');
 
-    });
+    });    
 });
