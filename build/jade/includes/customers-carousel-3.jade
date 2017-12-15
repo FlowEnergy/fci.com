@@ -1,8 +1,8 @@
 .col-md-1
-//   a.left.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='prev')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.left.carousel-control.resources-control.customers-control(href='#customers-hos-carousel', role='button', data-slide='prev')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")
 .col-md-10
-   #customers-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
+   #customers-hos-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
       .carousel-inner(role='listbox')
          .item.active
             .row
@@ -41,11 +41,25 @@
                            li Dramatically reduced maintenance expense
                            li Reduced pumping needs to support a growing campus
          .item
-           .row
-              include customers-carousel-item
-         .item
-           .row
-              include customers-carousel-item
+            .row
+               .col-md-4
+                  .customers-carousel-item
+                     a.customers-carousel-item__img-wrap(target="_blank" href="../resources/Midwest-Medical-Center.pdf")
+                        img.customers-carousel-item__img(src="../img/customers/mmc-sf.jpg" alt="Midwest Medical Center")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country SPRINGFIELD, IL • 2014
+                        .customers-carousel-item__title Midwest Medical Center
+                        ul.customers-carousel-item__list
+                           li Chilled water flow rate reduced by over <b>7,000 GPM</b>
+                           li Improvement of chilled water delta T from <b>4 to 12° F</b> on design day
+                           li Reduced electrical energy consumption by <b>10%</b>
+                           li <b>1200</b> tons in recovered capacity despite adding square footage
+         //.item
+         //  .row
+         //     include customers-carousel-item
+         //.item
+         //  .row
+         //     include customers-carousel-item
 .col-md-1
-//   a.right.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='next')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.right.carousel-control.resources-control.customers-control(href='#customers-hos-carousel', role='button', data-slide='next')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")

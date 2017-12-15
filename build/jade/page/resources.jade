@@ -40,6 +40,8 @@ block main-content
       h1#scroll-block-resources-2.main-title.main-title--sm.animate-40 Publications
     .row.whitepapers-row
       .col-md-12
+        +whitepapersItem('design-icon', 'Article: The New DeltaP SmartValve: Using Real-Time Data to Guarantee Performance', 'In the quest for more efficient systems and reduced maintenance, the missing piece has always been the lack of accurate real-time operating data of the hydronic system. The DeltaP SmartValve has been designed as a direct remedy for this problem.', '../resources/DSPV-Article.pdf')      
+      .col-md-12
         +whitepapersItem('precision-icon', 'Whitepaper: Pumping Configurations and DeltaPValve® Savings', 'Pump energy can be a large cost for chilled water systems. System configurations have evolved over the years in an attempt to save energy and increase performance. In this paper several different system configurations were modeled to predict the electrical cost and savings comparison of chilled water pumps. Additionally, typical control valves are compared to pressure independent DeltaPValves that are proven to increase delta T, decrease flow, and decrease pumping demands.', '../resources/Whitepaper-Pumping-Configurations-DeltaPValve-Savings.pdf')
       .col-md-12
         +whitepapersItem('precision-icon', 'Whitepaper: The DeltaPValve® System – Standard Control Gets Substandard Performance', 'HVAC system designers and operators have a new system technology that increases efficiency and the effective system capacity, cures low Delta T syndrome, improves comfort and simplifies operation. A DeltaPValve® System, using DeltaPValves as manufactured by Flow Control Industries, is revolutionary, changing the way HVAC systems are designed and operated. By establishing unprecedented system stability, the benefits of precision control extend throughout the HVAC system resulting in substantial energy savings as high as 40%. Precise control of an HVAC system provides efficient comfort for building occupants.', '../resources/The-DeltaPValve-System-Precision-Control.pdf')
@@ -57,7 +59,11 @@ block main-content
       .main-title-wrap
         h1#scroll-block-resources-4.main-title.main-title--sm.animate-40 Upcoming Events
       .col-md-4
-        +upcomingEventsItem('big10andFriends', 'Big10 and Friends 2017', 'Oct 8-11, 2017', 'https://intra.pplant.msu.edu/apps/big10andfriends/index.html', 'Lansing, MI')
+        +upcomingEventsItem('WOHESC', 'Washington & Oregon Higher Education Sustainability Conference', 'Feb 6-8, 2018', 'http://wohesc.org/', 'Portland, OR')
+      .col-md-4
+        +upcomingEventsItem('IDEAcls', 'IDEA CampusEnergy 2018', 'Mar 5-9, 2018', 'http://www.cvent.com/events/campusenergy2018/event-summary-560ca95ef6054b73a2c79c1a53205df3.aspx', 'Baltimore, MD')
+      .col-md-4
+        +upcomingEventsItem('nebraskalogo', 'Big Ten and Friends Utility Conference', 'Apr 29 - May 2, 2018', 'https://big10util.unl.edu/', 'Lincoln, NE')
       //-.col-md-4
       //-  +upcomingEventsItem('idea108', 'IDEA Annual Conference', 'Jun 26-29, 2017', '#', 'Scottsdale, AZ')
   .bg-gray-resources
