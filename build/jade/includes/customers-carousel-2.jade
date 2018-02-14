@@ -1,8 +1,8 @@
 .col-md-1
-//   a.left.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='prev')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.left.carousel-control.resources-control.customers-control(href='#customers-uni-carousel', role='button', data-slide='prev')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")
 .col-md-10
-   #customers-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
+   #customers-uni-carousel.resources-video-carousel.customers-carousel.carousel.slide(data-ride='carousel')
       .carousel-inner(role='listbox')
          .item.active
             .row
@@ -42,11 +42,24 @@
                            li <b>600 tons</b> of recovered cooling capacity, deferring $2,500,000 capital expenditures
                            li Comfort complaints reduced from 10/day to 2/week   
          .item
-           .row
-              include customers-carousel-item
-         .item
-           .row
-              include customers-carousel-item
+            .row
+               .col-md-4
+                  .customers-carousel-item
+                     a.customers-carousel-item__img-wrap(target="_blank" href="../resources/University-of-Maryland.pdf")
+                        img.customers-carousel-item__img(src="../img/customers/UMD4.jpg" alt="University of Maryland")
+                     .customers-carousel-item__content
+                        .customers-carousel-item__country BALTIMORE, MD
+                        .customers-carousel-item__title University of Maryland
+                        ul.customers-carousel-item__list
+                           li Increased delta T performance by <b>12 to 22° F</b>
+                           li <b>400+</b> DeltaPValves installed on campus since 1990's
+                           
+         //.item
+         //  .row
+         //     include customers-carousel-item
+         //.item
+         //  .row
+         //     include customers-carousel-item
 .col-md-1
-//   a.right.carousel-control.resources-control.customers-control(href='#customers-carousel', role='button', data-slide='next')
-//      img.svg(src="../img/resources/resources-arrow.svg" alt="")
+   a.right.carousel-control.resources-control.customers-control(href='#customers-uni-carousel', role='button', data-slide='next')
+      img.svg(src="../img/resources/resources-arrow.svg" alt="")
