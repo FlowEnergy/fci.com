@@ -34,7 +34,21 @@ block main-content
         +dataSheetsItem('design-icon', 'Design Manual')
       a.col-sm-6.col-md-3(target ="_blank" href="../resources/Commissioning-Checklist.pdf")
         +dataSheetsItem('service-icon', 'Commissioning Checklist')
-
+  #gateModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+    button.modal-close-btn(type='button', data-dismiss='modal')
+    .modal-dialog(role='document')
+      .modal-header.text-center
+        h2.modal-header-title Please Register for Document Access
+      .modal-body(data-backdrop="static" data-keyboard="false")
+        form(id='gateForm')
+          .form-group
+            input.form-control(type="text" placeholder="Name" id="gateName" required)
+          .form-group
+            input.form-control(type="email" placeholder="Email" id="gateEmail" required)
+          .form-group
+            input.form-control(type="text" placeholder="Company" id="gateCompany" required)
+     .modal-footer
+       button.btn.btn-main(type='button' id='gateButton') submit
   .container
     .main-title-wrap
       h1#scroll-block-resources-2.main-title.main-title--sm.animate-40 Publications
@@ -77,3 +91,4 @@ block main-content
           +whitepapersItem('iPhone', 'DeltaPValve iOS App', 'Flow Wheel app for iPhone, iPad, and iPod touch. This app automatically calculates pipe size, capacity in tons, and Delta T for your cooling system. This app is perfect for engineers, sales reps, designers and plant managers. ', 'https://itunes.apple.com/om/app/deltapvalve/id447837239?mt=8')
 block add-script
   script(src="../js/tab-scroll.js")
+  script(src="../js/linkgateway.js")
