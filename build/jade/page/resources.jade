@@ -34,12 +34,14 @@ block main-content
         +dataSheetsItem('design-icon', 'Design Manual')
       a.col-sm-6.col-md-3(target ="_blank" href="../resources/Commissioning-Checklist.pdf")
         +dataSheetsItem('service-icon', 'Commissioning Checklist')
+
   #gateModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
     button.modal-close-btn(type='button', data-dismiss='modal')
     .modal-dialog(role='document')
       .modal-header.text-center
-        h2.modal-header-title Please Register for Document Access
+        h2.modal-header-title Download this FREE resource!
       .modal-body(data-backdrop="static" data-keyboard="false")
+
         form(id='gateForm')
           .form-group
             input.form-control(type="text" placeholder="Name" id="gateName" required)
@@ -47,8 +49,10 @@ block main-content
             input.form-control(type="email" placeholder="Email" id="gateEmail" required)
           .form-group
             input.form-control(type="text" placeholder="Company" id="gateCompany" required)
+        p We will always keep your personal information safe. We ask for name and email in exchange for this valuable resource in order to help us improve your browsing experience on our website, and to be able to send you information and future resources and that we think may be of value to you.            	
      .modal-footer
        button.btn.btn-main(type='button' id='gateButton') submit
+
   .container
     .main-title-wrap
       h1#scroll-block-resources-2.main-title.main-title--sm.animate-40 Publications
@@ -75,11 +79,11 @@ block main-content
       .main-title-wrap
         h1#scroll-block-resources-4.main-title.main-title--sm.animate-40 Upcoming Events
       .col-md-4
-        +upcomingEventsItem('WOHESC', 'Washington & Oregon Higher Education Sustainability Conference', 'Feb 6-8, 2018', 'http://wohesc.org/', 'Portland, OR')
+        +upcomingEventsItem('IDEAAnnual-logo', 'IDEA 109th Annual Conference and Trade Show', 'June 11-14', 'http://www.cvent.com/events/idea2018/event-summary-5676664527ec4b58adaff8caf4e36c8c.aspx', 'Vancouver, BC')
       .col-md-4
-        +upcomingEventsItem('IDEAcls', 'IDEA CampusEnergy 2018', 'Mar 5-9, 2018', 'http://www.cvent.com/events/campusenergy2018/event-summary-560ca95ef6054b73a2c79c1a53205df3.aspx', 'Baltimore, MD')
+        +upcomingEventsItem('WCEMClogo', 'West Coast Energy Management Conference', 'June 20-21', 'http://www.energyevent.com/', 'Seattle, WA')
       .col-md-4
-        +upcomingEventsItem('nebraskalogo', 'Big Ten and Friends Utility Conference', 'Apr 29 - May 2, 2018', 'https://big10util.unl.edu/', 'Lincoln, NE')
+        +upcomingEventsItem('chesc-logo', 'California Higher Education Sustainability Conference 2018', 'July 9-12', 'https://chesc.org/', 'Santa Barbara, CA')
       //-.col-md-4
       //-  +upcomingEventsItem('idea108', 'IDEA Annual Conference', 'Jun 26-29, 2017', '#', 'Scottsdale, AZ')
   .bg-gray-resources
