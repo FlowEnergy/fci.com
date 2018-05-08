@@ -21,19 +21,6 @@ block main-content
           li: a.scroll-link-nav(href="#scroll-block-resources-2") publications
           li: a.scroll-link-nav(href="#scroll-block-resources-3") videos
           li: a.scroll-link-nav(href="#scroll-block-resources-4") events
-  .container.text-center
-    .main-title-wrap
-      h1#scroll-block-resources-1.main-title.main-title--sm.animate-40 Data Sheets
-
-    .row.data-sheets-row
-      a.col-sm-6.col-md-3(target ="_blank" href="../resources/DeltaPValves-Product-Catalog.pdf")
-        +dataSheetsItem('product-icon', 'Product Catalog')
-      a.col-sm-6.col-md-3(target ="_blank" href="../resources/DeltaPValve-Sample-Specification.pdf")
-        +dataSheetsItem('sample-icon', 'Sample Specs')
-      a.col-sm-6.col-md-3(target ="_blank" href="../resources/System-Design-Manual.pdf")
-        +dataSheetsItem('design-icon', 'Design Manual')
-      a.col-sm-6.col-md-3(target ="_blank" href="../resources/Commissioning-Checklist.pdf")
-        +dataSheetsItem('service-icon', 'Commissioning Checklist')
 
   #gateModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
     button.modal-close-btn(type='button', data-dismiss='modal')
@@ -49,9 +36,26 @@ block main-content
             input.form-control(type="email" placeholder="Email" id="gateEmail" required)
           .form-group
             input.form-control(type="text" placeholder="Company" id="gateCompany" required)
-        p We will always keep your personal information safe. We ask for name and email in exchange for this valuable resource in order to help us improve your browsing experience on our website, and to be able to send you information and future resources and that we think may be of value to you.            	
+        p We will always keep your personal information safe. We ask for name and email in exchange for this valuable resource in order to help us improve your browsing experience on our website, and to be able to send you information and future resources and that we think may be of value to you.             
      .modal-footer
        button.btn.btn-main(type='button' id='gateButton') submit
+
+  .container.text-center
+    .main-title-wrap
+      h1#scroll-block-resources-1.main-title.main-title--sm.animate-40 Data Sheets
+
+    .row.data-sheets-row
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/DeltaPValves-Product-Catalog.pdf")
+        +dataSheetsItem('product-icon', 'Product Catalog')
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/DeltaPValve-Sample-Specification.pdf")
+        +dataSheetsItem('sample-icon', 'Sample Specs')
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/System-Design-Manual.pdf")
+        +dataSheetsItem('design-icon', 'Design Manual')
+      a.col-sm-6.col-md-3(target ="_blank" href="../resources/Commissioning-Checklist.pdf")
+        +dataSheetsItem('service-icon', 'Commissioning Checklist')
+        
+    .container.text-cetner
+      a.lbtn.btn.btn-main.scroll-link-nav.animate-40(href="http://www.flowcontrol.com/Users/login") submittal sheets / oems
 
   .container
     .main-title-wrap
