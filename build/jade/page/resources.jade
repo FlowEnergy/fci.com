@@ -21,6 +21,7 @@ block main-content
           li: a.scroll-link-nav(href="#scroll-block-resources-2") publications
           li: a.scroll-link-nav(href="#scroll-block-resources-3") videos
           li: a.scroll-link-nav(href="#scroll-block-resources-4") events
+          li: a.scroll-link-nav(href="#scroll-block-resources-5") additional resources
 
   #gateModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
     button.modal-close-btn(type='button', data-dismiss='modal')
@@ -54,7 +55,7 @@ block main-content
       a.col-sm-6.col-md-3(target ="_blank" href="../resources/Commissioning-Checklist.pdf")
         +dataSheetsItem('service-icon', 'Commissioning Checklist')
         
-    .container.text-cetner
+    .container.text-center
       a.lbtn.btn.btn-main.scroll-link-nav.animate-40(href="http://www.flowcontrol.com/Users/login") submittal sheets / oems
 
   .container
@@ -97,6 +98,26 @@ block main-content
       .row.whitepapers-row
         .col-md-12
           +whitepapersItem('iPhone', 'DeltaPValve iOS App', 'Flow Wheel app for iPhone, iPad, and iPod touch. This app automatically calculates pipe size, capacity in tons, and Delta T for your cooling system. This app is perfect for engineers, sales reps, designers and plant managers. ', 'https://itunes.apple.com/om/app/deltapvalve/id447837239?mt=8')
-block add-script
+  .bg-gray-resources
+    .container
+      .main-title-wrap
+        h1#scroll-block-resources-5.main-title.main-title--sm.animate-40 Additonal Resources
+      .row.whitepapers-row
+        .col-md-12   
+          a(href="../resources/DeltaPValve-System-Integration.pdf", target="_blank").whitepapers__item
+            .whitepapers__icon-wrap.animated-down-0-7s
+              img.svg.whitepapers__icon(src="../img/resources/icons/design-icon.svg" alt="")
+            .whitepapers__content
+              .whitepapers__title.animated-down-0-9s Article: System Integration
+              .whitepapers__text.animate-40 DeltaPValve® System Integration is intended to ensure correct physical installation and proper operation of every DeltaPValve®, delivering the required performance at each associated cooling or heating coil.
+        .col-md-12
+          a(href="https://www.dwyer-inst.com/PDF_files/490_iom.pdf", target="_blank").whitepapers__item
+            .whitepapers__icon-wrap.animated-down-0-7s
+              img.svg.whitepapers__icon(src="../img/resources/icons/product-icon.svg" alt="")
+            .whitepapers__content
+              .whitepapers__title.animated-down-0-9s Manometer Sales
+              .whitepapers__text.animate-40 The three P/T ports on all DeltaPValves are an easily accessible feature to quickly confirm pressure independence and valve operation, or diagnose flow concerns. A handheld manometer is a basic tool that every installer, inspector or maintenance manager should have available during integration to manually check pressure readings to verify performance and sensor accuracy. While there are a number of manufacturers that provide acceptable manometers, Flow Control Industries typically utilizes the Dwyer model 490-4 for Wet/Wet 0-100 PSID service. FCI will be happy to assist in selecting and ordering new manometers.
+
+ block add-script
   script(src="../js/tab-scroll.js")
   script(src="../js/linkgateway.js")
