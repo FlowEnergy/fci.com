@@ -31,6 +31,7 @@ block main-content
           .col-sm-4
             ul.list-circle-green
               li.animated-down-0-9s Made in the USA
+              li.animated-down-0-9s Field Verifiable Performance
     .text-center
       a.btn.btn-main.animate-40.btn-download-product(target ="_blank" href="../resources/DeltaPValves-Product-Catalog.pdf") download catalog
 
@@ -71,6 +72,7 @@ block main-content
       .col-md-6
         +productInfoItem('installation-icon', 'Installation', 'The DeltaPValve® can be used for control with chilled water, heating water and glycol fluid systems. Orientation can be horizontal or vertical, with the recommendation to keep the stem and actuator above horizontal.' , 'There are no requirements for straight pipe lengths before or after a DeltaPValve®. ')
 
+    .row
       .col-md-6
         .product-info-item
           img.svg(src="../img/product/icons/valve-icon.svg")
@@ -87,6 +89,9 @@ block main-content
             b Seals:
             =" "
             | EPDM.
+      .col-md-6
+        +productInfoItem('meters-icon', 'Field Verifiable Performance', 'Inlet, intermediate, and outlet P/T ports are vital to verify pressure independent operation, validate flow rates, confirm valve shutoff, and troubleshoot system issues. The DeltaPValve® is the only pressure independent valve with 3 P/T ports.')
+
     .hidden-sm.hidden-xs.product-wrap-carousel
       include ../../jade/includes/product-1-carousel
 
