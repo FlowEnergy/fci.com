@@ -132,6 +132,10 @@ block main-content
 
               li
                 a(href='#nh', aria-controls='new hampshire', role='tab', data-toggle='tab') new hampshire
+
+              li
+                a(href='#nm', aria-controls='new mexico', role='tab', data-toggle='tab') new mexico
+
               li(role='presentation')
                 a(href='#nc', aria-controls='north carolina', role='tab', data-toggle='tab') north carolina
               li(role='presentation')
@@ -148,6 +152,9 @@ block main-content
               li(role='presentation')
                 a(href='#sc', aria-controls='south carolina', role='tab', data-toggle='tab') south carolina
 
+              li(role='presentation')
+                a(href='#texas', aria-controls='texas', role='tab', data-toggle='tab') texas
+
               li
                 a(href='#ve', aria-controls='vermont', role='tab', data-toggle='tab') vermont
               li(role='presentation')
@@ -163,6 +170,13 @@ block main-content
                 a(href='#wi', aria-controls='wisconsin', role='tab', data-toggle='tab') wisconsin
               li(role='presentation')
                 a(href='#wy', aria-controls='wyoming', role='tab', data-toggle='tab') wyoming
+
+              li(role='presentation')
+                a(href='#alberta', aria-controls='bc', role='tab', data-toggle='tab') alberta
+
+              li(role='presentation')
+                a(href='#bc', aria-controls='bc', role='tab', data-toggle='tab') british columbia
+
               li(role='presentation')
                 a(href='#caribbean', aria-controls='caribbean', role='tab', data-toggle='tab') caribbean
 
@@ -186,7 +200,7 @@ block main-content
             #arizona.tab-pane.active(role='tabpanel')
               +contactTabInfo('Arizona', 'Environ', 'Don Behm', '623.238.1640', 'don.behm@environhvac.com', 'www.environhvac.com')
             #colorado.tab-pane(role='tabpanel')
-              +contactTabInfo('Colorado', 'Engineered Mechanical Systems (E3MS)', 'Bob Padgett', '303.534.1600', 'bob@e3ms.com', 'www.e3ms.com')
+              +contactTabInfo('Colorado', 'CFM Company', 'Gene Krist', '303.761.2291', 'genek@cfmcompany.com', 'www.cfmcompany.com')
             #connecticut.tab-pane(role='tabpanel')
               +contactTabInfo('Connecticut', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net', 'www.systemspecialties.net')
             #illinois.tab-pane(role='tabpanel')
@@ -211,7 +225,7 @@ block main-content
               +contactTabInfo('Central & Northern Michigan', 'Flow Control Systems', 'Steve Mancuso', '248.549.4680', 'SMancuso@fcsystems-usa.com', 'www.fcsystems-usa.com')
               +contactTabInfo('Southern Michigan', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com', 'www.primeenergyinc.com')
             #minnesota.tab-pane(role='tabpanel')
-              +contactTabInfo('Minnesota', 'Midwest Mechanical Solutions', 'Bret Riemenschneider', '952.525.2004', 'Bret@mmsus.com', 'www.mmsus.com')
+              +contactTabInfo('Minnesota', 'Trane', 'Matt Johnston', '651.468.2732', 'MatthewS.Johnston@Trane.com', 'www.trane.com')
             #missouri.tab-pane(role='tabpanel')
               +contactTabInfo('Missouri', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com', 'www.b-g.com')
             #nebraska.tab-pane(role='tabpanel')
@@ -220,6 +234,10 @@ block main-content
               +contactTabInfo('Nevada', 'Mechanical Products of Nevada, Inc.', 'Cory Nehls', '702.228.8974', 'cnehls@mpnevada.com', 'www.mpnevada.com')
             #nh.tab-pane(role='tabpanel')
               +contactTabInfo('New Hampshire', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net', 'www.systemspecialties.net')
+
+            #nm.tab-pane(role='tabpanel')
+              +contactTabInfo('New Mexico', 'RK Green Mechanical Reps', 'Kent Green', '915.474.1487', 'kent@rkgmechreps.com', '')
+
             #nc.tab-pane(role='tabpanel')
               +contactTabInfo('North Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com', '')
             #oh.tab-pane(role='tabpanel')
@@ -227,13 +245,18 @@ block main-content
             #ok.tab-pane(role='tabpanel')
               +contactTabInfo('Oklahoma', 'R.B. Akins Company', 'Bert Akins', '405.947.6502', 'bakins@rbakins.com', 'www.rbakins.com')
             #or.tab-pane(role='tabpanel')
-              +contactTabInfo('Oregon', 'Air Reps', 'Ken Porter', '425.562.1150', 'KPorter@airreps.com', 'www.airreps.com')
+              +contactTabInfo('Oregon', 'Air Reps', 'Kurt Schultheis', '503.544.9865', 'KurtS@airreps.com', 'www.airreps.com')
             #pr.tab-pane(role='tabpanel')
               +contactTabInfo('Puerto Rico', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com', '')
             #ri.tab-pane(role='tabpanel')
               +contactTabInfo('Rhode Island', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #sc.tab-pane(role='tabpanel', 'www.systemspecialties.net')
               +contactTabInfo('South Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com', '')
+
+            #texas.tab-pane(role='tabpanel')
+              +contactTabInfo('West Texas', 'RK Green Mechanical Reps', 'Kent Green', '915.474.1487', 'kent@rkgmechreps.com', '')
+              +contactTabInfo('East Texas', 'Vicon Equipment INC', 'Don Sweat', '713.784.4647', 'dsweat@viconequip.com', 'www.viconequip.com')
+
             #va.tab-pane(role='tabpanel')
               +contactTabInfo('Virginia', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712', 'mark@mechanicalsolutions.net', 'www.mechanicalsolutions.net')
             #ve.tab-pane(role='tabpanel')
@@ -247,9 +270,16 @@ block main-content
             #wi.tab-pane(role='tabpanel', 'www.b-g.com')
               +contactTabInfo('Southern Wisconsin', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com')
             #wy.tab-pane(role='tabpanel', 'www.primeenergyinc.com')
-              +contactTabInfo('Wyoming', 'Engineered Mechanical Systems (E3MS)', 'Bob Padgett', '303.534.1600', 'bob@e3ms.com')
+              +contactTabInfo('Wyoming', 'CFM Company', 'Gene Krist', '303.761.2291', 'genek@cfmcompany.com', 'www.cfmcompany.com')
             #caribbean.tab-pane(role='tabpanel', 'www.e3ms.com')
               +contactTabInfo('Caribbean', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com', '')
+
+            #alberta.tab-pane(role='tabpanel')
+              +contactTabInfo('Alberta', 'HVAC Systems & Solutions', 'Jeevan Thaker', '604.944.9222', 'sales@hvacsystems.ca', 'www.hvacsystems.ca')  
+
+            #bc.tab-pane(role='tabpanel')
+              +contactTabInfo('British Columbia', 'HVAC Systems & Solutions', 'Jeevan Thaker', '604.944.9222', 'sales@hvacsystems.ca', 'www.hvacsystems.ca')              
+
             #ri.tab-pane(role='tabpanel')
             #ireland.tab-pane(role='tabpanel')
               +contactTabInfo('Ireland', 'Induchem', 'Stephen Keogh', '353-1-2763177', 'SKeogh@induchem.ie', 'www.induchem-group.com')
