@@ -1,7 +1,9 @@
 doctype html
 include ../mixins/mixins
 html(lang='en')
+  block vars
   block head
+    title #{title}
     include ../includes/head
 
   body
