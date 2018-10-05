@@ -103,6 +103,10 @@ block main-content
                 a(href='#colorado', aria-controls='colorado', role='tab', data-toggle='tab') colorado
               li(role='presentation')
                 a(href='#connecticut', aria-controls='connecticut', role='tab', data-toggle='tab') connecticut
+
+              li(role='presentation')
+                a(href='#florida', aria-controls='florida', role='tab', data-toggle='tab') florida
+
               li(role='presentation')
                 a(href='#illinois', aria-controls='illinois', role='tab', data-toggle='tab') illinois
 
@@ -210,6 +214,10 @@ block main-content
               +contactTabInfo('Colorado', 'CFM Company', 'Larry Gelin', '303.607.4420', 'larryg@cfmcompany.com', 'www.cfmcompany.com')
             #connecticut.tab-pane(role='tabpanel')
               +contactTabInfo('Connecticut', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net', 'www.systemspecialties.net')
+
+            #florida.tab-pane(role='tabpanel')
+              +contactTabInfo('Florida', 'Trane Florida', 'Erik Smedal', '407.468.4257', 'egsmedal@trane.com', '')
+
             #illinois.tab-pane(role='tabpanel')
               +contactTabInfo('Northern Illinois (Chicago Metro)', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com', 'www.primeenergyinc.com')
               +contactTabInfo('Southern Illinois', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com', 'www.b-g.com')
