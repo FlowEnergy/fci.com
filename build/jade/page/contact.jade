@@ -97,15 +97,29 @@ block main-content
         .col-md-3
           .nav-tabs-contact__scroll
             ul.nav.nav-tabs.nav-tabs-contact(role='tablist')
+
+              li.active(role='presentation')
+                a(href='#alabama', aria-controls='alabama', role='tab', data-toggle='tab') alabama
+
               li.active(role='presentation')
                 a(href='#arizona', aria-controls='arizona', role='tab', data-toggle='tab') arizona
+
+              li.active(role='presentation')
+                a(href='#california', aria-controls='california', role='tab', data-toggle='tab') california
+
               li(role='presentation')
                 a(href='#colorado', aria-controls='colorado', role='tab', data-toggle='tab') colorado
               li(role='presentation')
                 a(href='#connecticut', aria-controls='connecticut', role='tab', data-toggle='tab') connecticut
 
               li(role='presentation')
+                a(href='#districtofcolumbia', aria-controls='district of columbia', role='tab', data-toggle='tab') district of columbia                
+
+              li(role='presentation')
                 a(href='#florida', aria-controls='florida', role='tab', data-toggle='tab') florida
+
+              li(role='presentation')
+                a(href='#georgia', aria-controls='georgia', role='tab', data-toggle='tab') georgia
 
               li(role='presentation')
                 a(href='#illinois', aria-controls='illinois', role='tab', data-toggle='tab') illinois
@@ -145,6 +159,10 @@ block main-content
 
               li(role='presentation')
                 a(href='#nc', aria-controls='north carolina', role='tab', data-toggle='tab') north carolina
+
+              li(role='presentation')
+                a(href='#northdakota', aria-controls='north dakota', role='tab', data-toggle='tab') north dakota
+                
               li(role='presentation')
                 a(href='#oh', aria-controls='ohio', role='tab', data-toggle='tab') ohio
               li(role='presentation')
@@ -158,6 +176,9 @@ block main-content
                 a(href='#ri', aria-controls='rhode island', role='tab', data-toggle='tab') rhode island
               li(role='presentation')
                 a(href='#sc', aria-controls='south carolina', role='tab', data-toggle='tab') south carolina
+
+              li(role='presentation')
+                a(href='#southdakota', aria-controls='south dakota', role='tab', data-toggle='tab') south dakota                
 
               li(role='presentation')
                 a(href='#tennessee', aria-controls='tennessee', role='tab', data-toggle='tab') tennessee
@@ -207,16 +228,30 @@ block main-content
 
         .col-md-5
           #myAffix.tab-content.tab-content-info
+
+            #alabama.tab-pane.active(role='tabpanel')
+              +contactTabInfo('Alabama', 'Trane Alabama', 'Keith Roszell', '205.747.4017', 'keith.roszell@trane.com', '')
+
             #arizona.tab-pane.active(role='tabpanel')
               +contactTabInfo('Arizona', 'Environ', 'Don Behm', '623.238.1640', 'don.behm@environhvac.com', 'www.environhvac.com')
+
+            #california.tab-pane.active(role='tabpanel')
+              +contactTabInfo('Southern California', 'Zaretsky Engineering Solutions', 'Andy Beggs', '714.640.3530', 'abeggs@zaretskyengineering.com', 'www.zaretskyengineering.com')
+
             #colorado.tab-pane(role='tabpanel')
               +contactTabInfo('Colorado', 'CFM Company', 'Dave Nimetz', '303.875.7326', 'daven@cfmcompany.com', 'www.cfmcompany.com')
               +contactTabInfo('Colorado', 'CFM Company', 'Larry Gelin', '303.607.4420', 'larryg@cfmcompany.com', 'www.cfmcompany.com')
             #connecticut.tab-pane(role='tabpanel')
               +contactTabInfo('Connecticut', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net', 'www.systemspecialties.net')
 
+            #districtofcolumbia.tab-pane(role='tabpanel')
+              +contactTabInfo('District of Columbia', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712', 'mark@mechanicalsolutions.net', '')              
+
             #florida.tab-pane(role='tabpanel')
               +contactTabInfo('Florida', 'Trane Florida', 'Erik Smedal', '407.468.4257', 'egsmedal@trane.com', '')
+
+            #georgia.tab-pane(role='tabpanel')
+              +contactTabInfo('Georgia', 'Trane Georgia', 'Jeff Kellner', '678.775.4178', 'jkellner@trane.com', '')
 
             #illinois.tab-pane(role='tabpanel')
               +contactTabInfo('Northern Illinois (Chicago Metro)', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com', 'www.primeenergyinc.com')
@@ -255,6 +290,10 @@ block main-content
 
             #nc.tab-pane(role='tabpanel')
               +contactTabInfo('North Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com', '')
+
+            #northdakota.tab-pane(role='tabpanel')
+              +contactTabInfo('North Dakota', 'Trane Great Northern Plains', 'Matt Johnston', '651.468.2732', 'matthews.johnston@irco.com', '')
+
             #oh.tab-pane(role='tabpanel')
               +contactTabInfo('Southern Ohio', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com', 'www.b-g.com')
             #ok.tab-pane(role='tabpanel')
@@ -267,6 +306,10 @@ block main-content
               +contactTabInfo('Rhode Island', 'System Specialties, Inc.', 'Gary Franchi', '860.613.0093', 'gary@systemspecialties.net')
             #sc.tab-pane(role='tabpanel', 'www.systemspecialties.net')
               +contactTabInfo('South Carolina', 'Optimized Energy Solutions, LLC', 'Chris Visagé', '704.305.1761', 'optimizedenergysolutions@gmail.com', '')
+
+            #southdakota.tab-pane(role='tabpanel')
+              +contactTabInfo('South Dakota', 'Trane Great Northern Plains', 'Matt Johnston', '651.468.2732', 'matthews.johnston@irco.com', '')
+
             #tennessee.tab-pane(role='tabpanel')
               +contactTabInfo('Tennessee', 'Wimberly', 'John Welch', '931.881.6316', 'jwelch@wimberlysales.com', 'www.wimberlysales.com')
 
@@ -284,8 +327,10 @@ block main-content
               +contactTabInfo('Washington DC', 'Mechanical Sales of Virginia', 'Mark McGrath', '804.283.6712', 'mark@mechanicalsolutions.net', 'www.mechanicalsolutions.net')
             #wv.tab-pane(role='tabpanel')
               +contactTabInfo('West Virginia', 'Blackmore & Glunt', 'Scott Blackmore', '314.878.4313', 'sblackmore@b-g.com')
+
             #wi.tab-pane(role='tabpanel', 'www.b-g.com')
-              +contactTabInfo('Southern Wisconsin', 'Prime Energy, Inc.', 'Tim Nugent', '630.904.0399', 'tim@primeenergyinc.com')
+              +contactTabInfo('Southern Wisconsin', 'Trane Great Northern Plains', 'Matt Johnston', '651.468.2732', 'matthews.johnston@irco.com')
+
             #wy.tab-pane(role='tabpanel', 'www.primeenergyinc.com')
               +contactTabInfo('Wyoming', 'CFM Company', 'Larry Gelin', '303.607.4420', 'larryg@cfmcompany.com', 'www.cfmcompany.com')
               +contactTabInfo('Wyoming', 'CFM Company', 'Dave Nimetz', '303.875.7326', 'daven@cfmcompany.com', 'www.cfmcompany.com')
