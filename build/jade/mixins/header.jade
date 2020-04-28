@@ -38,3 +38,8 @@ mixin headerNav(home, customers)
               li: a(href='/fciblog') Blog
               li: a(href='contact.html') Contact
               li: a(href='http://www.flowcontrol.com/Users/login') Log In
+              li
+                form.searchform(action='https://www.google.com/search', method='get', name='searchform', target='_blank', style='padding-left: 15px;')
+                  input(name='sitesearch', type='hidden', value='flowcontrol.com')
+                  input.form-control.search(autocomplete='on', name='q', placeholder='Search in flowcontrol.com', required='required', type='text', style='width: 100px; float: left; vertical-align: middle; height: 20px; margin-top: 15px; font-size: 8pt;')
+                  button.button(type='submit', style='height: 25px; font-size: 8pt; vertical-align: middle; padding-top: -5px;margin-top: -5px; margin-top: 12px; margin-left: 4px;') Search
