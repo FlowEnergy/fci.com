@@ -13,7 +13,7 @@
   "author": "Flow controll team",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-awspublish": "^3.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
@@ -31,7 +31,7 @@
   "dependencies": {
     "es6-promise": "^3.0.2",
     "extend": "^3.0.0",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.0",
     "gulp-gzip": "^1.2.0",
     "gulp-rev": "^6.0.1",
